@@ -847,10 +847,10 @@ NDefines.NRaids.RAID_HIGH_RISK_SETTING_DISASTER_MODIFIER = 0.5
 
 NDefines_Graphics.NInterface.MINIMAP_TOGGLE_SHIFT = 405				-- horizontal shift for minimap to close it
 
-NDefines.NFactions.MAX_PROJECT_COUNT = 4 --The maximum number of projects a faction can have
-NDefines.NFactions.MAX_NUM_SHORT_TERM_GOALS = 3						-- Maximum number of short term goals a faction can have at any one time	
-NDefines.NFactions.MAX_NUM_MEDIUM_TERM_GOALS = 2						-- Maximum number of medium term goals a faction can have at any one time
-NDefines.NFactions.MAX_NUM_LONG_TERM_GOALS = 1					-- Maximum number of long term goals a faction can have at any one time
+NDefines.NFactions.MAX_PROJECT_COUNT = 5 --The maximum number of projects a faction can have
+NDefines.NFactions.MAX_NUM_SHORT_TERM_GOALS = 4						-- Maximum number of short term goals a faction can have at any one time	
+NDefines.NFactions.MAX_NUM_MEDIUM_TERM_GOALS = 3						-- Maximum number of medium term goals a faction can have at any one time
+NDefines.NFactions.MAX_NUM_LONG_TERM_GOALS = 2					-- Maximum number of long term goals a faction can have at any one time
 NDefines.NFactions.AI_DAYS_TO_SELECT_GOAL = 9999
 NDefines.NFactions.AI_THEATER_CREATION_PENALTY = 99 -- Penalty defines how much each theater reduces the chance linearly. (The higher, the worse the penalty is)
 NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 10 -- When doctrine sharing is enabled, this is the base amount of mastery gained monthly
