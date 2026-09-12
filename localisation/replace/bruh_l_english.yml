@@ -498,6 +498,15 @@
  GATHERING_META_DESC:0 "This scenario sets up the starting map up as it was during the 2025 Community Cup. It annexes in a number of smaller nations and is designed for a more symetrical 12v12 type game (though you can play with more). Consider also downloading the Submod for this called §R'Their Competitive Bruh (TCB)'§! to get the same style of gameplay experience as the 2025 Community Cup mod."
 
 
+ AXIS_doctrine_debuff:0 "Pre-Poland Doctrine Debuff"
+ AXIS_doctrine_debuff_desc:0 "Removed upon ENG, FRA, NOR, HOL, or Belgium getting any surrender progress, or upon Poland Capitulating."
+ AXIS_minor_doctrine_debuff:0 "Pre-Poland Doctrine Debuff"
+ AXIS_minor_doctrine_debuff_desc:0 "Removed upon ENG, FRA, NOR, HOL, or Belgium getting any surrender progress, or upon Poland Capitulating."
+ JAP_doctrine_debuff:0 "Pre China Capitulation Doctrine Debuff"
+ JAP_doctrine_debuff_desc:0 "Removed after the China war"
+ ALLIED_doctrine_debuff:0 "Pre-Poland Doctrine Debuff"
+ ALLIED_doctrine_debuff_desc:0 "Removed as soon as Germany goes to war."
+
  #### UNITS ####
  mountaineers:0 "Light Infantry"
  infantry_mot:0 "Semi-Motorized Infantry"

@@ -2261,8 +2261,11 @@
 			add_ideas = SOV_winter_war_soviet_nerf
 			#activate_mission = SOV_winter_war_lessons_mission
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_land_mastery_gain_factor_15_tt
-			add_to_variable = { SOV_red_army_land_mastery_gain_factor_var = 0.15 }
+			#custom_effect_tooltip = SOV_red_army_land_mastery_gain_factor_15_tt
+			add_to_variable = { 
+				SOV_red_army_land_mastery_gain_factor_var = 0.6
+				tooltip = land_mastery_gain_factor_tt
+			}
 
 			hidden_effect = {
 				add_state_claim = 146
@@ -17188,7 +17191,7 @@
 				folder = land
 			}
 			add_mastery = {
-				amount = 50
+				amount = 25
 				folder = land
 			}
 		}
@@ -17244,12 +17247,12 @@
 			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_our_losses
-				bonus = 0.2
+				bonus = 0.15
 				days = 360
 				folder = land
 			}
 			add_mastery = {
-				amount = 100
+				amount = 50
 				folder = land
 			}
 		}
@@ -17305,12 +17308,12 @@
 			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_losses_2
-				bonus = 0.3
+				bonus = 0.2
 				days = 360
 				folder = land
 			}
 			add_mastery = {
-				amount = 150
+				amount = 75
 				folder = land
 			}
 		}

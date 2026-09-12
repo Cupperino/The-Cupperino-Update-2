@@ -1974,6 +1974,22 @@ on_actions = {
 		# effect = {
 		# 	AST = { set_country_flag = AST_tfb_focus_tree }
 		# }
+		effect = {
+			JAP = { add_ideas = JAP_doctrine_debuff }
+			GER = { add_ideas = AXIS_doctrine_debuff }
+			ITA = { add_ideas = AXIS_doctrine_debuff }
+			HUN = { add_ideas = AXIS_minor_doctrine_debuff }
+			BUL = { add_ideas = AXIS_minor_doctrine_debuff }
+			YUG = { add_ideas = AXIS_minor_doctrine_debuff }
+			ROM = { add_ideas = AXIS_minor_doctrine_debuff }
+			ENG = { add_ideas = ALLIED_doctrine_debuff }
+			USA = { add_ideas = ALLIED_doctrine_debuff }
+			CAN = { add_ideas = ALLIED_doctrine_debuff }
+			AST = { add_ideas = ALLIED_doctrine_debuff }
+			SAF = { add_ideas = ALLIED_doctrine_debuff }
+			RAJ = { add_ideas = ALLIED_doctrine_debuff }
+			NZL = { add_ideas = ALLIED_doctrine_debuff }
+		}
 	}
 	# on_unit_leader_created = {
 	# 	effect = {

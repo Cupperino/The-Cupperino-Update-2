@@ -1650,6 +1650,119 @@ ideas = {
 			}
 
 		}
+		AXIS_doctrine_debuff = {
+
+			picture = disarmed_nation
+
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = ITA
+				}
+			}
+
+			cancel = {
+				if = {
+					OR = {
+						ENG = { surrender_progress > 0 }
+						NOR = { surrender_progress > 0 }
+						FRA = { surrender_progress > 0 }
+						BEL = { surrender_progress > 0 }
+						HOL = { surrender_progress > 0 }
+						POL = { has_capitulated = yes }
+					}
+				}
+			}
+
+			modifier = {
+				land_mastery_gain_factor = -0.80
+				air_mastery_gain_factor = -0.80
+				naval_mastery_gain_factor = -0.80
+			}
+		}
+
+		AXIS_minor_doctrine_debuff = {
+
+			picture = disarmed_nation
+
+			allowed = {
+				OR = {
+					original_tag = HUN
+					original_tag = BUL
+					original_tag = YUG
+					original_tag = ROM
+				}
+			}
+
+			cancel = {
+				if = {
+					OR = {
+						ENG = { surrender_progress > 0 }
+						NOR = { surrender_progress > 0 }
+						FRA = { surrender_progress > 0 }
+						BEL = { surrender_progress > 0 }
+						HOL = { surrender_progress > 0 }
+						POL = { has_capitulated = yes }
+					}
+				}
+			}
+
+			modifier = {
+				land_mastery_gain_factor = -0.50
+			}
+		}
+
+		JAP_doctrine_debuff = {
+
+			picture = disarmed_nation
+
+			allowed = {
+				OR = {
+					original_tag = JAP
+				}
+			}
+
+			cancel = {
+				if = {
+					OR = {
+						JAP = { owns_state = 200 }
+						MAN = { owns_state = 200 }
+						SIA = { owns_state = 200 }
+					}
+				}
+			}
+
+			modifier = {
+				land_mastery_gain_factor = -0.80
+				naval_mastery_gain_factor = -0.80
+			}
+		}
+
+
+		ALLIED_doctrine_debuff = {
+
+			picture = disarmed_nation
+
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = USA
+					original_tag = CAN
+					original_tag = AST
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = NZL
+				}
+			}
+
+			cancel = {
+				GER = { has_war = yes }
+			}
+
+			modifier = {
+				naval_mastery_gain_factor = -0.80
+			}
+		}
 	}
 
 	# TECHNOLOGY
