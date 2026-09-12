@@ -309,6 +309,8 @@ set_variable = { GER_military_unit_leader_as_advisor_cp_cost_factor = 0 }
 set_variable = { GER_military_command_power_gain_mult = 0 }
 add_dynamic_modifier = { modifier = GER_army_modifier }
 
+set_variable = { GER_living_allies_buff = -0.1 }
+
 #NAVY
 #REMINDER to always update the fake NS if these numbers are altered!
 set_variable = { GER_military_naval_heavy_gun_hit_chance_factor = 0 }

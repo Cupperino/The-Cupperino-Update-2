@@ -1522,7 +1522,6 @@ on_actions = {
 					}
 					SOV = { country_event = soviet.2222 }
 				}
-		
 			}
 		}
 
@@ -1682,6 +1681,25 @@ on_actions = {
 						}
 					}
 				}
+
+				# if = {
+				# 	limit = {
+				# 		64 = { NOT = { has_dynamic_modifier = GER_sun_never_sets} }
+				# 	}
+				every_state = {
+					limit = {
+						is_core_of = GER
+					}
+					add_dynamic_modifier = {
+						modifier = GER_sun_never_sets
+						scope = SOV
+					}
+				}
+				if = { limit = { BUL = { country_exists = no } } add_to_variable = { GER_living_allies_buff = 0.025} }
+				if = { limit = { HUN = { country_exists = no } } add_to_variable = { GER_living_allies_buff = 0.025} }
+				if = { limit = { ROM = { country_exists = no } } add_to_variable = { GER_living_allies_buff = 0.025} }
+				if = { limit = { FIN = { country_exists = no } } add_to_variable = { GER_living_allies_buff = 0.025} }
+				# }
 				
 				#Lone Wolf no longer removed, code now for removing volunteers if barb starts early
 				FIN = {
@@ -2299,6 +2317,22 @@ on_actions = {
 				}
 				SOV = {
 					set_country_flag = achievement_no_statistics
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = FIN
+						tag = HUN
+						tag = ROM
+						tag = BUL
+					}
+					GER = { has_war_with = SOV }		
+				}
+				GER = {
+					add_to_variable = { GER_living_allies_buff = 0.025}
 				}
 			}
 		}

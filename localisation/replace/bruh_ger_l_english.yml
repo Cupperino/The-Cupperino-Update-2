@@ -777,6 +777,9 @@
 
   GER_german_trade_offshore_tt: "([ROOT.GetFlag]§Y[ROOT.GetNameDefCap]§!) Add §G3§! offmap §Y$industrial_complex$§!."
 
+  GER_sun_never_sets:0 "Our Eastern Buffer"
+  GER_sun_never_sets_desc:0 "Soviets will have §R2.5% Attack and Defense Debuffs§! on §GGerman§! Core States for each of §YRomania§!, §YHungary§!, §YFinland§!, and §YBulgaria§! have not capitulated."
+
 
  #### Country FLAG #####
   GER_MAN_UP_1:0 "§R Axis has captured Cairo, Southern Egypt, or London§!"
