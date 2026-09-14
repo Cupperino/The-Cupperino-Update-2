@@ -347,6 +347,19 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 		0.0, -- operative
 	}
 
+NDefines.NMilitary.FIGHTING_STRENGTH_HQ_ALERT_THRESHOLD = 0.5 -- fighting strength below which deployed leader have an alert glow on their portrait
+NDefines.NMilitary.COMMS_MAX_DISTANCE = 8											-- If N is >= the size of the below arrays, the last value will be considered repeated
+NDefines.NMilitary.PLANNING_CAP_COMMS_SCALING = { 1.0, 0.975, 0.95, 0.925, 0.9, 0.875, 0.85, 0.825, 0.8 }		-- Value at index J is the scaling applied to planning cap when HQ is J provinces behind the frontline
+NDefines.NMilitary.PLANNING_CAP_NO_HQ_SCALING = 0.75								-- Scaling applied to planning cap when there's no HQ (no leader or leader not deployed or not the same root order)
+NDefines.NMilitary.PLANNING_SPEED_COMMS_SCALING = { 1.0, 0.975, 0.95, 0.925, 0.9, 0.875, 0.85, 0.825, 0.8 }		-- Same as PLANNING_CAP_COMMS_SCALING but for planning speed
+NDefines.NMilitary.PLANNING_SPEED_NO_HQ_SCALING = 0.75								-- Same as PLANNING_CAP_NO_HQ_SCALING but for planning speed
+NDefines.NMilitary.LEADER_MOD_COMMS_SCALING = { 1.08, 1.07, 1.06, 1.05, 1.04, 1.03, 1.02, 1.01, 1.0 }		-- Same as PLANNING_CAP_COMMS_SCALING but for leader modifiers
+NDefines.NMilitary.ABILITY_COMMS_SCALING = { 1.08, 1.07, 1.06, 1.05, 1.04, 1.03, 1.02, 1.01, 1.0 }		-- Same as PLANNING_CAP_COMMS_SCALING but for active abilities
+NDefines.NMilitary.GENERAL_PROXIMITY_CLOSE = 2								-- At the "close" proximity setting, the general should stay this many provinces behind the frontline
+NDefines.NMilitary.GENERAL_PROXIMITY_MEDIUM = 4									-- At the "medium" proximity setting, the general should stay this many provinces behind the frontline
+NDefines.NMilitary.GENERAL_PROXIMITY_FAR = 6										-- At the "far" proximity setting, the general should stay this many provinces behind the frontline
+NDefines.NMilitary.GENERAL_PROXIMITY_DEFAULT = 2									-- The default proximity setting for a deployed general. This number should correspond to one of the values above
+
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 500
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 400
