@@ -261,11 +261,11 @@ set_variable = { GER_increase_current_l2 = 2 } # Chromium, Oil, Coal
 set_variable = { GER_increase_current_l3 = 3 } # Steel, Aluminum, Tungsten
 
 set_variable = { GER_change_per_resource_civilian = 0.001 } #Changing monthly CG while on Civilian Eco # Max .007 # 2 missing .002
-set_variable = { GER_change_per_resource_early = 0.001 } #Changing monthly CG while on Early Mob # Max .014 # 2 missing .004
+set_variable = { GER_change_per_resource_early = 0.002 } #Changing monthly CG while on Early Mob # Max .014 # 2 missing .004
 set_variable = { GER_change_per_resource_partial = 0.003 } #Changing monthly CG while on Partial Mob # Max .021 # 2 missing .006
 set_variable = { GER_change_per_resource_war_eco = 0.005 } #Changing monthly CG while on War Eco # Max .035 # 2 missing .010
-set_variable = { GER_change_per_resource_total_mob = 0.009 } #Changing monthly CG while on Total Mob # Max .056 # 2 missing .016
-set_variable = { GER_change_per_resource_totaler_krieg = 0.017 } #Changing monthly CG while on Total Mob # Max .091 # 2 missing .026
+set_variable = { GER_change_per_resource_total_mob = 0.008 } #Changing monthly CG while on Total Mob # Max .056 # 2 missing .016
+set_variable = { GER_change_per_resource_totaler_krieg = 0.013 } #Changing monthly CG while on Total Mob # Max .091 # 2 missing .026
 set_variable = { GER_change_per_resoruce_current = 0 } # Represents the current value from the list above
 set_variable = { GER_change_per_resoruce_changing = 0 } # Represents the amount currently ticking per month
 
