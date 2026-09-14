@@ -155,11 +155,17 @@
   usa.1007.t:0 "You can Join the War"
   usa.1007.d:0 "You are in the allies and can now join the war.\n\nYou should probably do that."
   usa.1007.a:0 "Okay"
+  usa.1008.t:0 "NO Prepositioning"
+  usa.1008.d:0 "You are not allowed to pre-position troops into Indian, Malasyian, Dutch East Indies, Australian, or New Zealand owned land prior to January 1st 1942. If you place units there, they will be teleported to either the Phillipines or Pearl Harbor.\n\nTeleporting check occurs weekly beginning in 1940 and runs till Japan is at war with the UK."
+  usa.1008.a:0 "No Fun Mod"
 
 
   usa.70.t:0 "Flint Strikes"
   usa.70.desc:0 "The 1936–1937 Flint sit-down strike, also known as the General Motors sit-down strike, the great GM sit-down strike, and so on, was a sitdown strike at the General Motors plant in Flint, Michigan, United States."
   usa_flint_strikes.1.a:0 "Deal with the Flint Strikes"
+
+  USA_cant_preposition:0 "No pre-positioning"
+  USA_cant_preposition_desc:0 "USA Isn't allowed to preposition units in §YRAJ, INS, AST, NZL, or MAL§! prior to §YJanuary 1st 1942§! if the USA isn't at war."
 
   ### IDEAS ###
   USA_neutrality_idea:0 "Not Our War Major"

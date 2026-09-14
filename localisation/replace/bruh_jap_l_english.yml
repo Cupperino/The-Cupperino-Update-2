@@ -221,6 +221,16 @@
   japan.506.t:0 "Manchu Land Transfer"
   japan.506.d:0 "You may now open up the decisions tab and determine what (if any) land to give to Manchu. Right side Manchu is designed for giving lots of land to them, and left side doesn't need that much."
 
+  japan.507.t:0 "Call the Americans"
+  japan.507.d:0 "Such Bold Aggression may allow us to bring the United States to our side!"
+  japan.507.a:0 "Petition the Americans for help"
+  japan.507.b:0 "We do not need them!"
+
+  japan.508.t:0 "The UK Calls for Assistance"
+  japan.508.d:0 "The Japanese Aggression in South East Asia has gone undeterred by our actions. Now the UK Calls for aid while both are at their weakest."
+  japan.508.a:0 "We will join them at once!"
+  japan.508.b:0 "We are not ready for such a war."
+
   ### IDEAS ###
   JAP_break_mitsubishi_idea:0 "Break up Mitsubishi"
   JAP_break_mitsui_idea:0 "Break up Mitsui"
@@ -348,7 +358,8 @@
   JAP_early_war_destruction_tt:0 "§GAt the outbreak of the war our air strikes will damage some enemy defenses.§!"
   JAP_give_it_your_all_for_the_emperor_tt: "Unlocks decisions to Construct §G1§! §YCivilian Factory§! in starting core states with level §Y4§! or higher §YInfrastructure§!. It costs 15 PP and takes 30 days. \n§RThis decision can only be taken once per state§!"
   JAP_reduce_zaibatsu_focus_cost_tt: "Taking §Y$JAP_sea_guide_the_zaibatsus$§! will reduce the time this focus takes down to §G35§! days."
-
+  JAP_warning_usa_into_the_war_tt:0 "§RWARNING Going to war with the UK Prior to July 1st 1941 will allow the UK to instantly call the USA into the War.§!"
+  JAP_warning_usa_into_the_war2_tt:0 "§YNOTE§!: The USA can't preposition troops in §YRAJ, INS, AST, NZL, or MAL§! prior to §YJanuary 1st 1942§! if they aren't at war."
 
 
   #### PARTIES ####

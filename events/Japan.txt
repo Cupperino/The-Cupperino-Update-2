@@ -1308,3 +1308,68 @@ country_event = {
 		name = startingevent.999.a
 	}
 }
+
+country_event = {
+	id = japan.507
+	title = japan.507.t
+	desc = japan.507.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = japan.507.a
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = if_they_accept_tt
+		effect_tooltip = {
+			USA = {
+				remove_ideas = USA_neutrality_idea
+				remove_ideas = USA_neutrality_idea_2
+				remove_ideas = USA_neutrality_idea_3
+				ENG = { add_to_faction = USA }
+				country_event = usa.1005
+			}
+		}
+		USA = { country_event = japan.508 }
+
+	}
+
+	option = {
+		name = japan.507.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = japan.508
+	title = japan.508.t
+	desc = japan.508.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = japan.508.a
+		ai_chance = {
+			factor = 100
+		}
+		remove_ideas = USA_neutrality_idea
+		remove_ideas = USA_neutrality_idea_2
+		remove_ideas = USA_neutrality_idea_3
+		ENG = { add_to_faction = USA }
+		country_event = usa.1005
+	}
+
+	option = {
+		name = japan.508.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

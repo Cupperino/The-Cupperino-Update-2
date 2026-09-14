@@ -3192,3 +3192,17 @@ country_event = {
 
 	}
 }
+
+#Teleported Out
+country_event = {
+	id = usa.1008
+	title = usa.1008.t
+	desc = usa.1008.d
+	picture = GFX_report_event_oahu_withdraws
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1008.a
+	}
+}

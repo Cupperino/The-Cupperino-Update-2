@@ -2102,6 +2102,8 @@ on_actions = {
 						add_ideas = MAN_assert_mills
 					}
 				}
+				# Send Event to USA About not being able to Pre-Position
+				USA = { country_event = USA.1008 }
 			}
 		}
 		# # Going to the Peace Conference
@@ -2984,6 +2986,58 @@ on_actions = {
 					}
 				}
 				add_ideas = ITA_muslim_italians
+			}
+		}
+	}
+
+	on_weekly_USA = {
+		effect = {
+			if = { 
+				limit = {
+					date < 1942.1.1
+					NOT = { JAP = { has_war_with = ENG } }
+					#date > 1940.1.1
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_and_controlled_by = RAJ
+							is_owned_and_controlled_by = MAL
+							is_owned_and_controlled_by = INS
+							is_owned_and_controlled_by = AST
+							is_owned_and_controlled_by = NZL
+							is_core_of = INS
+						}
+					}
+					if = { 
+						limit = { 
+							OR = {
+								USA = { is_in_faction_with = PHI }
+								PHI = { is_subject_of = USA }
+								PHI = { has_war = no }
+							} 
+						}
+						teleport_armies = {
+							limit = { 
+								tag = USA
+							}
+							to_state = 327
+						}
+					} else = {
+						teleport_armies = {
+							limit = { 
+								tag = USA
+							}
+							to_state = 629
+						}
+					}
+					USA = { set_country_flag = USA_teleported }
+				}
+				if = {
+					limit = { has_country_flag = USA_teleported }
+					country_event = USA.1008
+					clr_country_flag = USA_teleported
+				}
 			}
 		}
 	}

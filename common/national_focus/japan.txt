@@ -14299,7 +14299,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_IMPERIAL_INFLUENCE }
 
 		completion_reward = {
-				
+			custom_effect_tooltip = JAP_warning_usa_into_the_war_tt
+			custom_effect_tooltip = JAP_warning_usa_into_the_war2_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					PHI = {
