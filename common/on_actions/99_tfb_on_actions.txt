@@ -1789,7 +1789,7 @@ on_actions = {
 				}
 				
 				# Ukraine West
-				set_variable = { var_ukraine_west_dev_map = 3 }
+				set_variable = { var_ukraine_west_dev_map = 4 }
 				#set_variable = { var_ukraine_west_dev_map_counter = 50 }
 				SOV = { add_to_array = { ukraine_west_states = 137 } }
 				SOV = { add_to_array = { ukraine_west_states = 196 } }
@@ -1811,7 +1811,7 @@ on_actions = {
 				}
 				
 				# Ukraine East
-				set_variable = { var_ukraine_east_dev_map = 3 }
+				set_variable = { var_ukraine_east_dev_map = 4 }
 				#set_variable = { var_ukraine_east_dev_map_counter = 70 }
 				SOV = { add_to_array = { ukraine_east_states = 227 } }
 				SOV = { add_to_array = { ukraine_east_states = 218 } }
