@@ -3009,34 +3009,39 @@ on_actions = {
 							is_core_of = INS
 						}
 					}
-					if = { 
-						limit = { 
-							OR = {
-								USA = { is_in_faction_with = PHI }
-								PHI = { is_subject_of = USA }
-								PHI = { has_war = no }
-							} 
-						}
-						teleport_armies = {
+					if = {
+						limit = { USA = { divisions_in_state = { state = PREV size > 0 } } }
+						if = { 
 							limit = { 
-								tag = USA
+								OR = {
+									USA = { is_in_faction_with = PHI }
+									PHI = { is_subject_of = USA }
+									PHI = { has_war = no }
+								} 
 							}
-							to_state = 327
-						}
-					} else = {
-						teleport_armies = {
-							limit = { 
-								tag = USA
+							teleport_armies = {
+								limit = { 
+									tag = USA
+								}
+								to_state = 327
 							}
-							to_state = 629
+						} else = {
+							teleport_armies = {
+								limit = { 
+									tag = USA
+								}
+								to_state = 629
+							}
 						}
+						log = "Got Here"
+						USA = { set_country_flag = USA_teleported }
 					}
-					USA = { set_country_flag = USA_teleported }
+					
 				}
 				if = {
 					limit = { has_country_flag = USA_teleported }
 					country_event = USA.1008
-					clr_country_flag = USA_teleported
+					USA = { clr_country_flag = USA_teleported }
 				}
 			}
 		}
