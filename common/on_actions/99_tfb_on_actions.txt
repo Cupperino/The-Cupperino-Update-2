@@ -1824,12 +1824,12 @@ on_actions = {
 				for_each_scope_loop = {
 					array = SOV.ukraine_west_states
 					add_dynamic_modifier = {
-						modifier = SOV_regional_development_stage_3
+						modifier = SOV_regional_development_stage_4
 					}
 				}
 				
 				# Ukraine East
-				set_variable = { var_ukraine_east_dev_map = 4 }
+				set_variable = { var_ukraine_east_dev_map = 3 }
 				#set_variable = { var_ukraine_east_dev_map_counter = 70 }
 				SOV = { add_to_array = { ukraine_east_states = 227 } }
 				SOV = { add_to_array = { ukraine_east_states = 218 } }

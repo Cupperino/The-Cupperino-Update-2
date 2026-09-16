@@ -65,8 +65,8 @@ country_event = {
 		add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.2 }
 		custom_effect_tooltip = SOV_construction_speed_mil_20_tt
 		add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.20 }
-		custom_effect_tooltip = SOV_factory_output_5_tt
-		add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+		# custom_effect_tooltip = SOV_factory_output_5_tt
+		# add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
 
 		set_country_flag = SOV_second_5_year_plan_completed
 		add_to_variable = { SOV_gosplan_gui_dirty_var = 1 }

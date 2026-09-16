@@ -7558,8 +7558,8 @@
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
 			
-			custom_effect_tooltip = SOV_factory_output_5_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+			custom_effect_tooltip = SOV_factory_output_025_tt
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
 			custom_effect_tooltip = SOV_consumer_good_factor_-2_tt
 			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.02 }
 
@@ -9469,8 +9469,8 @@
 			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
 			custom_effect_tooltip = SOV_efficiency_base_5_tt
 			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_efficiency_retention_5_tt
-			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
+			# custom_effect_tooltip = SOV_efficiency_retention_5_tt
+			# add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
 			
 			custom_effect_tooltip = SOV_civ_to_mil_conversion_20_tt
 			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.20 }
@@ -9941,10 +9941,14 @@
            	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05
             	tooltip = production_factory_max_efficiency_factor_tt
             }
-			custom_effect_tooltip = SOV_efficiency_base_-5_tt
-			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = -0.05 }
-			custom_effect_tooltip = SOV_efficiency_retention_-5_tt
-			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = -0.05 }
+			add_to_variable = { 
+				SOV_command_economy_production_factory_start_efficiency_factor_var = -0.075
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
+			add_to_variable = { 
+				SOV_command_economy_line_change_production_efficiency_factor_var = -0.075
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 	}
 	
@@ -10620,8 +10624,8 @@
 		cost = 4
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factory_output_5_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+			custom_effect_tooltip = SOV_factory_output_025_tt
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			
@@ -14820,6 +14824,12 @@
 			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 }
 			custom_effect_tooltip = SOV_construction_speed_mil_10_tt
 			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 }
+			custom_effect_tooltip = SOV_efficiency_retention_5_tt
+			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
+			custom_effect_tooltip = SOV_factory_output_10_tt
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.1 }
+			custom_effect_tooltip = SOV_efficiency_growth_5_tt
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
 
 			hidden_effect = {
 				SOV_check_equipment_stockpile = yes
