@@ -1,12 +1,6 @@
 
- #####    ####   #    #  #####    ####  
- #    #  #    #  ##  ##  #    #  #      
- #####   #    #  # ## #  #####    ####  
- #    #  #    #  #    #  #    #       # 
- #    #  #    #  #    #  #    #  #    # 
- #####    ####   #    #  #####    ####  
-
-sp_air_bouncing_bomb = {
+ ##### Remove before release ####
+  sp_air_bouncing_bomb = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_bouncing_bomb
 
@@ -16,6 +10,7 @@ sp_air_bouncing_bomb = {
 	}
 
 	allowed = {
+		always = no
 		has_dlc = "Gotterdammerung"		
 	}
 
@@ -184,10 +179,8 @@ sp_air_bouncing_bomb = {
 			}
 		}
 	}
-}
-
-
-sp_air_earthshaker_bomb = {
+  }
+  sp_air_earthshaker_bomb = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_earthshaker_bomb
 
@@ -197,6 +190,7 @@ sp_air_earthshaker_bomb = {
 	}
 
 	allowed = {
+		always = no
 		has_dlc = "Gotterdammerung"		
 	}
 
@@ -419,10 +413,427 @@ sp_air_earthshaker_bomb = {
 			}
 		}
 	}
-}
+  }
+   
+   
+ 
+ 
+ #####    ####   #    #  #####    ####  
+ #    #  #    #  ##  ##  #    #  #      
+ #####   #    #  # ## #  #####    ####  
+ #    #  #    #  #    #  #    #       # 
+ #    #  #    #  #    #  #    #  #    # 
+ #####    ####   #    #  #####    ####  
 
+ sp_air_specialiced_bombs = {
+	specialization = specialization_air 	
+	icon = GFX_sp_air_specialiced_bombs
 
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_bomb
+	}
 
+	allowed = {
+		has_dlc = "Gotterdammerung"		
+	}
+
+	available = { 
+		# FROM is country 
+		# THIS/ROOT is project
+		# if = {
+		# 	limit = {
+		# 		has_dlc = "By Blood Alone"
+		# 	}
+		# 	FROM = {
+		# 		has_tech = heavy_bombs
+		# 	}
+		# }
+		# else = {
+		 	OR = {
+				FROM = { has_tech = tactical_bomber2 }
+				FROM = { has_tech = strategic_bomber2 }
+			}
+		# }
+	}
+
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			steel = 80
+			tungsten = 80
+			aluminium = 40
+			rubber = 20
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+
+	complexity = sp_complexity.medium 
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_air_bouncing_bomb_completion_tt
+			custom_effect_tooltip = sp_air_earthshaker_bomb_completion_tt
+		}		
+	}	
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		#sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		#sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		#sp_air_generic_reward_major_progress_3
+		#sp_air_generic_reward_test_failure_1
+		#sp_air_generic_reward_test_failure_2
+		#sp_air_generic_reward_test_failure_3		
+	}
+
+	unique_prototype_rewards = {
+		sp_air_earthshaker_bomb_unique_reward = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_air_earthshaker_bomb_preference_naval_targetting
+				
+				iteration_output = {
+					country_effects = {
+					# 	if = {
+					# 		limit = { has_dlc = "By Blood Alone"}							
+						
+					# 		add_equipment_bonus = {
+					# 			name = sp_earthshaker_bomb_naval_targetting
+					# 			bonus = {
+					# 				large_plane_airframe = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
+					# 					naval_strike_targetting = 0.1									
+					# 				}
+					# 			}
+					# 		}
+					# 	}
+					# 	else = {
+							add_equipment_bonus = {
+								name = sp_earthshaker_bomb_naval_targetting
+								bonus = {
+								# 	large_plane_airframe = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
+								# 		naval_strike_targetting = 0.1
+								# 	}
+									jet_strat_bomber_equipment = {
+										naval_strike_targetting = 0.1
+									}
+									strat_bomber_equipment = {
+										naval_strike_targetting = 0.1
+									}
+									transport_plane_equipment = {
+										naval_strike_targetting = 0.1
+									}
+									flying_boat_equipment = {
+										naval_strike_targetting = 0.1
+									}
+								}
+							}
+					# 	}
+					}
+				}
+			}
+
+			option = {
+				token = sp_air_earthshaker_bomb_preference_raw_power
+				default = yes
+				iteration_output = {
+					country_effects = {
+					# 	if = {
+					# 		limit = { has_dlc = "By Blood Alone"}							
+						
+					# 		add_equipment_bonus = {
+					# 			name = sp_earthshaker_bomb_power
+					# 			bonus = {
+					# 				large_plane_airframe = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
+					# 					naval_strike_attack = 0.05
+					# 					air_bombing = 0.05									
+					# 				}
+					# 			}
+					# 		}
+					# 	}
+					# 	else = {
+							add_equipment_bonus = {
+								name = sp_earthshaker_bomb_power
+								bonus = {
+									jet_strat_bomber_equipment = {
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+									}
+									strat_bomber_equipment = {
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+									}
+									transport_plane_equipment = {
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+									}
+									flying_boat_equipment = {
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+									}
+								}
+							}
+					# 	}
+					}
+				}
+			}
+
+			option = {
+				token = sp_air_earthshaker_bomb_preference_both
+				
+				iteration_output = {
+					country_effects = {
+					# 	if = {
+					# 		limit = { has_dlc = "By Blood Alone"}							
+						
+					# 		add_equipment_bonus = {
+					# 			name = sp_earthshaker_bomb_both
+					# 			bonus = {
+					# 				large_plane_airframe = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
+					# 					naval_strike_targetting = 0.1
+					# 					naval_strike_attack = 0.05
+					# 					air_bombing = 0.05
+					# 					build_cost_ic = 0.05								
+					# 				}
+					# 			}
+					# 		}
+					# 	}
+					# 	else = {
+							add_equipment_bonus = {
+								name = sp_earthshaker_bomb_both
+								bonus = {
+								# 	large_plane_airframe = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
+								# 		naval_strike_targetting = 0.1
+								# 		naval_strike_attack = 0.05
+								# 		air_bombing = 0.05
+								# 		build_cost_ic = 0.05
+								# 	}
+									jet_strat_bomber_equipment = {
+										naval_strike_targetting = 0.1
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+										build_cost_ic = 0.05
+									}
+									strat_bomber_equipment = {
+										naval_strike_targetting = 0.1
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+										build_cost_ic = 0.05
+									}
+									transport_plane_equipment = {
+										naval_strike_targetting = 0.1
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+										build_cost_ic = 0.05
+									}
+									flying_boat_equipment = {
+										naval_strike_targetting = 0.1
+										naval_strike_attack = 0.05
+										air_bombing = 0.05
+										build_cost_ic = 0.05
+									}
+								}
+							}
+					# 	}
+					}
+				}
+			}
+		}
+		sp_air_bouncing_bomb_backspin_mechanism_reward = {
+			fire_only_once = yes
+			
+			threshold = { 
+				min = 0
+				max = 80
+			}
+			
+			weight = {
+				base = 1
+			}
+			
+			option = {
+				token = sp_air_bouncing_bomb_backspin_mechanism_reward_option
+						
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.medium }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience = constant:sp_scientist_xp_gain.high
+							specialization = specialization_air 
+						}
+					}
+				}
+			}
+		}
+
+		sp_air_bouncing_bomb_training_accidents_reward = {
+			fire_only_once = yes
+			
+			threshold = { 
+				min = 0
+				max = 80
+			}
+			
+			weight = {
+				base = 1
+			}
+			
+			option = {
+				token = sp_air_bouncing_bomb_training_accidents_reward_option
+						
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = -0.02 }
+						air_experience = 25 
+					}
+				}
+			}
+		}
+
+		sp_air_bouncing_bomb_type_of_explosives_reward = {
+			fire_only_once = yes
+			
+			threshold = { 
+				min = 0
+				max = 80
+			}
+			
+			weight = {
+				base = 1
+			}
+			
+			option = {
+				token = sp_air_bouncing_bomb_type_of_explosives_reward_option
+						
+				iteration_output = {
+					#country_effects = {
+					#	FROM = { add_project_progress_ratio = 0.10 }
+					#}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience = constant:sp_scientist_xp_gain.high
+							specialization = specialization_air 
+						}
+					}
+				}
+			}
+		}
+
+		sp_air_bouncing_bomb_aircraft_modifications_reward = {
+			fire_only_once = yes
+			
+			threshold = { 
+				min = 0
+				max = 80
+			}
+			
+			weight = {
+				base = 1
+			}
+			
+			option = {
+				token = sp_air_bouncing_bomb_aircraft_modifications_reward_option
+						
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+						air_experience = 5 
+					}
+				}
+			}
+		}
+	}
+ }
+
+ sp_air_Guided_missile_old = {
+	specialization = specialization_air 	
+	icon = GFX_sp_air_Guided_missile_old
+
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_bomb
+	}
+	special_project_parent = {
+		sp_rockets_flying_bomb
+	}
+	
+	available = {
+		from = {
+			has_tech = advanced_computing_machine 
+		}
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"		
+	}
+	
+	breakthrough_cost = {
+		specialization_air = 2
+	}
+	
+	resource_cost = {
+		resources = {
+			steel = 80
+			tungsten = 20
+			aluminium = 140
+			chromium = 25
+			rubber = 35
+		}
+	}
+    complexity = sp_complexity.medium 
+	prototype_time = sp_time.prototype.medium 
+
+	project_output = {
+		country_effects = {
+			add_ideas = SP_Guided_Rocket
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
+	}
+
+	unique_prototype_rewards = {
+
+		
+	}
+ }
 
    ##    #  #####    ####   #####     ##    ######  ##### 
   #  #   #  #    #  #    #  #    #   #  #   #         #   
@@ -432,7 +843,8 @@ sp_air_earthshaker_bomb = {
  #    #  #  #    #   ####   #    #  #    #  #         #   
 
 
-sp_air_intercontinental_bomber = {
+
+ sp_air_intercontinental_bomber = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_intercontinental_bomber
 
@@ -629,9 +1041,9 @@ sp_air_intercontinental_bomber = {
 			}
 		}
 	}
-}
-
-sp_air_mothership_aircraft = {
+ }
+ 
+ sp_air_mothership_aircraft = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_mothership_aircraft
 
@@ -825,7 +1237,7 @@ sp_air_mothership_aircraft = {
 			}		
 		}	
 	}
-}
+ }
 
 
 
@@ -835,10 +1247,253 @@ sp_air_mothership_aircraft = {
       #  #         #         # 
  #    #  #         #    #    # 
   ####   ######    #     ####  
+  sp_air_Volksjager = {
+	specialization = specialization_air 	
+	icon = GFX_sp_air_Volksjager
 
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_jet
+	}
 
+	special_project_parent = {
+		sp_air_jet_engine
+	}
 
-sp_air_jet_engine = {
+	visible = {
+
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"		
+		from = {     #Script triggers doesnt work....
+		 or = {
+	      tag = HUN
+          tag = VIC
+          tag = SLO
+          tag = CZE
+          tag = AUS
+	 	  tag = ROM
+	 	  tag = BUL
+	 	  tag = YUG
+	 	  tag = SPR
+	 	  tag = FIN
+	 	  tag = ITA
+	 	  tag = GER
+	 	  tag = DEN
+		 }
+		}
+	}
+	available = { 
+		GER = {
+			has_completed_focus = GER_volksturm
+		}
+	}
+	breakthrough_cost = {
+		specialization_air = 2
+	}
+	
+	resource_cost = {
+		resources = {
+			aluminium = 240
+			chromium = 160
+			rubber = 80
+		}
+	}
+    complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium	
+
+	project_output = {
+		enable_equipments = {
+			Jet_fighter_Volksjager_equipment_1
+		}	
+	}
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_discoveries_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
+	}
+
+	unique_prototype_rewards = {
+
+	}
+  }
+  sp_air_Jet_cas = {
+	specialization = specialization_air 	
+	icon = GFX_sp_air_Jet_cas
+
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_jet
+	}
+
+	special_project_parent = {
+		sp_air_jet_engine
+	}
+
+	complexity = sp_complexity.large
+	available = {
+		from = {
+			has_tech = CAS3
+		}
+	}
+	allowed = {
+		has_dlc = "Gotterdammerung"		
+	}
+	
+	breakthrough_cost = {
+		specialization_air = 3
+	}
+	
+	resource_cost = {
+		resources = {
+			aluminium = 200
+			chromium = 150
+			rubber = 60
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+
+	project_output = {
+		enable_equipments = {
+			jet_CAS_equipment
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
+	}
+
+	unique_prototype_rewards = {
+	    
+		sp_air_Hs132_unique_reward = { #Atlan wanted it.....
+			fire_only_once = yes
+
+			threshold = { 
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = { #Buff jet cas
+				token = sp_air_jet_Hs132_A_variant
+				
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_air_Hs132_A_variant
+							bonus = {
+								jet_CAS_equipment = { 
+									air_ground_attack = 0.1
+									reliability = -0.1
+									air_agility = -0.05
+									air_range = -0.05
+									build_cost_ic = 0.05
+								}
+							}
+						}						
+					}
+				}
+			}
+		
+
+			option = { #Buff cas, nerf jet cas, rato?
+				token = sp_air_Hs132_B_variant
+				default = yes
+				iteration_output = {
+					country_effects = {
+							add_equipment_bonus = {
+								name = sp_air_Hs132_B_variant
+								bonus = {
+									CAS_equipment = {
+										air_ground_attack = 0.075
+										reliability = -0.05
+										build_cost_ic = 0.05
+									}
+									tac_bomber_equipment = {
+										air_ground_attack = 0.025
+		                                air_bombing = 0.10
+										reliability = -0.05
+										build_cost_ic = 0.025
+									}
+								}
+							}
+							add_equipment_bonus = {	
+								name = sp_air_Hs132_B_variant
+								bonus = {
+									jet_CAS_equipment = { #I am aware this stacks with "CAS_equipment"
+									  air_ground_attack = -0.15
+									  reliability = -0.10
+									  air_agility = -0.05
+									  air_range = -0.1
+									  build_cost_ic = 0.05
+									}	
+								}
+							}						
+					}
+				}
+			}
+
+			option = {
+				token = sp_air_Hs132_C_variant
+				
+				iteration_output = { #Buff research bonus
+			        country_effects = {
+			        	add_tech_bonus = {
+			        		name = sp_air_Hs132_C_variant
+			        		bonus = 0.25
+			        		uses = 2
+			        		category = air_equipment
+			        	} 
+			
+						add_equipment_bonus = {
+							name = sp_air_Hs132_C_variant
+							bonus = {
+								jet_CAS_equipment = {
+								  reliability = 0.075
+								}
+							}
+						}					
+					}
+				}
+			}		
+		}	
+		
+	}
+  }
+  
+  
+  sp_air_jet_engine = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_jet_engine
 
@@ -1147,9 +1802,9 @@ sp_air_jet_engine = {
 			}		
 		}	
 	}
-}
-
-sp_air_axial_jet_engine = {
+  }
+  
+  sp_air_axial_jet_engine = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_axial_jet_engine
 
@@ -1475,9 +2130,9 @@ sp_air_axial_jet_engine = {
 			}		
 		}	
 	}
-}
-
-sp_air_supersonic_jet = {
+  }
+  
+  sp_air_supersonic_jet = {
 	specialization = specialization_air 	
 	icon = GFX_sp_air_supersonic_jet
 
@@ -1672,7 +2327,7 @@ sp_air_supersonic_jet = {
 			}		
 		}	
 	}
-}
+  }
 
 
 

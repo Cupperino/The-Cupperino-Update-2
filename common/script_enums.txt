@@ -858,6 +858,7 @@ script_enum_equipment_bonus_type = {
 	cv_fighter_equipment_4
 	CAS_equipment_4
 	jet_CAS_equipment
+	Jet_fighter_Volksjager_equipment_1
 	cv_CAS_equipment_4
 	nav_bomber_equipment_4
 	cv_nav_bomber_equipment_4

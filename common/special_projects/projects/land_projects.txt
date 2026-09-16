@@ -6,6 +6,351 @@
  #       #       #    #  #    #  #         #    #    #  #   #   #    #  ##  ##  #       #   #         #    #    #  #   ##  #   #   #    # 
  #       ######  #    #  #    #  ######    #    #    #  #    #   ####   #    #  ######  #    #        #    #    #  #    #  #    #   ####  
                                                                                                                                           
+sp_land_Jerrycan = {
+	specialization = specialization_land
+	icon = GFX_sp_land_fuel_cans
+
+	project_tags = sp_tag_support
+
+	ai_will_do = {
+		base = 1
+	}
+
+	visible = {
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		Or = {
+			From = {
+				tag = GER
+			}
+			GER = {
+				has_war = yes
+			}
+			date > 1939.01.01
+		}
+		
+		FROM = {
+			has_tech = tech_logistics_company
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				Jerrycan = 1
+				popup = no
+			}
+		}
+
+		enable_equipment_modules = {
+
+		}
+
+		enable_equipment_modules = {
+
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+sp_land_raketenwerfer = { 
+	specialization = specialization_land
+	icon = GFX_sp_land_pack_at3
+
+	project_tags =sp_tag_artillery
+
+	ai_will_do = {
+		base = 1
+	}
+
+	visible = {
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {	
+		FROM = {
+			has_tech = antitank_squeeze_2
+			has_tech = rocket_artillery
+		}
+	}
+
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		country_effects = {
+			
+		}
+
+		enable_equipments = {
+			raketenwerfer_equipment
+		}
+
+		enable_equipment_modules = {
+
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_artillery_tech_1
+		sp_land_generic_reward_artillery_tech_2
+		sp_land_generic_reward_artillery_tech_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+sp_land_Night_Vison = { 
+	specialization = specialization_land
+	icon = GFX_sp_land_night_vision_equipment
+
+	project_tags = sp_tag_support
+
+	ai_will_do = {
+		base = 1
+	}
+
+	visible = {
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = improved_computing_machine 
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+	
+	prototype_time = sp_time.prototype.long
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				night_vision = 1
+				popup = no
+			}
+		}
+
+		enable_equipment_modules = {
+
+		}
+
+		enable_equipment_modules = {
+
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+
+
+sp_land_assault_rifle = { 
+	specialization = specialization_land
+	icon = GFX_sp_land_assault_rifle
+
+	project_tags = sp_tag_support
+
+	ai_will_do = {
+		base = 1
+	}
+
+	visible = {
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = advanced_infantry_weapons
+		}
+	}
+	#resource_cost = {
+	#	resources = { 
+	#		steel = 6
+	#		chromium = 2
+	#		tungsten = 2
+	#	 }
+	#}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+	
+	project_output = {
+		country_effects = {
+			add_tech_bonus = {
+				name = GER_wonder
+				bonus = 0.75
+				ahead_reduction = 2
+				uses = 1
+				technology = advanced_infantry_weapons2
+			}
+		}
+
+		enable_equipment_modules = {
+
+		}
+
+		enable_equipment_modules = {
+
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_assault_rifle_cailber = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 0
+				max = 100
+			}
+
+			weight = {
+				base = 9999
+			}
+
+			option = {
+				token = sp_land_assault_rifle_cailber_bigger
+				
+				iteration_output = {
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.low
+							add_equipment_bonus = {	
+								name = sp_land_assault_rifle_cailber_bigger
+								bonus = {
+									infantry_equipment_4 = { 
+									  reliability = -0.025
+									  soft_attack = 0.05
+									  defense = 0.05
+									  build_cost_ic = 0.05
+									}		
+								}
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_assault_rifle_cailber_standard
+				
+				iteration_output = {
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.low
+							add_equipment_bonus = {	
+								name = sp_land_assault_rifle_cailber_standard
+								bonus = {
+									infantry_equipment_4 = { 
+									  build_cost_ic = -0.03
+									}
+									infantry_equipment_3 = { 
+									  build_cost_ic = -0.03
+									}		
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+		
+	}
+
+}
 
 
 sp_land_flamethrower_tank = {
