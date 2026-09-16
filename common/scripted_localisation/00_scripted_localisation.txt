@@ -1953,3 +1953,17 @@ defined_text = {
 		localization_key = ITA_GLOBALISM_DESCRIPTION_CUCK
 	}
 }
+
+defined_text = { # global
+	name = CivilianInfiltrationDesc
+
+	text = {
+		trigger = {
+			has_country_flag = no_ai_civ_infiltration_pp_flag
+		}
+		localization_key = CIVILIAN_INFILTRATION_OFF
+	}
+	text = {
+		localization_key = CIVILIAN_INFILTRATION_OFF
+	}
+}

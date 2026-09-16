@@ -605,21 +605,6 @@ deny_anschluss = {
 	}
 }
 
-infiltration_status = {
-	name = "RULE_INFILTRATION_STATUS"
-	group = "RULE_GROUP_TFB"
-	option = {
-		name = "STATIC"
-		text = "RULE_INFILTRATION_STATIC"
-		desc = "RULE_INFILTRATION_STATIC_DESC"
-	}
-	default = {
-		name = "NORMAL"
-		text = "RULE_INFILTRATION_NORMAL"
-		desc = "RULE_INFILTRATION_NORMAL_DESC"
-	}
-}
-
 danzig_autodeclare = {
 	name = "RULE_DANZIG_AUTODECLARE"
 	group = "RULE_GROUP_TFB"
@@ -662,6 +647,21 @@ intel_share_time = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_INTEL_SHARE_TIME_DISABLED_DESC"
+	}
+}
+
+no_ai_civ_infiltration = {
+	name = "RULE_NO_AI_CIV_INFILTRATION"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_NO_AI_CIV_INFILTRATION_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_NO_AI_CIV_INFILTRATION_DISABLED_DESC"
 	}
 }
 

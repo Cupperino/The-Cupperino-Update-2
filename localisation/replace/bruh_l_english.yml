@@ -1727,6 +1727,12 @@ meta_game_flag:0 "Using Competitive Game start"
  RULE_EARLY_DOCTRINE_DEBUFF_ENABLED_DESC:0 "Nations are given an early Debuff for Mastery gain to allow more scaling."
  RULE_EARLY_DOCTRINE_DEBUFF_DISABLED_DESC:0 "Ideas to debuff early mastery gain removed. WARNING, MASTERY WILL BE VERY HIGH."
 
+ RULE_NO_AI_CIV_INFILTRATION:0 "NO AI Civilian Infiltration PP"
+ RULE_NO_AI_CIV_INFILTRATION_ENABLED_DESC:0 "Disables the ability to get Political Power from Civilian Infilration on AI Nations, but increases PP from infiltrating players."
+ RULE_NO_AI_CIV_INFILTRATION_DISABLED_DESC:0 "Can gain political power from Civilian Infiltration on AI, but no bonus PP on infiltrating player nations"
+ CIVILIAN_INFILTRATION_OFF:0 "§YCivilian Infiltration of AI Gives no Political Power§!"
+ CIVILIAN_INFILTRATION_ON:0 ""
+
  RULE_ITALIAN_JOIN:0 "Italians Forced War Entry"
  RULE_OPTION_ITALIAN_QUICK_JOIN:0 "Italy Joins Quickly"
  RULE_ITALIAN_JOIN_90_DESC:0 "Italy will join the war after France has been at war with Germany for 90 days"
@@ -1782,12 +1788,6 @@ meta_game_flag:0 "Using Competitive Game start"
  RULE_BELGIUM_FORTS_DISABLED_DESC:0 "Prevent Belgium from being able to do their fortification focuses on the left side of their tree"
 
  custom_explanation_description:0 "Effects are applied to all countries in the category and are applied instantly. §RCountries can only belong to 1 Group at a time.§! If you need to apply different effects to specific countries, remove them from their Faction group and add them to a new one."
-
- RULE_INFILTRATION_STATUS:0 "Infiltration Type"
- RULE_INFILTRATION_STATIC:0 "Static Infiltration"
- RULE_INFILTRATION_STATIC_DESC:0 "Infiltration is static, always granting XP/PP but at a reduced amount"
- RULE_INFILTRATION_NORMAL:0 "Normal Infiltration"
- RULE_INFILTRATION_NORMAL_DESC:0 "Infiltration is normal, whre you might or might not get XP/PP, but at a higher amount, as well as other bonus actions."
 
  custom_diff_industrial:0 "Construction"
  custom_diff_production:0 "Production"

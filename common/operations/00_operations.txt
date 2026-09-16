@@ -13,7 +13,7 @@ operation_rescue_operative = { ### 0 1/35
 
 
 	days = 35
-	network_strength = 30
+	network_strength = 20
 	operatives = 1
 
 	visible = {
@@ -251,6 +251,29 @@ operation_infiltrate_civilian = { ### 1 1/35
 			}
 		}
         add_to_array = { ROOT.CIVILIAN = FROM }
+		if = {
+			limit = {
+				AND = {
+					FROM = { is_ai = no}
+					has_game_rule = {
+						rule = no_ai_civ_infiltration
+						option = ENABLED
+					}
+				}
+			}
+			ROOT = { add_political_power = 5 }
+		}
+		else_if = {
+			limit = {
+				AND = {
+					has_game_rule = {
+						rule = no_ai_civ_infiltration
+						option = DISABLED
+					}
+				}
+			}
+			ROOT = { add_political_power = 5 }
+		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
 		random_list = {
@@ -260,7 +283,29 @@ operation_infiltrate_civilian = { ### 1 1/35
 						tag = FROM
 						token = token_civilian
 					}
-					add_political_power = 25
+					if = {
+						limit = {
+							AND = {
+								FROM = { is_ai = no}
+								has_game_rule = {
+									rule = no_ai_civ_infiltration
+									option = ENABLED
+								}
+							}
+						}
+						add_political_power = 20
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_game_rule = {
+									rule = no_ai_civ_infiltration
+									option = DISABLED
+								}
+							}
+						}
+						add_political_power = 5
+					}
 					add_intel = {
 						target = FROM
 						civilian_intel = 10
@@ -274,7 +319,29 @@ operation_infiltrate_civilian = { ### 1 1/35
 						tag = FROM
 						token = token_civilian
 					}
-					add_political_power = 25
+					if = {
+						limit = {
+							AND = {
+								FROM = { is_ai = no}
+								has_game_rule = {
+									rule = no_ai_civ_infiltration
+									option = ENABLED
+								}
+							}
+						}
+						add_political_power = 20
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_game_rule = {
+									rule = no_ai_civ_infiltration
+									option = DISABLED
+								}
+							}
+						}
+						add_political_power = 5
+					}
 				}
 				add_to_array = { ROOT.CIVILIAN = FROM }
 			}
@@ -287,6 +354,29 @@ operation_infiltrate_civilian = { ### 1 1/35
 				tag = FROM
 				token = token_civilian
 			}
+		}
+		if = {
+			limit = {
+				AND = {
+					FROM = { is_ai = no}
+					has_game_rule = {
+						rule = no_ai_civ_infiltration
+						option = ENABLED
+					}
+				}
+			}
+			ROOT = { add_political_power = 5 }
+		}
+		else_if = {
+			limit = {
+				AND = {
+					has_game_rule = {
+						rule = no_ai_civ_infiltration
+						option = DISABLED
+					}
+				}
+			}
+			ROOT = { add_political_power = 5 }
 		}
 		add_to_array = { ROOT.CIVILIAN = FROM }
 	}

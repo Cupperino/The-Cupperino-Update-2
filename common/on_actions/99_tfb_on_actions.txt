@@ -660,15 +660,6 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = infiltration_status
-						option = STATIC
-					}
-				}
-				set_global_flag = infiltration_status_static_flag
-			}
-			if = {
-				limit = {
-					has_game_rule = {
 						rule = danzig_autodeclare
 						option = ENABLED
 					}
@@ -728,6 +719,15 @@ on_actions = {
 					}
 				}
 				set_global_flag = allow_voice_lines_flag
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = no_ai_civ_infiltration
+						option = ENABLED
+					}
+				}
+				set_global_flag = no_ai_civ_infiltration_pp_flag
 			}
 			if = {
 				limit = {
