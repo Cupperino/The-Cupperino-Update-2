@@ -1546,6 +1546,13 @@ on_actions = {
 
 				if = {
 					limit = {
+						date < 1941.7.1
+					}
+					ENG = { country_event = Japan.507 }
+				}
+
+				if = {
+					limit = {
 						has_global_flag = intel_share_time_flag
 					}
 					# Setup Shared Faction Intelligence

@@ -2130,7 +2130,12 @@ on_actions = {
 					}
 				}
 				# Send Event to USA About not being able to Pre-Position
-				USA = { country_event = USA.1008 }
+				if = { 
+					limit = {
+						has_global_flag = japan_leave_out_USA_flag
+					}
+					USA = { country_event = USA.1008 }
+				}
 			}
 		}
 		# # Going to the Peace Conference
@@ -3021,9 +3026,11 @@ on_actions = {
 		effect = {
 			if = { 
 				limit = {
+					has_global_flag = japan_leave_out_USA_flag
 					date < 1942.1.1
+					date > 1940.1.1
 					NOT = { JAP = { has_war_with = ENG } }
-					#date > 1940.1.1
+					NOT = { USA = { has_war = yes } }
 				}
 				every_state = {
 					limit = {
@@ -3034,6 +3041,24 @@ on_actions = {
 							is_owned_and_controlled_by = AST
 							is_owned_and_controlled_by = NZL
 							is_core_of = INS
+							AND = {
+								is_owned_and_controlled_by = ENG
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+									is_on_continent = africa
+									is_on_continent = middle_east
+								}
+							}
+							AND = {
+								is_owned_and_controlled_by = FRA
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+									is_on_continent = africa
+									is_on_continent = middle_east
+								}
+							}
 						}
 					}
 					if = {
