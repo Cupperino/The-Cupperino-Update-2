@@ -1675,9 +1675,9 @@ ideas = {
 			}
 
 			modifier = {
-				land_mastery_gain_factor = -0.80
+				land_mastery_gain_factor = -0.70
 				#air_mastery_gain_factor = -0.80
-				naval_mastery_gain_factor = -0.80
+				naval_mastery_gain_factor = -0.70
 			}
 		}
 
@@ -1691,6 +1691,7 @@ ideas = {
 					original_tag = BUL
 					original_tag = YUG
 					original_tag = ROM
+					original_tag = CHI
 				}
 			}
 
@@ -1733,8 +1734,8 @@ ideas = {
 			}
 
 			modifier = {
-				land_mastery_gain_factor = -0.80
-				naval_mastery_gain_factor = -0.80
+				land_mastery_gain_factor = -0.70
+				naval_mastery_gain_factor = -0.70
 			}
 		}
 
@@ -1760,7 +1761,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_mastery_gain_factor = -0.80
+				naval_mastery_gain_factor = -0.70
 			}
 		}
 	}

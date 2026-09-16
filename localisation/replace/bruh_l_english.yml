@@ -1719,6 +1719,10 @@ meta_game_flag:0 "Using Competitive Game start"
  RULE_OPTION_MIO_SIZE_NO_NAVY:0 "Disable MIO Size for Navy"
  MIO_SIZE_NO_NAVY_DESC:0 "Sets Naval MIO's to 99 size"
 
+ RULE_EARLY_DOCTRINE_DEBUFF:0 "Debuff early doctrine gain"
+ RULE_EARLY_DOCTRINE_DEBUFF_ENABLED_DESC:0 "Nations are given an early Debuff for Mastery gain to allow more scaling."
+ RULE_EARLY_DOCTRINE_DEBUFF_DISABLED_DESC:0 "Ideas to debuff early mastery gain removed. WARNING, MASTERY WILL BE VERY HIGH."
+
  RULE_ITALIAN_JOIN:0 "Italians Forced War Entry"
  RULE_OPTION_ITALIAN_QUICK_JOIN:0 "Italy Joins Quickly"
  RULE_ITALIAN_JOIN_90_DESC:0 "Italy will join the war after France has been at war with Germany for 90 days"

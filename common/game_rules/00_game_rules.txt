@@ -467,6 +467,21 @@ italian_join_type = {
 # 	# }
 # }
 
+early_doctrine_debuff = {
+	name = "RULE_EARLY_DOCTRINE_DEBUFF"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_EARLY_DOCTRINE_DEBUFF_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_EARLY_DOCTRINE_DEBUFF_DESC"
+	}
+}
+
 raj_version = {
 	name = "RULE_RAJ_VERSION"
 	group = "RULE_GROUP_TFB"
