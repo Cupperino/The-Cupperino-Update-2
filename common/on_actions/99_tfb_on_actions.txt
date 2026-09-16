@@ -732,6 +732,15 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
+						rule = mio_donation
+						option = ENABLED
+					}
+				}
+				set_global_flag = mio_donation_enabled_flag
+			}
+			if = {
+				limit = {
+					has_game_rule = {
 						rule = early_doctrine_debuff
 						option = ENABLED
 					}

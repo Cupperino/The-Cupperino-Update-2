@@ -1719,6 +1719,10 @@ meta_game_flag:0 "Using Competitive Game start"
  RULE_OPTION_MIO_SIZE_NO_NAVY:0 "Disable MIO Size for Navy"
  MIO_SIZE_NO_NAVY_DESC:0 "Sets Naval MIO's to 99 size"
 
+ RULE_MIO_DONATION:0 "Allow MIO Level Donations"
+ RULE_MIO_DONATION_ENABLED_DESC:0 "Can use the Level Donation Decisions to pass levels between MIOs"
+ RULE_MIO_DONATION_DISABLED_DESC:0 "Transfering MIO Levels between MIO's is disabled"
+
  RULE_EARLY_DOCTRINE_DEBUFF:0 "Debuff early doctrine gain"
  RULE_EARLY_DOCTRINE_DEBUFF_ENABLED_DESC:0 "Nations are given an early Debuff for Mastery gain to allow more scaling."
  RULE_EARLY_DOCTRINE_DEBUFF_DISABLED_DESC:0 "Ideas to debuff early mastery gain removed. WARNING, MASTERY WILL BE VERY HIGH."

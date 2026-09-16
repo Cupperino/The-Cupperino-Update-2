@@ -467,6 +467,21 @@ italian_join_type = {
 # 	# }
 # }
 
+mio_donation = {
+	name = "RULE_MIO_DONATION"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_MIO_DONATION_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_MIO_DONATION_DISABLED_DESC"
+	}
+}
+
 early_doctrine_debuff = {
 	name = "RULE_EARLY_DOCTRINE_DEBUFF"
 	group = "RULE_GROUP_TFB"
