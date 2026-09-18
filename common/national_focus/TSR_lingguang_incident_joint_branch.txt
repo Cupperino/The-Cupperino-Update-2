@@ -1,5 +1,6 @@
 joint_focus = {
 	id = GXC_the_japanese_visit
+	allowed_is_joint = yes
 	icon = GFX_focus_PER_fascist_reach_out_to_japan
 
 	x = 31
@@ -45,25 +46,18 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	add_political_power = 25
-		# 	add_equipment_to_stockpile = { 
-		# 			type = infantry_equipment
-		# 			amount = 1000 
-		# 			producer = JAP
-		# 		}	
-		# }
+		add_political_power = 25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = JAP
+		}
 	}
 }
 
 joint_focus = {
 	id = GXC_question_chiangs_authority
+	allowed_is_joint = yes
 	icon = GFX_focus_generic_support_the_left_right
 
 	prerequisite = { focus = GXC_the_japanese_visit }
@@ -109,20 +103,13 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	add_political_power = 25	
-		# }
+		add_political_power = 25
 	}
 }
 
 joint_focus = {
 	id = GXC_rumors_of_deposition
+	allowed_is_joint = yes
 	icon = GFX_focus_PRC_arms_recovery_efforts
 
 	prerequisite = { focus = GXC_the_japanese_visit }
@@ -167,25 +154,18 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	ROOT = {
-		# 		add_opinion_modifier = {
-		# 			target = CHI
-		# 			modifier = small_decrease
-		# 		}
-		# 	}	
-		# }
+		ROOT = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = small_decrease
+			}
+		}
 	}
 }
 
 joint_focus = {
 	id = GXC_the_scorched_earth_speech
+	allowed_is_joint = yes
 	icon = GFX_focus_AST_war_japan
 
 	prerequisite = { focus = GXC_question_chiangs_authority }
@@ -230,21 +210,14 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	add_political_power = 25
-		# 	add_war_support = 0.05	
-		# }
+		add_political_power = 25
+		add_war_support = 0.05
 	}
 }
 
 joint_focus = {
 	id = GXC_denounce_chiang
+	allowed_is_joint = yes
 	icon = GFX_goal_generic_propaganda
 
 	prerequisite = { focus = GXC_rumors_of_deposition }
@@ -284,25 +257,18 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	CHI = {
-		# 		add_opinion_modifier = {
-		# 			target = ROOT
-		# 			modifier = medium_decrease
-		# 		}
-		# 	}
-		# }
+		CHI = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
 	}
 }
 
 joint_focus = {
 	id = GXC_formation_of_the_nraja
+	allowed_is_joint = yes
 	icon = GFX_focus_PRC_reorganize_divisions
 
 	prerequisite = { focus = GXC_denounce_chiang }
@@ -407,6 +373,7 @@ joint_focus = {
 
 joint_focus = {
 	id = GXC_declare_opposition
+	allowed_is_joint = yes
 	icon = GFX_focus_prc_remove_chiang_kai_shek
 
 	prerequisite = { focus = GXC_formation_of_the_nraja }
@@ -444,15 +411,14 @@ joint_focus = {
 	search_filters = {FOCUS_FILTER_POLITICAL}
 
 	completion_reward = {
-		# IF = {
-		# 	limit = {
-		# 		OR = {
-		# 			tag = GXC
-		# 			tag = GDC
-		# 		}
-		# 	}
-		# 	add_political_power = 50	
-		# }
+		add_political_power = 50
+		IF = {
+			limit = {
+				has_idea = GXC_uneasy_minds_idea
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = GXC_uneasy_minds_idea
+		}
 	}
 	completion_reward_joint_originator = {
 		CHI = {
@@ -462,5 +428,9 @@ joint_focus = {
 			}
 		}
 	}
+
+}
+
+
 
 }

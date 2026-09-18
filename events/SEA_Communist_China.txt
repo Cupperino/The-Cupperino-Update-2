@@ -4332,6 +4332,7 @@ country_event = {
 		# 	amount = 125 
 		# 	producer = NXM
 		# }
+		remove_mission = PRC_assaulting_guyuan
 	}
 
 	option = {
@@ -4400,6 +4401,7 @@ country_event = {
 		# 	amount = 125 
 		# 	producer = SHX
 		# }
+		remove_mission = PRC_assaulting_shanxi
 	}
 
 	option = {
@@ -4468,6 +4470,7 @@ country_event = {
 		# 	amount = 125 
 		# 	producer = XIC
 		# }
+		remove_mission = PRC_assaulting_yanan
 	}
 
 	option = {

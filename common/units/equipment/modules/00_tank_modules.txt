@@ -55,7 +55,6 @@
 #37-50mm cannon in coax mount or a secondary turret = secondary_turret_small_cannon
 #pintle-mounted MGs, close defence weapons like Nahverteidigungswaffe (do not apply this for the normal MGs in turret and hull, only for extra ones mounted on the commander's cupola) = additional_machine_guns
 #
-
 equipment_modules = {
 
 	# Memez Modules

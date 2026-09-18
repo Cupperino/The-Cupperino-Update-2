@@ -2957,7 +2957,8 @@ focus_tree = {
 				category = cat_anti_tank	# optional 
 				# tecnology  = technology_id # optional
 			}
-			custom_effect_tooltip = SWE_bofors_anti_tank_gun_tt
+			#custom_effect_tooltip = tech_effect|SWE_bofors_antitank_gun
+			#custom_effect_tooltip = SWE_bofors_anti_tank_gun_tt
 			# hidden_effect = {
 			# 	set_technology = {
 			# 		SWE_bofors_antitank_gun = 1
@@ -3012,7 +3013,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_FOLKHEMMET }
+		search_filters = { FOCUS_FILTER_FOLKHEMMET FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			random_core_state = {

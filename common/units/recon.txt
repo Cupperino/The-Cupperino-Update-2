@@ -1,4 +1,5 @@
 sub_units = {
+	
 	recon = { #mounted cav
 		abbreviation = "CREC"
 		sprite = infantry
@@ -22,8 +23,8 @@ sub_units = {
 			category_recon
 		}
 
+		
 		regimental = no
-	
 		combat_width = 0
 	
 		#Size Definitions
@@ -757,7 +758,6 @@ sub_units = {
 		}
 
 		regimental = no
-	
 		combat_width = 0
 	
 		#Size Definitions

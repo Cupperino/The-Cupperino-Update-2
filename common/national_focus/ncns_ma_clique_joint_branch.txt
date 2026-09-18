@@ -1,5 +1,6 @@
 joint_focus = {
-	id = MA_develop_inter_province_ties 
+	id = MA_develop_inter_province_ties
+	allowed_is_joint = yes
 	icon = GFX_goal_generic_national_unity
 
 	x = 31
@@ -170,6 +171,7 @@ joint_focus = {
 
 joint_focus = {
 	id = MA_unified_training_program
+	allowed_is_joint = yes
 	icon = GFX_focus_PER_recruit_bakhtiari
 
 	prerequisite = { focus = MA_develop_inter_province_ties }
@@ -240,7 +242,8 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = MA_strenghten_regional_trade 
+	id = MA_strenghten_regional_trade
+	allowed_is_joint = yes
 	icon = GFX_focus_generic_economic_recovery
 
 	prerequisite = { focus = MA_develop_inter_province_ties }
@@ -326,6 +329,7 @@ joint_focus = {
 
 joint_focus = {
 	id = MA_promises_of_mutual_defense
+	allowed_is_joint = yes
 	icon = GFX_goal_generic_defence
 
 	prerequisite = { focus = MA_strenghten_regional_trade }
@@ -501,6 +505,7 @@ joint_focus = {
 
 joint_focus = {
 	id = MA_formalize_the_ma_clique_collective
+	allowed_is_joint = yes
 	icon = GFX_focus_generic_treaty
 
 	prerequisite = { focus = MA_promises_of_mutual_defense }

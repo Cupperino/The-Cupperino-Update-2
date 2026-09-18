@@ -80,7 +80,6 @@ sub_units = {
 		}
 
 		regimental = no
-	
 		combat_width = 0
 	
 		#Size Definitions
@@ -167,9 +166,7 @@ sub_units = {
 			support_equipment = 20
 			#horse_equipment = 60
 		}
-		
 		same_support_type = logistics_company
-
 	}
 
 	########################
@@ -217,7 +214,7 @@ sub_units = {
 		# Important Ability
 		supply_consumption_factor = -0.15
 		#fuel_consumption_factor = -0.05 #MM: No bonus or penalty to fuel consumption, just extra supply bonus
-		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+		#own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		
 		essential = {
 			support_equipment

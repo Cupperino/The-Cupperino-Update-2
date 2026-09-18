@@ -314,8 +314,23 @@ characters={
 				AST_motherland_advocate_pa
 			}
 			available = {
-				is_country_leader = no
-				has_completed_focus = AST_in_from_the_cold
+				IF = {
+					limit = {
+						OR = {
+							has_idea = AST_monarchist_intervention_spirit
+							has_completed_focus = AST_for_crown_and_empire
+						}
+					}
+					NOT = {
+						has_completed_focus = AST_for_crown_and_empire
+					}
+					is_country_leader = no
+					has_completed_focus = AST_in_from_the_cold
+				}
+				ELSE = {
+					is_country_leader = no
+					has_completed_focus = AST_in_from_the_cold
+				}
 			}
 		}
 	}
@@ -410,7 +425,7 @@ characters={
 		}		
 	}
 
-	AST_eric_campbell={ #BASEGAME ONLY
+	AST_eric_campbell={
 		name=AST_eric_campbell
 		portraits={
 			civilian={
