@@ -633,15 +633,15 @@ GER_designer_merge_decisions = {
 	}
 }
 
-GER_wunderwaffe = {
-	icon = military_operation
+# GER_wunderwaffe = {
+# 	icon = military_operation
 
-	picture = GFX_decision_cat_picture_generic_mefo_bills
+# 	picture = GFX_decision_cat_picture_generic_mefo_bills
 
-	allowed = {
-		original_tag = GER
-	}
-}
+# 	allowed = {
+# 		original_tag = GER
+# 	}
+# }
 
 GER_share_generals = {
 	icon = military_operation

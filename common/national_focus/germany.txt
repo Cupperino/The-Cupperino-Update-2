@@ -13668,26 +13668,26 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_wunderwaffe_weapons
-		icon = GFX_ger_loyalty_to_the_fuhrer
-		prerequisite = { focus = GER_avenge_versailles }
-		x = -4
-		y = 1
-		relative_position_id = GER_avenge_versailles
-		cost = 5
-		available = {
+	# focus = {
+	# 	id = GER_wunderwaffe_weapons
+	# 	icon = GFX_ger_loyalty_to_the_fuhrer
+	# 	prerequisite = { focus = GER_avenge_versailles }
+	# 	x = -4
+	# 	y = 1
+	# 	relative_position_id = GER_avenge_versailles
+	# 	cost = 5
+	# 	available = {
 			
-		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			custom_effect_tooltip = GER_wunderwaffe_tt
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = GER_wunderwaffe_tt
+	# 	}
+	# }
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine

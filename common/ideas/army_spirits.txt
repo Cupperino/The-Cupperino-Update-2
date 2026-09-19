@@ -548,7 +548,7 @@ ideas = {
 			ledger = army
 			modifier = {
 				no_supply_grace = 24
-				army_fuel_capacity_factor  = 0.3				
+				org_loss_when_moving  = -0.1				
 				army_morale_factor = 0.06
 			}
 			ai_will_do = {

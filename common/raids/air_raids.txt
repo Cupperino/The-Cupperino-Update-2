@@ -302,7 +302,7 @@ types = {
 
 		# Can prepare
 		available = {
-			is_special_project_completed = sp:sp_air_bouncing_bomb
+			is_special_project_completed = sp:sp_air_specialiced_bombs
 			has_war_with = FROM
 		}
 
@@ -546,7 +546,7 @@ types = {
 
 		# Can prepare
 		available = {
-			is_special_project_completed = sp:sp_air_bouncing_bomb
+			is_special_project_completed = sp:sp_air_specialiced_bombs
 
 		}
 
@@ -1119,7 +1119,7 @@ types = {
 
 		# Can prepare
 		available = {
-			is_special_project_completed = sp:sp_air_earthshaker_bomb
+			is_special_project_completed = sp:sp_air_specialiced_bombs
 		}
 		launchable = {
 			has_war_with = FROM
@@ -1333,7 +1333,7 @@ types = {
 
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_air_earthshaker_bomb
+			is_special_project_completed = sp:sp_air_specialiced_bombs
 		}
 		# Specific Target is visible
 		show_target = {

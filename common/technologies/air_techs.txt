@@ -1587,7 +1587,7 @@ technologies = {
 				}
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_air_bouncing_bomb	
+					PROJECT = sp_air_specialiced_bombs	
 				}
 			}
 		}
@@ -1837,12 +1837,8 @@ technologies = {
 				}
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_air_bouncing_bomb	
-				}	
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_air_earthshaker_bomb	
-				}														
+					PROJECT = sp_air_specialiced_bombs	
+				}													
 			}
 		}
 	
