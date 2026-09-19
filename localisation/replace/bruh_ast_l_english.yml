@@ -383,17 +383,6 @@
   allows_extensive_conscription:0 "§YAllows the ability to pick§! §GExtensive Conscription.§!"
   allows_service_by_requirement:0 "§YAllows the ability to pick§! §GService By Requirement.§!"
 
-
-
-  naval_torpedo_enemy_critical_chance_factor_tt:0 "$MODIFIER_NAVAL_TORPEDO_ENEMY_CRITICAL_CHANCE_FACTOR$: $RIGHT|G=%1$"
-  navy_capital_ship_attack_factor_tt:0 "$MODIFIER_NAVY_CAPITAL_SHIP_ATTACK_FACTOR$: $RIGHT|G=%1$"
-  strike_force_movement_org_loss_tt:0 "$MODIFIER_STRIKE_FORCE_MOVING_ORG$: $RIGHT|G=%1$"
-  naval_invasion_penalty_tt: "$MODIFIER_NAVAL_INVASION_PENALTY$: $RIGHT|G=%1$"
-  experience_gain_destroyer_combat_factor_tt: "$modifier_experience_gain_destroyer_combat_factor$: $RIGHT|G=%1$"
-  experience_gain_destroyer_training_factor_tt: "$modifier_experience_gain_destroyer_training_factor$: $RIGHT|G=%1$"
-  naval_speed_factor_tt: "$MODIFIER_NAVAL_SPEED_FACTOR$: $RIGHT|G=%1$"
-  static_anti_air_damage_factor_tt: "$MODIFIER_STATIC_ANTI_AIR_DAMAGE_FACTOR$: $RIGHT|G=%1$"
-
   #### PARTY NAMES ####
   AST_democratic_party:0 "U.A.P."
   AST_democratic_party_long:0 "United Australia Party (U.A.P.)"

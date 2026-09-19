@@ -1598,14 +1598,10 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_efficiency_growth_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_construction_speed_civ_-20_tt
-			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.2 }
-			custom_effect_tooltip = SOV_construction_speed_mil_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_civ_to_mil_conversion_20_tt
-			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.2 }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
 		}
 	}
 	
@@ -1961,8 +1957,7 @@
         	   amount = 20
         	}
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_rubber_build_speed_25_tt
-			add_to_variable = { SOV_command_economy_production_speed_synthetic_rubber_refinery_factor_var = 0.25 }
+			add_to_variable = { SOV_command_economy_production_speed_synthetic_rubber_refinery_factor_var = 0.25 tooltip = production_speed_synthetic_rubber_refinery_factor_tt }
 			
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2261,11 +2256,7 @@
 			add_ideas = SOV_winter_war_soviet_nerf
 			#activate_mission = SOV_winter_war_lessons_mission
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			#custom_effect_tooltip = SOV_red_army_land_mastery_gain_factor_15_tt
-			add_to_variable = { 
-				SOV_red_army_land_mastery_gain_factor_var = 0.6
-				tooltip = land_mastery_gain_factor_tt
-			}
+			add_to_variable = { SOV_red_army_land_mastery_gain_factor_var = 0.6 tooltip = land_mastery_gain_factor_tt }
 
 			hidden_effect = {
 				add_state_claim = 146
@@ -3389,12 +3380,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_army_org_factor_5_tt
-			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_leader_experience_gain_factor_20_tt
-			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.2 }
+			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.2 tooltip = experience_gain_factor_tt }
 
 			remove_ideas = SOV_nkvd
 		}
@@ -3422,18 +3409,10 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_experience_gain_army_factor_10_tt
-			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 }
-			
-			custom_effect_tooltip = SOV_red_army_leader_experience_gain_factor_5_tt
-			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-10_tt
-			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.1 }
-
-			custom_effect_tooltip = SOV_red_army_army_core_defence_factor_-5_tt
-			add_to_variable = { SOV_red_army_army_core_defence_factor_var = -0.05 }
+			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.05 tooltip = experience_gain_factor_tt }
+			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.1 tooltip = land_doctrine_cost_factor_tt }
+			add_to_variable = { SOV_red_army_army_core_defence_factor_var = -0.05 tooltip = army_core_defence_factor_tt }
 		}
 	}
 
@@ -3492,12 +3471,8 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_minimum_training_level_-5_tt
-			add_to_variable = { SOV_red_army_minimum_training_level_var = -0.05 }
-
-			custom_effect_tooltip = SOV_red_army_training_time_factor_-10_tt
-			add_to_variable = { SOV_red_army_training_time_factor_var = -0.1 }
+			add_to_variable = { SOV_red_army_minimum_training_level_var = -0.05 tooltip = minimum_training_level_tt }
+			add_to_variable = { SOV_red_army_training_time_factor_var = -0.1 tooltip = training_time_factor_tt }
 		}
 	}
 
@@ -3542,8 +3517,8 @@
 		}
 
 		bypass_effect = {
-			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 }
-			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
+			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 tooltip = land_doctrine_cost_factor_tt }
 		}
 
 		available_if_capitulated = yes
@@ -3570,1034 +3545,10 @@
 			custom_effect_tooltip = SOV_army_autobypass
 			#custom_effect_tooltip = SOV_army_future_potencial
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_experience_gain_army_factor_10_tt
-			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-5_tt
-			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
+			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 tooltip = land_doctrine_cost_factor_tt }
 		}
 	}
-
-	# focus = {
-	# 	id = SOV_army_top1
-	# 	icon = GFX_SOV_rework248
-	# 	prerequisite = { focus = SOV_army_04 }
-	# 	mutually_exclusive = { focus = SOV_army_top5 focus = SOV_army_top2 focus = SOV_army_top3 focus = SOV_army_top4}
-	# 	relative_position_id = SOV_army_04
-	# 	x = -8
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		NOT = {has_completed_focus = SOV_mil2}
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = -0.4
-	# 		}
-	# 		custom_effect_tooltip = SOV_army_grind_tt
-	# 		SOV_semyon_budyonny = {
-	# 			remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-	# 			add_attack = 2
-	# 			add_defense = 1
-	# 			add_logistics = 2
-	# 			add_planning = 2
-	# 			add_unit_leader_trait = trait_head_red_army
-	# 			hidden_effect = {
-	# 				remove_unit_leader_trait = panzer_leader
-	# 				remove_unit_leader_trait = cavalry_leader
-	# 				remove_unit_leader_trait = panzer_expert
-	# 				remove_unit_leader_trait = commando
-	# 				remove_unit_leader_trait = skirmisher
-	# 				remove_unit_leader_trait = paratrooper
-	# 				remove_unit_leader_trait = camouflage_expert
-	# 				remove_unit_leader_trait = combined_arms_expert
-	# 				remove_unit_leader_trait = cavalry_expert
-	# 			}
-	# 		}
-	# 	}
-		
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top11
-	# 	icon = GFX_SOV_rework249
-	# 	prerequisite = { focus = SOV_army_top1 }
-	# 	relative_position_id = SOV_army_top1
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = -0.2
-	# 		}
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-	# 		custom_effect_tooltip = SOV_red_army_cavalry_attack_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_cavalry_attack_factor_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_cavalry_defence_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_cavalry_defence_factor_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_armor_attack_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_armor_attack_factor_var = -0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_armor_defence_-5_tt
-	# 		add_to_variable = { SOV_red_army_armor_defence_var = -0.5 }
-
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_attack_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_attack_factor_var = -0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_defence_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_defence_factor_var = -0.05 }
-
-	# 		add_to_variable = {
-	# 			SOV_red_army_org_loss_at_low_org_factor_var = 0.2
-	# 			tooltip = org_loss_at_low_org_factor_tt
-	# 		}
-
-	# 		add_to_variable = {
-	# 			SOV_red_army_army_org_factor_var = 0.05
-	# 			tooltip = army_org_factor_tt
-	# 		}
-
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top12
-	# 	icon = GFX_goal_generic_construction2
-	# 	prerequisite = { focus = SOV_army_top11 }
-	# 	relative_position_id = SOV_army_top11
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = -0.2
-	# 		}
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-	# 		custom_effect_tooltip = SOV_red_army_max_dig_in_5_tt
-	# 		add_to_variable = { SOV_red_army_max_dig_in_var = 5 }
-
-	# 		custom_effect_tooltip = SOV_red_army_dig_in_speed_factor_-10_tt
-	# 		add_to_variable = { SOV_red_army_dig_in_speed_factor_var = -0.1 }
-
-	# 		custom_effect_tooltip = SOV_red_army_max_planning_factor_10_tt
-	# 		add_to_variable = { SOV_red_army_max_planning_factor_var = 0.1 }
-	# 		custom_effect_tooltip = SOV_red_army_planning_speed_-15_tt
-	# 		add_to_variable = { SOV_red_army_planning_speed_var = -0.15 }
-
-	# 		custom_effect_tooltip = SOV_red_army_coordination_bonus_-3_tt
-	# 		add_to_variable = { SOV_red_army_coordination_bonus_var = -0.03 }
-
-	# 		custom_effect_tooltip = SOV_red_army_infantry_attack_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_infantry_attack_factor_var = 0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_infantry_defence_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_infantry_defence_factor_var = 0.05 }
-	# 	}
-	# }
-
-	# # focus = {
-	# # 	id = SOV_army_top13
-	# # 	icon = GFX_SOV_rework61
-	# # 	prerequisite = { focus = SOV_army_top12 }
-	# # 	relative_position_id = SOV_army_top12
-	# # 	x = 0
-	# # 	y = 1
-	# # 	cost = 3
-	# # 	ai_will_do = {
-	# # 		factor = 5
-	# # 	}
-
-	# # 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	available = {
-
-	# # 	}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# # 	completion_reward = {
-	# # 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# # 		custom_effect_tooltip = SOV_red_army_infantry_attack_factor_5_tt
-	# # 		add_to_variable = { SOV_red_army_infantry_attack_factor_var = 0.05 }
-	# # 		custom_effect_tooltip = SOV_red_army_infantry_defence_factor_5_tt
-	# # 		add_to_variable = { SOV_red_army_infantry_defence_factor_var = 0.05 }
-
-	# # 		custom_effect_tooltip = SOV_red_army_cavalry_attack_factor_5_tt
-	# # 		add_to_variable = { SOV_red_army_cavalry_attack_factor_var = 0.05 }
-
-	# # 		custom_effect_tooltip = SOV_red_army_cavalry_defence_factor_5_tt
-	# # 		add_to_variable = { SOV_red_army_cavalry_defence_factor_var = 0.05 }
-
-	# # 		add_to_variable = {
-	# # 			SOV_red_army_org_loss_at_low_org_factor_var = 0.1
-	# # 			tooltip = org_loss_at_low_org_factor_tt
-	# # 		}
-
-	# # 		add_to_variable = {
-	# # 			SOV_red_army_army_org_factor_var = 0.025
-	# # 			tooltip = army_org_factor_tt
-	# # 		}
-
-	# # 	}
-	# # }
-
-	
-
-	# focus = {
-	# 	id = SOV_army_top2
-	# 	icon = GFX_goal_yegorovfocus
-	# 	prerequisite = { focus = SOV_army_04 }
-	# 	mutually_exclusive = { focus = SOV_army_top1 focus = SOV_army_top5 focus = SOV_army_top3 focus = SOV_army_top4}
-	# 	relative_position_id = SOV_army_04
-	# 	x = -4
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_MILITARY_CHARACTER }
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		NOT = { has_completed_focus = SOV_pol_purge13 }
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = SOV_army_grind_tt
-	# 		SOV_aleksandr_yegorov = {
-	# 			remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-	# 			add_defense = 2
-	# 			add_logistics = 1
-	# 			add_planning = 2
-	# 			add_unit_leader_trait = trait_head_red_army
-	# 			add_unit_leader_trait = organizer
-	# 			hidden_effect = {
-	# 				remove_unit_leader_trait = panzer_leader
-	# 				remove_unit_leader_trait = cavalry_leader
-	# 				remove_unit_leader_trait = panzer_expert
-	# 				remove_unit_leader_trait = commando
-	# 				remove_unit_leader_trait = skirmisher
-	# 				remove_unit_leader_trait = paratrooper
-	# 				remove_unit_leader_trait = camouflage_expert
-	# 				remove_unit_leader_trait = combined_arms_expert
-	# 				remove_unit_leader_trait = cavalry_expert
-	# 			}
-	# 		}
-	# 		add_ideas = SOV_aleksandr_yegorov
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top21
-	# 	icon = GFX_SOV_breakthrough_priority
-	# 	prerequisite = { focus = SOV_army_top2 }
-	# 	relative_position_id = SOV_army_top2
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-			
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_attack_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_attack_factor_var = -0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_armor_attack_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_armor_attack_factor_var = -0.05 }
-
-
-	# 		custom_effect_tooltip = SOV_red_army_max_dig_in_7_tt
-	# 		add_to_variable = { SOV_red_army_max_dig_in_var = 7 }
-
-	# 		custom_effect_tooltip = SOV_red_army_dig_in_speed_factor_20_tt
-	# 		add_to_variable = { SOV_red_army_dig_in_speed_factor_var = 0.2 }
-
-	# 		custom_effect_tooltip = SOV_red_army_infantry_defence_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_infantry_defence_factor_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_land_reinforce_rate_3_tt
-	# 		add_to_variable = { SOV_red_army_land_reinforce_rate_var = 0.03 }
-
-	# 		add_to_variable = {
-	# 			SOV_red_army_org_loss_at_low_org_factor_var = -0.15 # WHY IS THIS RED I DONT GET IT
-	# 			tooltip = org_loss_at_low_org_factor_tt
-	# 		}
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top22
-	# 	icon = GFX_goal_generic_more_territorial_claims
-	# 	prerequisite = { focus = SOV_army_top21 }
-	# 	relative_position_id = SOV_army_top21
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = -0.50
-	# 		}
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# 		custom_effect_tooltip = SOV_red_army_land_reinforce_rate_3_tt
-	# 		add_to_variable = { SOV_red_army_land_reinforce_rate_var = 0.03 }
-
-	# 		add_to_variable = {
-	# 			SOV_red_army_army_org_factor_var = 0.05
-	# 			tooltip = army_org_factor_tt
-	# 		}
-	# 	}
-	# }
-
-	# # focus = {
-	# # 	id = SOV_army_top23
-	# # 	icon = GFX_focus_GER_gebirgsjager
-	# # 	prerequisite = { focus = SOV_army_top22 }
-	# # 	relative_position_id = SOV_army_top22
-	# # 	x = 0
-	# # 	y = 1
-	# # 	cost = 3
-	# # 	ai_will_do = {
-	# # 		factor = 5
-	# # 	}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	available = {
-
-	# # 	}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# # 	completion_reward = {
-	# # 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-	# # 		custom_effect_tooltip = SOV_red_army_infantry_defence_factor_5_tt
-	# # 		add_to_variable = { SOV_red_army_infantry_defence_factor_var = 0.05 }
-
-	# # 		custom_effect_tooltip = SOV_red_army_land_reinforce_rate_3_tt
-	# # 		add_to_variable = { SOV_red_army_land_reinforce_rate_var = 0.03 }
-
-	# # 		add_to_variable = {
-	# # 			SOV_red_army_org_loss_at_low_org_factor_var = -0.15 # WHY IS THIS RED I DONT GET IT
-	# # 			tooltip = org_loss_at_low_org_factor_tt
-	# # 		}
-	# # 	}
-	# # }
-
-	# focus = {
-	# 	id = SOV_army_top3
-	# 	icon = GFX_goal_voroshilovfocus
-	# 	prerequisite = { focus = SOV_army_04 }
-	# 	mutually_exclusive = { focus = SOV_army_top1 focus = SOV_army_top2 focus = SOV_army_top5 focus = SOV_army_top4}
-	# 	relative_position_id = SOV_army_04
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_MILITARY_CHARACTER }
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		has_completed_focus = SOV_mil2
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = SOV_army_grind_tt
-	# 		SOV_kliment_voroshilov = {
-	# 			remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-	# 			add_attack = 3
-	# 			add_defense = 2
-	# 			add_logistics = 2
-	# 			add_planning = 2
-	# 			add_unit_leader_trait = trait_head_red_army
-	# 			add_unit_leader_trait = organizer
-	# 			hidden_effect = {
-	# 				remove_unit_leader_trait = panzer_leader
-	# 				remove_unit_leader_trait = cavalry_leader
-	# 				remove_unit_leader_trait = panzer_expert
-	# 				remove_unit_leader_trait = commando
-	# 				remove_unit_leader_trait = skirmisher
-	# 				remove_unit_leader_trait = paratrooper
-	# 				remove_unit_leader_trait = camouflage_expert
-	# 				remove_unit_leader_trait = combined_arms_expert
-	# 				remove_unit_leader_trait = cavalry_expert
-	# 			}
-	# 		}
-
-	# 		custom_effect_tooltip = generic_skip_one_line_tt
-	# 		activate_advisor = kliment_voroshilov
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top31
-	# 	icon = GFX_goal_generic_more_territorial_claims
-	# 	prerequisite = { focus = SOV_army_top3 }
-	# 	relative_position_id = SOV_army_top3
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_INDUSTRY}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		OR = {
-	# 			mio:SOV_astrov_design_bureau_organization = { has_mio_size > 2  }    
-	# 			mio:SOV_morozov_design_bureau_organization = { has_mio_size > 2  }   
-	# 			mio:SOV_kirov_organization = { has_mio_size > 2  }     
-	# 			mio:SOV_tankograd_plant_organization = { has_mio_size > 2  }    
-	# 			mio:SOV_okmo_organization = { has_mio_size > 2  }   
-	# 			mio:SOV_morozov_design_bureau_ac_organization = { has_mio_size > 2  }     
-	# 		}
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = voro_patronage_tt
-	# 		custom_effect_tooltip = generic_skip_one_line_tt
-
-	# 		custom_effect_tooltip = voroshilov2_tt
-	# 		hidden_effect= {
-	# 			remove_trait = {
-	# 				character = SOV_kliment_voroshilov
-	# 				slot = army_chief
-	# 				trait = army_voro1
-	# 			}
-	# 			add_trait = {
-	# 				character = SOV_kliment_voroshilov
-	# 				slot = army_chief
-	# 				trait = army_voro2
-	# 			}
-	# 		}
-	# 		custom_effect_tooltip = generic_skip_one_line_tt
-	# 		custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-	# 		custom_effect_tooltip = SOV_construction_speed_mil_5_tt
-	# 		add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 }
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top321
-	# 	icon = GFX_goal_generic_cavalry
-	# 	prerequisite = { focus = SOV_army_top31 }
-	# 	relative_position_id = SOV_army_top31
-	# 	x = -1
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-			
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = voroshilov3_tt
-	# 		IF = {
-	# 			LIMIT = {has_completed_focus = SOV_army_top322}
-	# 			hidden_effect= {
-	# 				remove_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro4
-	# 				}
-	# 				add_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro5
-	# 				}
-	# 			}
-	# 		}
-	# 		ELSE = {
-	# 			hidden_effect= {
-	# 				remove_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro2
-	# 				}
-	# 				add_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro3
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top322
-	# 	icon = GFX_SOV_modernize_the_cavalry
-	# 	prerequisite = { focus = SOV_army_top31 }
-	# 	relative_position_id = SOV_army_top31
-	# 	x = 1
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = voroshilov4_tt
-	# 		IF = {
-	# 			LIMIT = {has_completed_focus = SOV_army_top321}
-	# 			hidden_effect= {
-	# 				remove_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro3
-	# 				}
-	# 				add_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro5
-	# 				}
-	# 			}
-
-	# 		}
-	# 		ELSE = {
-	# 			hidden_effect= {
-	# 				remove_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro2
-	# 				}
-	# 				add_trait = {
-	# 					character = SOV_kliment_voroshilov
-	# 					slot = army_chief
-	# 					trait = army_voro4
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-
-	# # focus = {
-	# # 	id = SOV_army_top33
-	# # 	icon = GFX_SOV_rework136
-	# # 	prerequisite = { focus = SOV_army_top321 focus = SOV_army_top322}
-	# # 	relative_position_id = SOV_army_top321
-	# # 	x = 1
-	# # 	y = 1
-	# # 	cost = 3
-	# # 	ai_will_do = {
-	# # 		factor = 5
-	# # 	}
-
-	# # 	search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	available = {
-	# # 			has_army_experience > 50
-	# # 	}
-
-	# # 	completion_reward = { 
-	# # 		add_political_power = 25
-	# # 		army_experience = -50
-	# # 		custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-	# # 		custom_effect_tooltip = SOV_construction_speed_mil_5_tt
-	# # 		add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 }
-	# # 	}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	search_filters = { FOCUS_FILTER_RESEARCH }
-		
-	# # }
-
-	# focus = {
-	# 	id = SOV_army_top4
-	# 	icon = GFX_goal_timoshenkofocus
-	# 	prerequisite = { focus = SOV_army_04 }
-	# 	mutually_exclusive = { focus = SOV_army_top1 focus = SOV_army_top2 focus = SOV_army_top3 focus = SOV_army_top5}
-	# 	relative_position_id = SOV_army_04
-	# 	x = 4
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_MILITARY_CHARACTER }
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		has_completed_focus = SOV_pol_purge12
-	# 		has_idea = semyon_timoshenko
-	# 		has_completed_focus = SOV_mil2
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		hidden_effect= {
-	# 			remove_trait = {
-	# 				character = SOV_semyon_timoshenko
-	# 				slot = army_chief
-	# 				trait = army_chief_reform_2
-	# 			}
-	# 		}
-	# 		add_trait = {
-	# 			character = SOV_semyon_timoshenko
-	# 			slot = army_chief
-	# 			trait = army_chief_reform_timo
-	# 		}
-	# 		SOV_semyon_timoshenko = {
-	# 			remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-	# 			add_attack = 1
-	# 			add_planning = 1
-	# 			add_logistics = 2
-	# 			add_unit_leader_trait = trait_head_red_army
-	# 			add_unit_leader_trait = organizer
-	# 			promote_leader = yes 
-	# 		}
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top41
-	# 	icon = GFX_SOV_rework286
-	# 	prerequisite = { focus = SOV_army_top4 }
-	# 	relative_position_id = SOV_army_top4
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = 0.3
-	# 		}
-
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_attack_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_attack_factor_var = 0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_defence_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_defence_factor_var = 0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_army_org_factor_-025_tt
-	# 		add_to_variable = { SOV_red_army_army_org_factor_var = -0.025 }
-	# 		custom_effect_tooltip = SOV_red_army_army_morale_factor_075_tt
-	# 		add_to_variable = { SOV_red_army_army_morale_factor_var = 0.075 }
-
-
-	# 		custom_effect_tooltip = SOV_red_army_max_dig_in_1_tt
-	# 		add_to_variable = { SOV_red_army_max_dig_in_var = 1 }
-
-	# 		custom_effect_tooltip = SOV_red_army_dig_in_speed_factor_10_tt
-	# 		add_to_variable = { SOV_red_army_dig_in_speed_factor_var = 0.1 }
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top42
-	# 	icon = GFX_focus_HUN_form_the_gyorshadtest
-	# 	prerequisite = { focus = SOV_army_top41 }
-	# 	relative_position_id = SOV_army_top41
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-	# 		# power_balance_value = {
-	# 		# 	id = SOV_army_bop
-	# 		# 	value > 0.2
-	# 		# }
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_attack_factor_025_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_attack_factor_var = 0.025 }
-	# 		custom_effect_tooltip = SOV_red_army_mechanized_defence_factor_025_tt
-	# 		add_to_variable = { SOV_red_army_mechanized_defence_factor_var = 0.025 }
-
-	# 		custom_effect_tooltip = SOV_red_army_coordination_bonus_5_tt
-	# 		add_to_variable = { SOV_red_army_coordination_bonus_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_land_reinforce_rate_3_tt
-	# 		add_to_variable = { SOV_red_army_land_reinforce_rate_var = 0.03 }
-
-	# 		custom_effect_tooltip = SOV_red_army_planning_speed_10_tt
-	# 		add_to_variable = { SOV_red_army_planning_speed_var = 0.10 }
-
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = 0.2
-	# 		}
-	# 	}
-	# }
-
-	# # focus = {
-	# # 	id = SOV_army_top43
-	# # 	icon = GFX_SOV_rework292
-	# # 	prerequisite = { focus = SOV_army_top42 }
-	# # 	relative_position_id = SOV_army_top42
-	# # 	x = 0
-	# # 	y = 1
-	# # 	cost = 3
-	# # 	ai_will_do = {
-	# # 		factor = 5
-	# # 	}
-
-	# # 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	available = {
-
-	# # 	}
-
-	# # 	available_if_capitulated = yes
-
-	# # 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# # 	completion_reward = {
-	# # 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# # 		custom_effect_tooltip = SOV_red_army_mechanized_attack_factor_025_tt
-	# # 		add_to_variable = { SOV_red_army_mechanized_attack_factor_var = 0.025 }
-	# # 		custom_effect_tooltip = SOV_red_army_mechanized_defence_factor_025_tt
-	# # 		add_to_variable = { SOV_red_army_mechanized_defence_factor_var = 0.025 }
-
-	# # 		custom_effect_tooltip = SOV_red_army_army_org_factor_-025_tt
-	# # 		add_to_variable = { SOV_red_army_army_org_factor_var = -0.025 }
-	# # 		custom_effect_tooltip = SOV_red_army_army_morale_factor_075_tt
-	# # 		add_to_variable = { SOV_red_army_army_morale_factor_var = 0.075 }
-	# # 		add_power_balance_value = {
-	# # 			id = SOV_army_bop
-	# # 			value = 0.1
-	# # 		}
-	# # 	}
-	# # }
-
-	# focus = {
-	# 	id = SOV_army_top5
-	# 	icon = GFX_goal_tukachevskyfocus
-	# 	prerequisite = { focus = SOV_army_04 }
-	# 	mutually_exclusive = { focus = SOV_army_top1 focus = SOV_army_top2 focus = SOV_army_top3 focus = SOV_army_top4}
-	# 	relative_position_id = SOV_army_04
-	# 	x = 8
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = {FOCUS_FILTER_MILITARY_CHARACTER }
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 		NOT = { has_completed_focus = SOV_pol_purge13 }
-	# 		OR = {
-	# 		has_completed_focus = SOV_spain_big
-	# 		has_completed_focus = SOV_spanish_training
-	# 		}
-	# 		OR = {
-	# 			has_completed_focus = SOV_mil42
-	# 			has_completed_focus = SOV_mil29
-	# 			has_completed_focus = SOV_mil33
-	# 		}
-			
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		SOV_mikhail_tukhachevsky = {
-	# 		remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-	# 		add_attack = 1
-	# 		add_defense = 1
-	# 		add_logistics = 1
-	# 		add_unit_leader_trait = trait_head_red_army
-	# 		add_unit_leader_trait = organizer
-	# 		promote_leader = yes 
-	# 	}
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top51
-	# 	icon = GFX_SOV_rework93
-	# 	prerequisite = { focus = SOV_army_top5 }
-	# 	relative_position_id = SOV_army_top5
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-			
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = 0.45
-	# 		}
-
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# 		custom_effect_tooltip = SOV_red_army_army_org_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_army_morale_factor_10_tt
-	# 		add_to_variable = { SOV_red_army_army_morale_factor_var = 0.1 }
-	# 		add_to_variable = { SOV_red_army_initiative_factor_var = 0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_initiative_factor_var_5_tt
-
-	# 		custom_effect_tooltip = SOV_red_army_army_speed_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_army_speed_factor_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_coordination_bonus_5_tt
-	# 		add_to_variable = { SOV_red_army_coordination_bonus_var = 0.05 }
-
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top52
-	# 	icon = GFX_SOV_rework297
-	# 	prerequisite = { focus = SOV_army_top51 }
-	# 	relative_position_id = SOV_army_top51
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-			
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = 0.45
-	# 		}
-
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-	# 		custom_effect_tooltip = SOV_red_army_armor_attack_factor_075_tt
-	# 		add_to_variable = { SOV_red_army_armor_attack_factor_var = 0.075 }
-	# 		custom_effect_tooltip = SOV_red_army_armor_defence_-025_tt
-	# 		add_to_variable = { SOV_red_army_armor_defence_var = -0.025 }
-	# 		custom_effect_tooltip = SOV_red_army_max_planning_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_max_planning_factor_var = -0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_planning_speed_15_tt
-	# 		add_to_variable = { SOV_red_army_planning_speed_var = 0.15 }
-
-	# 		custom_effect_tooltip = SOV_red_army_max_dig_in_-3_tt
-	# 		add_to_variable = { SOV_red_army_max_dig_in_var = -3 }
-	# 	}
-	# }
-
-	# focus = {
-	# 	id = SOV_army_top53
-	# 	icon = GFX_SOV_rework270
-	# 	prerequisite = { focus = SOV_army_top52 }
-	# 	relative_position_id = SOV_army_top52
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 3
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-
-	# 	search_filters = { FOCUS_FILTER_BALANCE_OF_POWER}
-
-	# 	available_if_capitulated = yes
-
-	# 	available = {
-
-	# 	}
-
-	# 	available_if_capitulated = yes
-
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	completion_reward = {
-
-	# 		add_power_balance_value = {
-	# 			id = SOV_army_bop
-	# 			value = 0.3
-	# 		}
-
-	# 		custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-	# 		custom_effect_tooltip = SOV_red_army_army_speed_factor_5_tt
-	# 		add_to_variable = { SOV_red_army_army_speed_factor_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_coordination_bonus_5_tt
-	# 		add_to_variable = { SOV_red_army_coordination_bonus_var = 0.05 }
-
-	# 		custom_effect_tooltip = SOV_red_army_max_planning_factor_-5_tt
-	# 		add_to_variable = { SOV_red_army_max_planning_factor_var = -0.05 }
-	# 		custom_effect_tooltip = SOV_red_army_planning_speed_15_tt
-	# 		add_to_variable = { SOV_red_army_planning_speed_var = 0.15 }
-	# 	}
-	# }
-
 
 	# focus = {
 	# 	id = SOV_dance_of_the_marshals
@@ -6332,14 +5283,6 @@
 				has_completed_focus = SOV_new_corps5
 				has_completed_focus = SOV_new_corps4
 			}
-			# power_balance_value = {
-			# 	id = SOV_army_bop
-			# 	value < -0.45
-			# }
-			# NOT = {has_country_flag = SOV_army2_flag}
-			# NOT = {has_completed_focus = SOV_mil2}
-			# NOT = {has_completed_focus = SOV_army_top1}
-			# NOT = {has_completed_focus = SOV_army_popo}
 		}
 
 		available_if_capitulated = yes
@@ -6373,9 +5316,7 @@
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
 			custom_effect_tooltip = SOV_red_army_modifier_army_sub_unit_cavalry_speed_factor_5_tt
 			add_to_variable = { SOV_red_army_modifier_army_sub_unit_cav_speed_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_cavalry_attack_factor_5_tt
-			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = 0.05 tooltip = cavalry_attack_factor_tt }
 		}
 	}
 
@@ -6411,12 +5352,8 @@
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_special_forces_cap_3_tt
-			add_to_variable = { SOV_red_army_special_forces_cap_var = 0.03 }
-
-			custom_effect_tooltip = SOV_red_army_special_forces_training_time_factor_-10_tt
-			add_to_variable = { SOV_red_army_special_forces_training_time_factor_var = -0.10 }
+			add_to_variable = { SOV_red_army_special_forces_cap_var = 0.03 tooltip = special_forces_cap_tt }
+			add_to_variable = { SOV_red_army_special_forces_training_time_factor_var = -0.10 tooltip = special_forces_training_time_factor_tt}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = vasily_kuznetsov
@@ -6890,15 +5827,9 @@
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-				custom_effect_tooltip = SOV_red_army_org_loss_when_moving_-5_tt
-				add_to_variable = { SOV_red_army_org_loss_when_moving_var = -0.05 }
-				custom_effect_tooltip = SOV_red_army_planning_speed_5_tt
-				add_to_variable = { SOV_red_army_planning_speed_var = 0.05 }
-				# custom_effect_tooltip = SOV_red_army_coordination_bonus_5_tt
-				# add_to_variable = { SOV_red_army_coordination_bonus_var = 0.05 }
-				custom_effect_tooltip = SOV_red_army_winter_attrition_factor_-5_tt
-				add_to_variable = { SOV_red_army_winter_attrition_factor_var = -0.05 }
+				add_to_variable = { SOV_red_army_org_loss_when_moving_var = -0.05 tooltip = org_loss_when_moving_tt }
+				add_to_variable = { SOV_red_army_planning_speed_var = 0.05 tooltip = planning_speed_factor_tt }
+				add_to_variable = { SOV_red_army_winter_attrition_factor_var = -0.05 tooltip = winter_attrition_factor_tt }
 			}
 		}
 	}
@@ -7242,8 +6173,7 @@
             }
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_-5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 tooltip = stability_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = SOV_collectivisation_finished
@@ -7289,11 +6219,8 @@
 			
 			custom_effect_tooltip = generic_skip_one_line_tt	
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_-5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 }
-			
-			custom_effect_tooltip = SOV_consumer_good_factor_-5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 tooltip = consumer_goods_factor_tt }
 			
 			# custom_effect_tooltip = SOV_factory_output_-2_tt
 			# add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = -0.02 }
@@ -7507,14 +6434,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_stability_5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05 }
-
-			add_to_variable = { 
-				SOV_command_economy_conversion_cost_mil_to_civ_factor_var = -0.30 
-				tooltip = conversion_cost_civ_to_mil_factor_tt
-			}
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_conversion_cost_mil_to_civ_factor_var = -0.30 tooltip = conversion_cost_civ_to_mil_factor_tt }
 			
 			# custom_effect_tooltip = SOV_consumer_good_factor_3_tt
 			# add_to_variable = { SOV_command_economy_consumer_goods_factor_var = 0.03 }
@@ -7562,11 +6483,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_factory_output_025_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
-			custom_effect_tooltip = SOV_consumer_good_factor_-2_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.02 }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.02 tooltip = consumer_goods_factor_tt }
 
 			every_owned_state = {
 				limit = {
@@ -7646,9 +6564,7 @@
 		
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_resource_gain_efficiency_025_tt
-			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.025 }
+			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.025 tooltip = local_resources_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			add_tech_bonus = {
@@ -7716,12 +6632,9 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-		 	custom_effect_tooltip = SOV_consumer_good_factor_-5_tt
-		 	add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 }
-			custom_effect_tooltip = SOV_political_power_gain_factor_05_tt
-			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_weekly_stability_01_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 }
+		 	add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 tooltip = stability_weekly_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			# Regional Dev
@@ -7769,26 +6682,12 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 					
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_political_power_gain_factor_10_tt
-			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.1 }
-			
-			custom_effect_tooltip = SOV_weekly_stability_01_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 }
-			custom_effect_tooltip = SOV_stability_5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05 }
-		
-			custom_effect_tooltip = SOV_expected_consumer_goods_5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = 0.05 }
+			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.1 tooltip = political_power_factor_tt}
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = 0.05 tooltip = consumer_goods_expected_value_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-			# custom_effect_tooltip = SOV_increase_5_year_plan_-3_tt 
-			# add_to_variable = { var_SOV_second_5_year_plan_progress_bar_counter = -3 }
-			# clamp_variable = {
-			# 	var = var_SOV_second_5_year_plan_progress_bar_counter
-			# 	max = 105
-			# }
-			# add_to_variable = { SOV_gosplan_gui_dirty_var = 1 }	
 			
 			SOV_check_plan_completion = yes
 		}
@@ -7858,17 +6757,10 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 		
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_political_power_gain_factor_-10_tt
-			add_to_variable = { SOV_command_economy_political_power_factor_var = -0.1 }
-			
-			custom_effect_tooltip = SOV_weekly_stability_-01_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = -0.001 }
-			custom_effect_tooltip = SOV_stability_-5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 }
-		
-			custom_effect_tooltip = SOV_expected_consumer_goods_-5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 }
+			add_to_variable = { SOV_command_economy_political_power_factor_var = -0.1 tooltip = political_power_factor_tt}
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = -0.001 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 tooltip = consumer_goods_expected_value_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_5_tt 
@@ -7961,11 +6853,8 @@
 		
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_political_power_gain_factor_10_tt
-			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_consumer_good_factor_-5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.1 tooltip = political_power_factor_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 tooltip = consumer_goods_factor_tt }
 		}
 	}
 	
@@ -8053,15 +6942,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_political_power_gain_factor_05_tt
-			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_stability_10_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.1 }
-			
-			custom_effect_tooltip = SOV_market_access_-5_tt
-			add_to_variable = { SOV_command_economy_min_export_var = -0.05 }
+			add_to_variable = { SOV_command_economy_political_power_factor_var = 0.05 tooltip = political_power_factor_tt}
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.1  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_min_export_var = -0.05 tooltip = min_export_tt }
 		}
 	}
 	
@@ -8326,8 +7209,7 @@
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_5_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 tooltip = research_speed_factor_tt }
 		}
 	}
 	
@@ -8381,11 +7263,9 @@
 			unlock_decision_tooltip = { decision = SOV_short_term_science show_effect_tooltip = no }
 			unlock_decision_tooltip = { decision = SOV_long_term_science show_effect_tooltip = no }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			#add_research_slot = -1
+
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_20_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.20 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.20 tooltip = research_speed_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_3_tt 
@@ -8421,8 +7301,7 @@
 		
 			add_research_slot = 1
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_-20_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = -0.20 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = -0.20 tooltip = research_speed_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_3_tt 
@@ -8485,8 +7364,7 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_nuclear_facility_50_tt
-			add_to_variable = { SOV_command_economy_production_speed_nuclear_facility_factor_var = 0.5 }
+			add_to_variable = { SOV_command_economy_production_speed_nuclear_facility_factor_var = 0.5 tooltip = production_speed_nuclear_facility_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_soviet_atomic_bomb_project_tt
@@ -8590,10 +7468,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_consumer_good_factor_-5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.05 tooltip = consumer_goods_factor_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_3_tt 
@@ -8628,11 +7504,8 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-
-			custom_effect_tooltip = SOV_resource_gain_efficiency_025_tt
-			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.025 }
-			custom_effect_tooltip = SOV_construction_speed_infra_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.05 }	
+			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.025 tooltip = local_resources_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.05 tooltip = production_speed_infrastructure_factor_tt }	
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_1_tt 
@@ -8906,8 +7779,7 @@
 		cost = 3
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_consumer_good_factor_-3_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.03 }
+			add_to_variable = { SOV_command_economy_consumer_goods_factor_var = -0.03 tooltip = consumer_goods_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_owned_state = {
@@ -9120,12 +7992,6 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			# custom_effect_tooltip = SOV_construction_speed_5_tt
-			# add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
-
-			# custom_effect_tooltip = generic_skip_one_line_tt
-
 			every_owned_state = {
 				limit = {
 					OR = {
@@ -9182,10 +8048,7 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_infra_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.05 }
-			# custom_effect_tooltip = SOV_construction_speed_civ_5_tt
-			# add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.05 tooltip = production_speed_infrastructure_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_5_tt 
@@ -9430,10 +8293,8 @@
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factories_in_state_factor_10_tt
-			add_to_variable = { SOV_command_economy_global_building_slots_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_factories_in_state_1_tt
-			add_to_variable = { SOV_command_economy_global_building_slots_var = 1 }
+			add_to_variable = { SOV_command_economy_global_building_slots_factor_var = 0.1 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { SOV_command_economy_global_building_slots_var = 1 tooltip = global_building_slots_tt }
 			
 			hidden_effect = { remove_ideas = SOV_new_construction_sites }
 
@@ -9478,24 +8339,11 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-
-			custom_effect_tooltip = SOV_construction_speed_civ_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_construction_speed_mil_10_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 }
-			
-			# custom_effect_tooltip = SOV_factory_output_5_tt
-			# add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_efficiency_growth_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_efficiency_base_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 }
-			# custom_effect_tooltip = SOV_efficiency_retention_5_tt
-			# add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_civ_to_mil_conversion_20_tt
-			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.20 }
+			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.20 tooltip = conversion_cost_civ_to_mil_factor_tt }
 		}
 	}
 	
@@ -9515,18 +8363,9 @@
 		completion_reward = {
 
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_construction_speed_075_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.075 }
-			
-			custom_effect_tooltip = SOV_dockyard_output_075_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_dockyard_var = 0.075 }
-			# add_to_variable = { 
-           	#  	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05
-            # 	tooltip = production_factory_max_efficiency_factor_tt
-            # }
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.075  tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_command_economy_industrial_capacity_dockyard_var = 0.075 tooltip = industrial_capacity_dockyard_tt }
 
 			add_days_mission_timeout = {
                 mission = SOV_second_5_year_plan_deadline
@@ -9553,12 +8392,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_efficiency_growth_2_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.02 }
-			add_to_variable = { 
-           	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.02
-            	tooltip = production_factory_max_efficiency_factor_tt
-            }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.02 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_max_efficiency_factor_var = 0.02 tooltip = production_factory_max_efficiency_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
@@ -9794,10 +8629,8 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_efficiency_base_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_efficiency_retention_10_tt
-			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.1 }
+			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.1 tooltip = line_change_production_efficiency_factor_tt }
 		}
 	}
 	
@@ -9815,14 +8648,9 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_political_power_gain_factor_05_tt
-			add_to_variable = { SOV_command_economy_political_power_gain_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_stability_10_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.1 }
-			
-			custom_effect_tooltip = SOV_research_speed_5_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_political_power_gain_var = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 tooltip = research_speed_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			# add_tech_bonus = {
 			# 	name = SOV_electrification
@@ -9959,18 +8787,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			add_to_variable = { 
-           	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05
-            	tooltip = production_factory_max_efficiency_factor_tt
-            }
-			add_to_variable = { 
-				SOV_command_economy_production_factory_start_efficiency_factor_var = -0.075
-				tooltip = production_factory_start_efficiency_factor_tt
-			}
-			add_to_variable = { 
-				SOV_command_economy_line_change_production_efficiency_factor_var = -0.075
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
+			add_to_variable = { SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = -0.075 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = -0.075 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
 	}
 	
@@ -9992,10 +8811,7 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factories_in_state_2_tt
-			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 }
-			# custom_effect_tooltip = SOV_resource_gain_efficiency_5_tt
-			# add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 tooltip = global_building_slots_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -10126,16 +8942,9 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_efficiency_growth_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
-			# add_to_variable = { 
-           	#  	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.03
-            # 	tooltip = production_factory_max_efficiency_factor_tt
-            # }
-			custom_effect_tooltip = SOV_efficiency_base_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_efficiency_retention_5_tt
-			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 tooltip = line_change_production_efficiency_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_10_tt 
@@ -10339,14 +9148,9 @@
 		cost = 3
 		completion_reward = {			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			# custom_effect_tooltip = SOV_construction_speed_5_tt
-			# add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_factories_in_state_2_tt
-			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 }
-			custom_effect_tooltip = SOV_civ_to_mil_conversion_20_tt
-			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.20 }
-			custom_effect_tooltip = SOV_mil_to_civ_conversion_20_tt
-			add_to_variable = { SOV_command_economy_conversion_cost_mil_to_civ_factor_var = -0.20 }
+			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 tooltip = global_building_slots_tt }
+			add_to_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = -0.20 tooltip = conversion_cost_civ_to_mil_factor_tt }
+			add_to_variable = { SOV_command_economy_conversion_cost_mil_to_civ_factor_var = -0.20 tooltip = conversion_cost_mil_to_civ_factor_tt }
 			
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -10516,10 +9320,8 @@
 		cost = 5
 		completion_reward = {	
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_-10_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = -0.1 }
-			custom_effect_tooltip = SOV_construction_speed_infra_25_tt
-			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.25 }
+			add_to_variable = { SOV_command_economy_stability_factor_var = -0.1  tooltip = stability_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.25 tooltip = production_speed_infrastructure_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = {
@@ -10644,8 +9446,7 @@
 		cost = 4
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factory_output_025_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 tooltip = industrial_capacity_factory_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			
@@ -10811,13 +9612,9 @@
 		cost = 4
 		completion_reward = {	
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_weekly_stability_01_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 }
-			custom_effect_tooltip = SOV_resource_gain_efficiency_5_tt
-			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_factory_output_5_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.001 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 tooltip = industrial_capacity_factory_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_owned_state = {
@@ -10884,8 +9681,7 @@
 		completion_reward = {
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_efficiency_base_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_production_factory_start_efficiency_factor_var = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -11148,8 +9944,7 @@
 		cost = 5
 		completion_reward = {			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factory_output_025_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 tooltip = industrial_capacity_factory_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_heavy_industrial_powerhouses_tt
@@ -12519,14 +11314,10 @@
 		
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_special_forces_attack_factor_5_tt
-			add_to_variable = { SOV_red_army_special_forces_attack_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_special_forces_attack_factor_var = 0.05 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { SOV_red_army_special_forces_defence_factor_var = 0.05 tooltip = special_forces_defence_factor_tt }
+			add_to_variable = { SOV_red_army_special_forces_no_supply_grace_var = 48 tooltip = special_forces_no_supply_grace_tt }
 
-			custom_effect_tooltip = SOV_red_army_special_forces_defence_factor_5_tt
-			add_to_variable = { SOV_red_army_special_forces_defence_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_red_army_special_forces_no_supply_grace_48_tt
-			add_to_variable = { SOV_red_army_special_forces_no_supply_grace_var = 48 }
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -12738,19 +11529,11 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_modifier_army_sub_unit_cavalry_speed_factor_-10_tt
-			add_to_variable = { SOV_red_army_modifier_army_sub_unit_cav_speed_factor_var = -0.1 }
-
-			custom_effect_tooltip = SOV_red_army_cavalry_attack_factor_-15_tt
-			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = -0.15 }
-
-			custom_effect_tooltip = SOV_red_army_cavalry_defence_factor_-15_tt
-			add_to_variable = { SOV_red_army_cavalry_defence_factor_var = -0.15 }
-			
-			custom_effect_tooltip = SOV_red_army_armor_attack_factor_025_tt
-			add_to_variable = { SOV_red_army_armor_attack_factor_var = 0.025 }
-			custom_effect_tooltip = SOV_red_army_armor_defence_025_tt
-			add_to_variable = { SOV_red_army_armor_defence_var = 0.025 }
+			add_to_variable = { SOV_red_army_modifier_army_sub_unit_cav_speed_factor_var = -0.1 tooltip = modifier_army_sub_unit_cav_speed_factor_tt }
+			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = -0.15 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { SOV_red_army_cavalry_defence_factor_var = -0.15 tooltip = cavalry_defence_factor_tt }
+			add_to_variable = { SOV_red_army_armor_attack_factor_var = 0.025 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { SOV_red_army_armor_defence_var = 0.025 tooltip = army_armor_defence_factor_tt }
 		}
 	}
 
@@ -13495,8 +12278,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_special_forces_cap_5_tt
-			add_to_variable = { SOV_red_army_special_forces_cap_var = 0.05 }
+			add_to_variable = { SOV_red_army_special_forces_cap_var = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 
@@ -14165,14 +12947,10 @@
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
 
-			custom_effect_tooltip = SOV_red_air_force_air_attack_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_agility_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_superiority_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 }
+			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 tooltip = air_attack_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 tooltip = air_superiority_efficiency_tt }
 
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -14212,13 +12990,9 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_agility_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_attack_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_superiority_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 }
+			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 tooltip = air_attack_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 tooltip = air_superiority_efficiency_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14291,11 +13065,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_cas_efficiency_var_15_tt
-			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.15 }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.15 tooltip = air_cas_efficiency_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14333,11 +13104,8 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_range_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_bombing_targetting_var_10_tt
-			add_to_variable = { SOV_red_air_force_air_bombing_targetting_var = 0.1 }
+			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.05 tooltip = air_range_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_bombing_targetting_var = 0.1 tooltip = air_bombing_targetting_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14376,13 +13144,9 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_cas_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_bombing_targetting_var_10_tt
-			add_to_variable = { SOV_red_air_force_air_bombing_targetting_var = 0.1 }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 tooltip = air_cas_efficiency_tt }
+			add_to_variable = { SOV_red_air_force_air_bombing_targetting_var = 0.1 tooltip = air_bombing_targetting_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14418,9 +13182,9 @@
 				category = cat_strategic_bomber
 			}
 			mio:SOV_ilyushin_design_bureau_organization = {
-					add_mio_funds_gain_factor = 0.05
-					add_mio_funds = 1500
-				}
+				add_mio_funds_gain_factor = 0.05
+				add_mio_funds = 1500
+			}
 		}
 	}
 
@@ -14443,9 +13207,9 @@
 
 		completion_reward = {
 			mio:SOV_mig_design_bureau_organization = {
-					add_mio_funds_gain_factor = 0.05
-					add_mio_funds = 1000
-				}
+				add_mio_funds_gain_factor = 0.05
+				add_mio_funds = 1000
+			}
 		}
 	}
 
@@ -14569,15 +13333,10 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_agility_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_attack_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_cas_efficiency_var_-5_tt
-			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = -0.05 }
+			add_to_variable = { SOV_red_air_force_air_agility_factor_var = 0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 tooltip = air_attack_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = -0.05 tooltip = air_cas_efficiency_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14616,14 +13375,9 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_range_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_cas_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.05 tooltip = air_range_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 tooltip = air_cas_efficiency_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14735,15 +13489,10 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_attack_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_range_factor_var_10_tt
-			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_red_air_force_air_superiority_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 }
+			add_to_variable = { SOV_red_air_force_air_attack_factor_var = 0.05 tooltip = air_attack_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_range_factor_var = 0.1 tooltip = air_range_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 tooltip = air_superiority_efficiency_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14779,13 +13528,9 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_agility_factor_var_-5_tt
-			add_to_variable = { SOV_red_air_force_air_agility_factor_var = -0.05 }
-			custom_effect_tooltip = SOV_red_air_force_air_defence_factor_var_10_tt
-			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_red_air_force_air_superiority_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 }
+			add_to_variable = { SOV_red_air_force_air_agility_factor_var = -0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_defence_factor_var = 0.1 tooltip = air_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_superiority_efficiency_var = 0.05 tooltip = air_superiority_efficiency_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -14844,17 +13589,11 @@
 		completion_reward = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_weekly_stability_02_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.002 }
-			custom_effect_tooltip = SOV_expected_consumer_goods_-5_tt
-			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 }
-			custom_effect_tooltip = SOV_construction_speed_mil_10_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_efficiency_retention_5_tt
-			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_factory_output_5_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.002 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 tooltip = consumer_goods_expected_value_tt }
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_command_economy_line_change_production_efficiency_factor_var = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 tooltip = industrial_capacity_factory_tt }
 
 			hidden_effect = {
 				SOV_check_equipment_stockpile = yes
@@ -15015,15 +13754,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_supply_node_range_5_tt
-			add_to_variable = { SOV_red_army_supply_node_range_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_red_army_supply_combat_penalties_on_core_factor_-15_tt
-			add_to_variable = { SOV_red_army_supply_combat_penalties_on_core_factor_var = -0.15 }	
-
-			custom_effect_tooltip = SOV_red_army_out_of_supply_factor_var_-15_tt
-			add_to_variable = { SOV_red_army_out_of_supply_factor_var = -0.15 }
+			add_to_variable = { SOV_red_army_supply_node_range_var = 0.05 tooltip = supply_node_range_tt }
+			add_to_variable = { SOV_red_army_supply_combat_penalties_on_core_factor_var = -0.15 tooltip = supply_combat_penalties_on_core_factor_tt }	
+			add_to_variable = { SOV_red_army_out_of_supply_factor_var = -0.15 tooltip = out_of_supply_factor_tt }
 		}
 	}
 	
@@ -15101,8 +13834,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_infra_10_tt
-			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.1 }
+			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.1 tooltip = production_speed_infrastructure_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -15329,11 +14061,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_max_planning_factor_5_tt
-			add_to_variable = { SOV_red_army_max_planning_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_planning_speed_5_tt
-			add_to_variable = { SOV_red_army_planning_speed_var = 0.05 }
+			add_to_variable = { SOV_red_army_max_planning_factor_var = 0.05 tooltip = max_planning_factor_tt }
+			add_to_variable = { SOV_red_army_planning_speed_var = 0.05 tooltip = planning_speed_factor_tt }
 		}
 	}
 
@@ -15356,11 +14085,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_winter_attrition_factor_-10_tt
-			add_to_variable = { SOV_red_army_winter_attrition_factor_var = -0.1 }
-
-			custom_effect_tooltip = SOV_red_army_acclimatization_cold_climate_gain_factor_10_tt
-			add_to_variable = { SOV_red_army_acclimatization_cold_climate_gain_factor_var = 0.1 }
+			add_to_variable = { SOV_red_army_winter_attrition_factor_var = -0.1 tooltip = winter_attrition_factor_tt }
+			add_to_variable = { SOV_red_army_acclimatization_cold_climate_gain_factor_var = 0.1 tooltip = acclimatization_cold_climate_gain_factor_tt }
 		}
 	}
 	
@@ -15512,15 +14238,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-
-			add_to_variable = { 
-				SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			add_to_variable = { 
-           	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05
-            	tooltip = production_factory_max_efficiency_factor_tt
-            }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -15537,8 +14256,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_075_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.075 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.075 tooltip = research_speed_factor_tt }
 		}
 	}
 
@@ -15640,8 +14358,7 @@
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_supply_node_range_10_tt
-			add_to_variable = { SOV_red_army_supply_node_range_var = 0.1 }
+			add_to_variable = { SOV_red_army_supply_node_range_var = 0.1 tooltip = supply_node_range_tt }
 		}
 	}
 
@@ -15979,10 +14696,8 @@
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			custom_effect_tooltip = SOV_red_army_army_org_factor_5_tt
-			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_army_army_core_defence_factor_5_tt
-			add_to_variable = { SOV_red_army_army_core_defence_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { SOV_red_army_army_core_defence_factor_var = 0.05 tooltip = army_core_defence_factor_tt }
 
 			if = {
 				limit = {
@@ -16150,13 +14865,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			
-			custom_effect_tooltip = SOV_weekly_stability_-01_tt
-			add_to_variable = { SOV_command_economy_stability_gain_factor_var = -0.001 }
-			custom_effect_tooltip = SOV_construction_speed_10_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.1 }
-			custom_effect_tooltip = SOV_factory_output_10_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.1 }
+			add_to_variable = { SOV_command_economy_stability_gain_factor_var = -0.001 tooltip = stability_weekly_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.1 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.1 tooltip = industrial_capacity_factory_tt }
 			add_offsite_building = { type = industrial_complex level = 10 }
 			add_offsite_building = { type = arms_factory level = 10 }
 
@@ -17002,15 +15713,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_army_org_factor_5_tt
-			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_red_army_experience_gain_army_factor_10_tt
-			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 }
-
-			custom_effect_tooltip = SOV_red_army_experience_loss_factor_-5_tt
-			add_to_variable = { SOV_red_army_experience_loss_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_army_org_factor_var = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SOV_red_army_experience_loss_factor_var = -0.05 tooltip = experience_loss_factor_tt }
 		}
 	}
 
@@ -17027,15 +15732,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_minimum_training_level_-15_tt
-			add_to_variable = { SOV_red_army_minimum_training_level_var = -0.05 }
-
-			custom_effect_tooltip = SOV_red_army_experience_loss_factor_5_tt
-			add_to_variable = { SOV_red_army_experience_loss_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_training_time_factor_-10_tt
-			add_to_variable = { SOV_red_army_training_time_factor_var = -0.1 }
+			add_to_variable = { SOV_red_army_minimum_training_level_var = -0.05 tooltip = minimum_training_level_tt }
+			add_to_variable = { SOV_red_army_experience_loss_factor_var = 0.05 tooltip = experience_loss_factor_tt }
+			add_to_variable = { SOV_red_army_training_time_factor_var = -0.1 tooltip = training_time_factor_tt }
 		}
 	}
 
@@ -17128,9 +15827,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_experience_loss_factor_-10_tt
-			add_to_variable = { SOV_red_army_experience_loss_factor_var = -0.10 }
+			add_to_variable = { SOV_red_army_experience_loss_factor_var = -0.10 tooltip = experience_loss_factor_tt }
 		}
 	}
 
@@ -17172,9 +15869,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_army_core_defence_factor_5_tt
-			add_to_variable = { SOV_red_army_army_core_defence_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_army_core_defence_factor_var = 0.05 tooltip = army_core_defence_factor_tt }
 		}
 	}
 
@@ -17215,10 +15910,6 @@
 		}
 
 		completion_reward = {
-			#custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			# custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-10_tt
-			# add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.1 }
 			add_mastery_bonus = {
 				name = SOV_new_doctrine
 				bonus = 0.1
@@ -17269,17 +15960,6 @@
 		}
 
 		completion_reward = {
-			# custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			# custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-5_tt
-			# add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
-
-			# add_doctrine_cost_reduction = {
-			# 	name = doc_bonus
-			# 	cost_reduction = 0.4
-			# 	uses = 2
-			# 	category = land_doctrine
-			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_our_losses
 				bonus = 0.15
@@ -17330,17 +16010,6 @@
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			# custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-10_tt
-			# add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.1 }
-
-			# add_doctrine_cost_reduction = {
-			# 	name = doc_bonus
-			# 	cost_reduction = 0.6
-			# 	uses = 4
-			# 	category = land_doctrine
-			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_losses_2
 				bonus = 0.2
@@ -17367,21 +16036,13 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-			custom_effect_tooltip = SOV_red_army_experience_gain_army_factor_5_tt
-			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_leader_experience_gain_factor_10_tt
-			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.1 }
+			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.05 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { SOV_red_army_experience_gain_factor_var = 0.1 tooltip = experience_gain_factor_tt }
 
 			if = {
 				limit = { NOT = { has_country_flag = SOV_army_promotion_cost_reduced } }
-				custom_effect_tooltip = SOV_red_army_promote_cost_factor_-500_tt
-				add_to_variable = { SOV_red_army_promote_cost_factor_var = -5 }
-				add_to_variable = { 
-				SOV_red_army_army_leader_cost_factor_var = -5
-				tooltip = army_leader_cost_factor_tt
-				}
+				add_to_variable = { SOV_red_army_promote_cost_factor_var = -5 tooltip = promote_cost_factor_tt }
+				add_to_variable = { SOV_red_army_army_leader_cost_factor_var = -5 tooltip = army_leader_cost_factor_tt }
 				SOV_georgy_zhukov = { 
 					promote_leader = yes
 				}
@@ -17403,11 +16064,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			
-			custom_effect_tooltip = SOV_red_army_armor_attack_factor_5_tt
-			add_to_variable = { SOV_red_army_armor_attack_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_red_army_armor_defence_5_tt
-			add_to_variable = { SOV_red_army_armor_defence_var = 0.05 }
+			add_to_variable = { SOV_red_army_armor_attack_factor_var = 0.05 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { SOV_red_army_armor_defence_var = 0.05 tooltip = army_armor_defence_factor_tt }
 
 			SOV_modernisation_towards_mech = yes
 		}
@@ -17434,11 +16092,8 @@
 			set_variable = { SOV_red_army_armor_attack_factor_var = 0 }
 			custom_effect_tooltip = SOV_red_army_set_armor_attack_factor_0_tt
 			set_variable = { SOV_red_army_armor_defence_var = 0 }
-			
-			custom_effect_tooltip = SOV_red_army_cavalry_attack_factor_-10_tt
-			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = -0.1 }
-			custom_effect_tooltip = SOV_red_army_cavalry_defence_factor_-10_tt
-			add_to_variable = { SOV_red_army_cavalry_defence_factor_var = -0.1 }
+			add_to_variable = { SOV_red_army_cavalry_attack_factor_var = -0.1 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { SOV_red_army_cavalry_defence_factor_var = -0.1 tooltip = cavalry_defence_factor_tt }
 
 
 			if = {
@@ -17873,24 +16528,11 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_mission_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_accidents_factor_var_-25_tt
-			add_to_variable = { SOV_red_air_force_air_accidents_factor_var = -0.25 }
-
-			#custom_effect_tooltip = SOV_red_air_force_air_ace_generation_chance_factor_var_15_tt
-			#add_to_variable = { SOV_red_air_force_air_ace_generation_chance_factor_var = 0.15 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_home_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_home_defence_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var_-20_tt
-			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.2 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_doctrine_cost_factor_var_-10_tt
-			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 }
+			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 tooltip = air_mission_efficiency_tt }
+			add_to_variable = { SOV_red_air_force_air_accidents_factor_var = -0.25 tooltip = air_accidents_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_home_defence_factor_var = 0.05 tooltip = air_home_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.2 tooltip = air_wing_xp_loss_when_killed_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 tooltip = air_doctrine_cost_factor_tt }
 		}
 	}
 
@@ -17915,24 +16557,11 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_mission_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_accidents_factor_var_-15_tt
-			add_to_variable = { SOV_red_air_force_air_accidents_factor_var = -0.15 }
-
-			#custom_effect_tooltip = SOV_red_air_force_air_ace_generation_chance_factor_var_10_tt
-			#add_to_variable = { SOV_red_air_force_air_ace_generation_chance_factor_var = 0.1 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_home_defence_factor_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_home_defence_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var_-10_tt
-			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.1 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_doctrine_cost_factor_var_-10_tt
-			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 }
+			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 tooltip = air_mission_efficiency_tt }
+			add_to_variable = { SOV_red_air_force_air_accidents_factor_var = -0.15 tooltip = air_accidents_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_home_defence_factor_var = 0.05 tooltip = air_home_defence_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.1 tooltip = air_wing_xp_loss_when_killed_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 tooltip = air_doctrine_cost_factor_tt }
 		}
 	}
 
@@ -17957,18 +16586,10 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_generic_modify_red_air_force_tt
-
-			custom_effect_tooltip = SOV_red_air_force_air_mission_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_red_air_force_air_cas_efficiency_var_5_tt
-			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var_-10_tt
-			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.1 }
-
-			custom_effect_tooltip = SOV_red_air_force_air_doctrine_cost_factor_var_-10_tt
-			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 }
+			add_to_variable = { SOV_red_air_force_air_mission_efficiency_var = 0.05 tooltip = air_mission_efficiency_tt }
+			add_to_variable = { SOV_red_air_force_air_cas_efficiency_var = 0.05 tooltip = air_cas_efficiency_tt }
+			add_to_variable = { SOV_red_air_force_air_wing_xp_loss_when_killed_factor_var = -0.1 tooltip = air_wing_xp_loss_when_killed_factor_tt }
+			add_to_variable = { SOV_red_air_force_air_doctrine_cost_factor_var = -0.1 tooltip = air_doctrine_cost_factor_tt }
 		}
 	}
 }

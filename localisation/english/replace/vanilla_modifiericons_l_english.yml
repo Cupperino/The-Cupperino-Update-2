@@ -553,7 +553,7 @@
  MODIFIER_NAVAL_INVASION_DEFENSE:0 "£defence_texticon  Invasion Defense"
  MODIFIER_NAVAL_INVASION_PENALTY:0 "£naval_invasion_texticon  Invasion Penalty"
  MODIFIER_OCCUPATION_COST:0 "£occupation_costs  Occupation Cost"
- MODIFIER_MINIMUM_TRAINING_LEVEL:0 "£training_texticon  Minimum training level"
+ MODIFIER_MINIMUM_TRAINING_LEVEL:0 "£training_max_texticon  Minimum training level"
  MODIFIER_AUTONOMY_MANPOWER_SHARE:0 "£manpower_cost_texticon  Subject manpower requirement"
  MODIFIER_TRADE_TO_OVERLORD_FACTOR:0 "£trade_texticon  Extra trade to overlord"
  MODIFIER_TRADE_COST_FACTOR:1 "£trade_texticon  Overlord trade cost"

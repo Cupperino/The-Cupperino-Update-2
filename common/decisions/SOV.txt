@@ -2949,20 +2949,16 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 tooltip = production_speed_buildings_factor_tt }
 			set_country_flag = SOV_contruction_focus_taken
 			set_country_flag = SOV_military_construction_focus_taken
 		}
 		
 		remove_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_construction_speed_mil_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_construction_speed_civ_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.05 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 
 		days_remove = 180
@@ -2991,20 +2987,16 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 tooltip = production_speed_buildings_factor_tt }
 			set_country_flag = SOV_contruction_focus_taken
 			set_country_flag = SOV_civilian_construction_focus_taken
 		}
 		
 		remove_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
-			custom_effect_tooltip = SOV_construction_speed_mil_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = -0.05 }
-			custom_effect_tooltip = SOV_construction_speed_civ_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = -0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
 			set_country_flag = SOV_civilian_construction_focus_completed
 		}
 
@@ -3030,16 +3022,13 @@ SOV_gosplan_decisions_category = {
         fire_only_once = yes
         complete_effect = {
             custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-            #custom_effect_tooltip = SOV_remove_civilian_construction_focus_tt
             hidden_effect = {
                 # Cancel the final modifiers from Focus on Civilian Construction.
                 add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.05 }
                 add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.05 }
             }
-            custom_effect_tooltip = SOV_construction_speed_mil_10_tt
-            add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 }
-            custom_effect_tooltip = SOV_construction_speed_civ-10_tt
-            add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.1 }
+            add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+            add_to_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = -0.1 tooltip = production_speed_industrial_complex_factor_tt }
             set_country_flag = SOV_military_construction_refocus_taken
         }
         cost = 25
@@ -3068,14 +3057,14 @@ SOV_gosplan_decisions_category = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SOV_construction_speed_-075_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 }
+			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 
 		remove_effect = {
 			add_stability = 0.05
-			custom_effect_tooltip = SOV_construction_speed_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
+			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
 			hidden_effect = {
 				add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.075 }
 			}
@@ -3232,11 +3221,8 @@ SOV_gosplan_decisions_category = {
 
 		remove_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_075_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.075 }
-			
-			custom_effect_tooltip = SOV_efficiency_growth_5_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.075 tooltip = research_speed_factor_tt }
+			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3289,14 +3275,12 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_-5_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_stability_factor_var = -0.05 tooltip = stability_factor_tt }
 		}
 		
 		remove_effect = {
             custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_stability_15_tt
-			add_to_variable = { SOV_command_economy_stability_factor_var = 0.15 }
+			add_to_variable = { SOV_command_economy_stability_factor_var = 0.15 tooltip = stability_factor_tt }
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_increase_5_year_plan_1_tt 
@@ -3342,11 +3326,8 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_5_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 }
-			
-			custom_effect_tooltip = SOV_construction_speed_-5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.05 tooltip = production_speed_buildings_factor_tt }
 		}
 
 		ai_will_do = {
@@ -3389,8 +3370,7 @@ SOV_gosplan_decisions_category = {
 
 		remove_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_-5_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = -0.05 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = -0.05 tooltip = research_speed_factor_tt }
 		}
 
 		ai_will_do = {
@@ -3432,8 +3412,7 @@ SOV_gosplan_decisions_category = {
 
 		remove_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_5_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.05 tooltip = research_speed_factor_tt }
 		}
 
 		ai_will_do = {
@@ -3893,12 +3872,8 @@ SOV_gosplan_decisions_category = {
 				army_experience = -50
 			}
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-
-			custom_effect_tooltip = SOV_red_army_special_forces_attack_factor_5_tt
-			add_to_variable = { SOV_red_army_special_forces_attack_factor_var = 0.05 }
-
-			custom_effect_tooltip = SOV_red_army_special_forces_defence_factor_5_tt
-			add_to_variable = { SOV_red_army_special_forces_defence_factor_var = 0.05 }
+			add_to_variable = { SOV_red_army_special_forces_attack_factor_var = 0.05 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { SOV_red_army_special_forces_defence_factor_var = 0.05 tooltip = special_forces_defence_factor_tt }
 		}
 
 		fire_only_once = yes
@@ -4070,8 +4045,7 @@ SOV_gosplan_decisions_category = {
 			}
 			navy_experience = 50
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_1_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 tooltip = research_speed_factor_tt }
 		}
 
 		fire_only_once = yes
@@ -4106,8 +4080,7 @@ SOV_gosplan_decisions_category = {
 			}
 			army_experience = 25
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_1_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 tooltip = research_speed_factor_tt }
 		}
 
 		fire_only_once = yes
@@ -4142,8 +4115,7 @@ SOV_gosplan_decisions_category = {
 			}
 			air_experience = 25
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_research_speed_1_tt
-			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 }
+			add_to_variable = { SOV_command_economy_research_speed_factor_var = 0.01 tooltip = research_speed_factor_tt }
 		}
 
 		fire_only_once = yes

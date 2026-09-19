@@ -703,18 +703,6 @@ characters = {
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-		# on_add = {
-		# 	add_power_balance_value = {
-		# 		id = SOV_army_bop
-		# 		value = -0.2
-		# 	}
-		# }
-		# on_remove = {
-		# 	add_power_balance_value = {
-		# 		id = SOV_army_bop
-		# 		value = 0.2
-		# 	}
-		# }
 
 	}
   
