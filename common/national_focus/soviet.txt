@@ -219,7 +219,7 @@
 		}
 
 		available = {
-			has_political_power > 100
+			has_political_power > 50
 		}
 
 		available_if_capitulated = yes
@@ -228,7 +228,7 @@
 		}
 
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
@@ -3118,7 +3118,7 @@
 		search_filters = { FOCUS_FILTER_STABILITY  FOCUS_FILTER_POLITICAL  FOCUS_FILTER_BALANCE_OF_POWER }
 
 		relative_position_id = SOV_pol_general1
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -3132,8 +3132,6 @@
 			create_intelligence_agency = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_political_power = -50
 			add_stability = 0.075
 			add_war_support = 0.075
 			add_power_balance_value = {
@@ -16514,7 +16512,7 @@
 		x = 4
 		y = 1
 		relative_position_id = SOV_reorganize_red_army
-		cost = 5
+		cost = 3
 
 
 		
@@ -16543,7 +16541,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_fix_airforce
-		cost = 5
+		cost = 3
 
 
 		
@@ -16572,7 +16570,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_fix_fighters
-		cost = 5
+		cost = 3
 
 
 		
