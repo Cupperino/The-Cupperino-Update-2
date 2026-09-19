@@ -392,6 +392,7 @@
  chromium_green_tt: "[?resource@chromium|0+]"
 
  consumer_goods_factor_custom_tt: " $MODIFIER_CONSUMER_GOODS_FACTOR$: §Yset to 80%§!"
+ conversion_cost_mil_to_civ_factor_tt: " $MODIFIER_CONVERSION_COST_MIL_TO_CIV_FACTOR$: $RIGHT|-=%1$"
 
 
  marines_cap_tt: "$MODIFIER_MARINES_SPECIAL_FORCES_CONTRIBUTION_FACTOR$: $RIGHT|-=%1$"

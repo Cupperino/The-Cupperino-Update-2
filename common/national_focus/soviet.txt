@@ -7510,6 +7510,11 @@
 			
 			custom_effect_tooltip = SOV_stability_5_tt
 			add_to_variable = { SOV_command_economy_stability_factor_var = 0.05 }
+
+			add_to_variable = { 
+				SOV_command_economy_conversion_cost_mil_to_civ_factor_var = -0.30 
+				tooltip = conversion_cost_civ_to_mil_factor_tt
+			}
 			
 			# custom_effect_tooltip = SOV_consumer_good_factor_3_tt
 			# add_to_variable = { SOV_command_economy_consumer_goods_factor_var = 0.03 }
