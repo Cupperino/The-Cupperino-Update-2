@@ -206,7 +206,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 	priority = 1
 
 	days = 60
-	network_strength = 35
+	network_strength = 25
 	operatives = 1
 
 	visible = {
@@ -732,7 +732,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 	priority = 4
 	
 	days = 60
-	network_strength = 50
+	network_strength = 40
 	operatives = 1
 
 	visible = {
@@ -885,7 +885,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 	priority = 5
 	
 	days = 60
-	network_strength = 50
+	network_strength = 40
 	operatives = 1
 
 	visible = {
@@ -1047,7 +1047,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 	priority = 6
 
 	days = 60
-	network_strength = 50
+	network_strength = 40
 	operatives = 1
 
 	visible = {
