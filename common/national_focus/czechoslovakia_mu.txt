@@ -14961,7 +14961,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 4
+						amount = 40
 					}
 				}
 			}
@@ -15045,11 +15045,11 @@ focus_tree = {
 					prioritize = { 9 }
 					add_resource = {
 						type = coal
-						amount = 8
+						amount = 80
 					}
 					add_resource = {
 						type = steel
-						amount = 2
+						amount = 20
 					}
 				}
 			}
@@ -15248,7 +15248,7 @@ focus_tree = {
 				prioritize = { 70 }
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 20
 				}
 			}
 			random_core_state = {
@@ -15258,7 +15258,7 @@ focus_tree = {
 				prioritize = { 75 }
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 20
 				}
 			}
 			random_core_state = {
@@ -15268,7 +15268,7 @@ focus_tree = {
 				prioritize = { 71 }
 				add_resource = {
 					type = oil
-					amount = 1
+					amount = 10
 				}
 			}
 		}
@@ -15391,11 +15391,11 @@ focus_tree = {
 					prioritize = { 69 }
 					add_resource = {
 						type = tungsten
-						amount = 5
+						amount = 50
 					}
 					add_resource = {
 						type = coal
-						amount = 2
+						amount = 20
 					}
 				}
 			}
@@ -15412,7 +15412,7 @@ focus_tree = {
 					prioritize = { 972 }
 					add_resource = {
 						type = tungsten
-						amount = 3
+						amount = 30
 					}
 				}
 			}
@@ -15429,7 +15429,7 @@ focus_tree = {
 					prioritize = { 74 }
 					add_resource = {
 						type = coal
-						amount = 1
+						amount = 10
 					}
 				}
 			}
@@ -15524,7 +15524,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = aluminium
-						amount = 2
+						amount = 20
 					}
 				}
 			}
