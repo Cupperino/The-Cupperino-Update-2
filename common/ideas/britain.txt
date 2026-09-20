@@ -585,22 +585,10 @@ ideas = {
 			picture = generic_air_bonus
 				
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_all_small_plane = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				CAS_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.075 instant = yes
 				}
 			}
@@ -697,7 +685,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_only_light_fighter_no_cv = {
 					build_cost_ic = -0.03 instant = yes
 				}
 			}
@@ -728,7 +716,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					air_range = 0.1 instant = yes
 				}
 			}
@@ -754,7 +742,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					build_cost_ic = -0.1 instant = yes
 					air_range = 0.1 instant = yes
 				}
@@ -780,7 +768,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					air_range = 0.05 instant = yes
 				}
 			}
@@ -805,7 +793,7 @@ ideas = {
 				air_strategic_bomber_bombing_factor = 0.125
 			}
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					build_cost_ic = -0.05 instant = yes
 					air_range = 0.05 instant = yes
 				}
@@ -830,7 +818,7 @@ ideas = {
 				air_range_factor = 0.05
 			}
 			equipment_bonus = {
-				tac_bomber_equipment = {
+				mio_cat_eq_only_tactical_bomber = {
 					air_range = 0.05 instant = yes
 				}
 			}
@@ -856,7 +844,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				tac_bomber_equipment = {
+				mio_cat_eq_only_tactical_bomber = {
 					build_cost_ic = -0.1 instant = yes
 					air_range = 0.05 instant = yes
 				}
@@ -901,7 +889,7 @@ ideas = {
 				air_range_factor = 0.05
 			}
 			equipment_bonus = {
-				tac_bomber_equipment = {
+				mio_cat_eq_only_tactical_bomber = {
 					build_cost_ic = -0.05 instant = yes
 					air_range = 0.05 instant = yes
 				}
@@ -925,7 +913,7 @@ ideas = {
 				air_cas_efficiency = 0.05
 			}
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					air_range = 0.15 instant = yes
 				}
 			}
@@ -949,11 +937,11 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 					air_range = 0.15 instant = yes
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -975,7 +963,7 @@ ideas = {
 				ground_attack_factor = 0.05
 			}
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					air_range = 0.05 instant = yes
 				}
 			}
@@ -998,11 +986,11 @@ ideas = {
 				air_cas_efficiency = 0.05
 			}
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.05 instant = yes
 					air_range = 0.05 instant = yes
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1093,11 +1081,7 @@ ideas = {
 			removal_cost = -1
 				
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05
-					#air_agility = 0.03
-				}
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter = {
 					build_cost_ic = -0.05
 					#air_agility = 0.03
 				}
@@ -1117,11 +1101,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-					#air_agility = 0.06
-				}
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter = {
 					build_cost_ic = -0.1 instant = yes
 					#air_agility = 0.06
 				}
@@ -1140,10 +1120,7 @@ ideas = {
 			removal_cost = -1
 				
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.025 instant = yes
-				}
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter = {
 					build_cost_ic = -0.025 instant = yes
 				}
 			}
@@ -1162,10 +1139,7 @@ ideas = {
 			removal_cost = -1
 				
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1305,19 +1279,19 @@ ideas = {
 			}
 				
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter_only_cv = {
 					air_attack = 0.05
 					air_defence = 0.05
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_range = 0.1
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_defence = 0.1
 				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					build_cost_ic = -0.1
 					air_defence = 0.1
 				}
@@ -1343,19 +1317,19 @@ ideas = {
 			}
 				
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter_only_cv = {
 					air_attack = 0.1
 					air_defence = 0.1
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_range = 0.15
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_defence = 0.15
 				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					build_cost_ic = -0.1
 					air_defence = 0.1
 					air_range = 0.1
@@ -1381,18 +1355,18 @@ ideas = {
 			}
 				
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter_only_cv = {
 					air_attack = 0.05
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_range = 0.05
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_defence = 0.05
 				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					build_cost_ic = -0.05
 					air_defence = 0.04
 					air_range = 0.04
@@ -1420,19 +1394,19 @@ ideas = {
 			}
 				
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter_only_cv = {
 					air_attack = 0.1
 					air_defence = 0.05
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_range = 0.1
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.05
 					air_defence = 0.1
 				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					build_cost_ic = -0.1
 					air_defence = 0.08
 					air_range = 0.08
@@ -2230,7 +2204,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_only_light_fighter_no_cv = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -3292,34 +3266,13 @@ ideas = {
 			removal_cost = -1
 						
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_all_small_plane = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				CAS_equipment = {
+				mio_cat_eq_all_medium_plane = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				cv_fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				transport_plane_equipment = {
+				mio_cat_eq_all_large_plane = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}

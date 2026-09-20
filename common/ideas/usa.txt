@@ -301,14 +301,14 @@ ideas = {
 				production_speed_synthetic_rubber_refinery_factor = 0.2
 			}
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_only_light_fighter_no_cv = {
 					air_range = 0.1 instant = yes
 					build_cost_ic = -0.2 instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				cv_fighter_equipment = {
+				mio_cat_eq_only_light_fighter_only_cv = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1846,7 +1846,7 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					air_range = 0.2 instant = yes
 				}	
 			}
@@ -1999,13 +1999,10 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				fighter_equipment = {
+				mio_cat_eq_only_light_fighter = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				cv_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -2024,13 +2021,10 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				CAS_equipment = {
+				mio_cat_eq_only_light_cas = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				cv_CAS_equipment = {
+				mio_cat_eq_only_tactical_bomber = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -2049,16 +2043,13 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				mio_cat_eq_only_strategic_bomber = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				nav_bomber_equipment = {
+				mio_cat_eq_only_light_nav = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
