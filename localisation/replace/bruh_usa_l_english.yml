@@ -156,7 +156,7 @@
   usa.1007.d:0 "You are in the allies and can now join the war.\n\nYou should probably do that."
   usa.1007.a:0 "Okay"
   usa.1008.t:0 "NO Prepositioning"
-  usa.1008.d:0 "You are not allowed to pre-position troops into Indian, Malasyian, Dutch East Indies, Australian, or New Zealand owned land prior to January 1st 1942. If you place units there, they will be teleported to either the Phillipines or Pearl Harbor.\n\nTeleporting check occurs weekly beginning in 1940 and runs till Japan is at war with the UK."
+  usa.1008.d:0 "You are not allowed to pre-position troops into Indian, Malasyian, Dutch East Indies, Australian, or New Zealand, or French/UK Asian, Oceanic, Middle Eastern, or African owned land prior to January 1st 1942. If you place units there, they will be teleported to either the Phillipines or Pearl Harbor.\n\nTeleporting check occurs weekly beginning in 1940 and will cancel when Japan is at war with the UK, or the USA is at war with anyone"
   usa.1008.a:0 "No Fun Mod"
 
 
