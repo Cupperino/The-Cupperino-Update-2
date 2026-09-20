@@ -2434,6 +2434,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			mio:AST_vickers-ruwolt_organization = {
+				unlock_mio_trait_tooltip = AST_mio_trait_better_ammo_supply
+			}
 		}
 	}
 	

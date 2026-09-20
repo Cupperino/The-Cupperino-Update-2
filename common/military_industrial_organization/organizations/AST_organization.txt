@@ -1797,7 +1797,10 @@ AST_vickers-ruwolt_organization = {
 
 		available = {
 		    owner = {
-		        has_completed_focus = AST_department_of_supply_and_development_taog
+				OR = {
+					has_completed_focus = AST_department_of_supply_and_development
+					has_completed_focus = AST_department_of_supply_and_development_taog
+				}
 		    }
 		}	
 
