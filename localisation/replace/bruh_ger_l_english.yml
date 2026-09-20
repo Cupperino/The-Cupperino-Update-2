@@ -362,6 +362,7 @@
   GER_secure_spanish_resources:0 "Secure Spanish Resources"
   GER_secure_spanish_resources_desc:0 "Now that we border our fascist brothers we should ensure their resources can help our war effort."
   GER_secure_spanish_resources_tt:0 "Adds §Y50%§! of §YSpanish Resources§! to our §YAutarky§! resource values"
+  GER_coal_growth:0 "Grow the Coal Industry"
 
 
   GER_expand_the_reichsautobahn_south_tt: "Add §G2§! §Y$infrastructure$§! in §Y[53.GetName]§!, §Y[52.GetName]§!, §Y[50.GetName]§!, §Y[152.GetName]§!, §Y[4.GetName]§! and a level §Y1§! railway from §Y[53.GetName]§! to §Y[4.GetName]§!, if §Y[ROOT.GetName]§! or a German subject controls the states. Current effect:"

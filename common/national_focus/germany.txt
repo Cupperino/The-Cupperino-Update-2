@@ -736,6 +736,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_coal_growth
+		icon = GFX_focus_generic_coal_mining
+		prerequisite = { focus = GER_workers_rights }
+
+		x = 1
+		y = 1
+		relative_position_id = GER_workers_rights
+		cost = 5
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = expand_german_coal_mines_tt
+		}
+	}
+
+	focus = {
 		id = GER_urbanization
 		icon = GFX_focus_generic_full_employment
 		prerequisite = { focus = GER_agricultural_reforms }
