@@ -1449,7 +1449,7 @@ defined_text = { # global
 				}
 			}
 		}
-		localization_key = "SotP Locations: [?global.SOTF_ALLIES_LOCATIONS]/16"
+		localization_key = "SotP Locations: [?global.SOTF_ALLIES_LOCATIONS]/20"
 	}
 	text = {
 		trigger = {
@@ -1473,7 +1473,7 @@ defined_text = { # global
 				}
 			}
 		}
-		localization_key = "SotP Locations: [?global.SOTF_GEACPS_LOCATIONS]/16"
+		localization_key = "SotP Locations: [?global.SOTF_GEACPS_LOCATIONS]/20"
 	}
 	text = {
 		trigger = {

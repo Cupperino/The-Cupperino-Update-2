@@ -10,6 +10,7 @@ state = {
 	state_category = town
 	
 	history = {
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		owner = RAJ
 		add_core_of = BRM
 		set_state_flag = RAJ_controls

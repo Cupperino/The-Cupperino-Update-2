@@ -1277,8 +1277,8 @@ scripted_gui = {
 
 			PACIFIC_SIAM_visible = {
 				count_triggers = {
-					amount > 1
-					289 = {
+					amount >1 
+					1076 = {
 						CONTROLLER = {
 							OR = {
 								tag = USA

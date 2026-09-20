@@ -55,9 +55,13 @@ WAR_IN_PACIFIC = {
 		state = 285 #Canberra
 		state = 635 #New Caledonia
 		state = 284 #Wellington
-		state = 289 #Bangkok
+		state = 1076 #Bangkok
 		state = 524 #Taiwan
 		state = 613 #Nanjing
+		state = 326 #Hong Kong
+		state = 328 #Manchukuo
+		state = 640 #Mandalay
+		state = 671 #Hanoi
 		zoom = 800
 	}
 

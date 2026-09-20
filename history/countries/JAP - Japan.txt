@@ -347,12 +347,12 @@ set_variable = { JAP_war_start_delay = 0 }
 
 # ASIA GUI - VARIABLES
 # ALLIES
-set_variable = { global.SOTF_ALLIES_LOCATIONS = 13 }
+set_variable = { global.SOTF_ALLIES_LOCATIONS = 15 }
 set_variable = { global.ISLHOP_ALLIES_LOCATIONS = 4 }
 set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 4 }
 set_variable = { global.EASTERN_BUFFER_ALLIES_LOCATIONS = 4 }
 # GEACPS
-set_variable = { global.SOTF_GEACPS_LOCATIONS = 3 }
+set_variable = { global.SOTF_GEACPS_LOCATIONS = 5 }
 set_variable = { global.ISLHOP_GEACPS_LOCATIONS = 4 }
 set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 0 }
 set_variable = { global.EASTERN_BUFFER_GEACPS_LOCATIONS = 0 }
