@@ -8,7 +8,7 @@ MIO_transfer_decisions = {
 	}
 
 	visible = {
-		NOT = { has_country_flag = disabled_mio_transfer }
-        NOT = { has_global_flag = mio_donation_enabled_flag }
+	    NOT = { has_country_flag = disabled_mio_transfer }
+        has_global_flag = mio_donation_enabled_flag
 	}
 }
