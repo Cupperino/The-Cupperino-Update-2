@@ -5980,7 +5980,7 @@
 		available_if_capitulated = yes
 
 		available = {
-			has_completed_focus = SOV_pol_purge12
+			#has_completed_focus = SOV_pol_purge12
 			#has_completed_focus = SOV_mil25
 		}
 
