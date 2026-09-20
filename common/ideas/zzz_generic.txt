@@ -1692,6 +1692,7 @@ ideas = {
 					original_tag = YUG
 					original_tag = ROM
 					original_tag = CHI
+					original_tag = SPR
 				}
 			}
 
@@ -1726,9 +1727,9 @@ ideas = {
 			cancel = {
 				if = {
 					OR = {
-						JAP = { owns_state = 200 }
-						MAN = { owns_state = 200 }
-						SIA = { owns_state = 200 }
+						JAP = { owns_state = 750 }
+						MAN = { owns_state = 750 }
+						SIA = { owns_state = 750 }
 					}
 				}
 			}

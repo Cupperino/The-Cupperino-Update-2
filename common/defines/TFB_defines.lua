@@ -874,10 +874,10 @@ NDefines.NFactions.FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR = 0.2 -- a scala
 NDefines.NFactions.FACTION_INFLUENCE_SCIENTIST_CONTRIBUTION_VALUE = 1 --how much contribution one scientists gives to you if it is working for somebody else.
 
 
-NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.02				-- How much training contributes to doctrine mastery relative to combat/missions
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.01				-- How much training contributes to doctrine mastery relative to combat/missions
 NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.5 				-- The rate at which mastery gained when a track is finished or empty is "banked"
 NDefines.NDoctrines.MASTERY_BANK_MAX = 300							-- The maximum amount of mastery that can be banked
-NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 80					-- Monthly mastery gain will not exceed this value
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 75					-- Monthly mastery gain will not exceed this value
 NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0.1	-- For each mastery track, military attaches will add this fraction of their visiting country's mastery gain (from units only) in that track
 NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0.01	-- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense
 NDefines.NDoctrines.NAVAL_MISSION_MASTERY_GAIN_FACTORS = {  -- Mastery gain from naval missions is reduced, just like training
