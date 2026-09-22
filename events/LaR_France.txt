@@ -3052,6 +3052,7 @@ country_event = {
 			FROM = { add_to_faction = ROOT }
 		}
 		load_focus_tree = french_focus
+		set_global_flag = VIC_regains_france
 		# unlock_national_focus = FRA_revive_the_national_bloc
 		# unlock_national_focus = FRA_utilize_the_leagues
 		# unlock_national_focus = FRA_national_regeneration

@@ -491,6 +491,34 @@
 		}
 	}
 	focus = {
+		id = FRA_dec_on_vichy
+		icon = GFX_focus_generic_attack_vichy_france
+		x = 1
+		y = 1
+
+		prerequisite = { focus = FRA_form_the_national_committee }
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = VIC_regains_france
+		}
+		
+		bypass = {
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VIC
+			}
+		}
+	}
+	focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
 		icon = GFX_goal_tripartite_pact
 		x = 0
