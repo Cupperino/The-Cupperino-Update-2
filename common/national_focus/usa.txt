@@ -5997,57 +5997,68 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_fund_the_navy
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
-		y = 1
-		relative_position_id = USA_two_ocean_navy_act
-		cost = 5
-		prerequisite = { focus = USA_two_ocean_navy_act }
-		ai_will_do = {
-			factor = 1
-		}
+	# focus = {
+	# 	id = USA_fund_the_navy
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	x = 7
+	# 	y = 1
+	# 	relative_position_id = USA_two_ocean_navy_act
+	# 	cost = 5
+	# 	prerequisite = { focus = USA_two_ocean_navy_act }
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = USA_fund_the_navy
-				uses = 3
-				cost_reduction = 0.25
-				category = naval_doctrine
-			}
-		}
-	}
+	# 	search_filters = {FOCUS_FILTER_RESEARCH}
+	# 	completion_reward = {
+	# 		add_doctrine_cost_reduction = {
+	# 			name = USA_fund_the_navy
+	# 			uses = 3
+	# 			cost_reduction = 0.25
+	# 			category = naval_doctrine
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = USA_liberty_ships
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = USA_fund_the_navy }
-		x = -0
+		prerequisite = { focus = USA_two_ocean_navy_act }
+		x = 0
 		y = 1
-		relative_position_id = USA_fund_the_navy
-		cost = 5
+		relative_position_id = USA_two_ocean_navy_act
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available = {
+			ENG = { has_war_with = GER }
+			FRA = { has_capitulated = yes }
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = liberty_ships_focus
+			ENG = { 
+				add_timed_idea = { 
+					idea = USA_convoys 
+					days = 365
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = USA_liberty_ships }
+		prerequisite = { focus = USA_advanced_basing }
 		x = 0
 		y = 1
-		relative_position_id = USA_liberty_ships
+		relative_position_id = USA_advanced_basing
 		cost = 5
 		#ai_will_do = {
 		#	factor = 1
