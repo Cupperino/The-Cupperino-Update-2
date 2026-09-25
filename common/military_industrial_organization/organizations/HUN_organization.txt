@@ -460,6 +460,30 @@ HUN_digep_artillery = {
 		has_dlc = "Arms Against Tyranny"
 		has_dlc = "Gotterdammerung"
 	}
+	
+	add_trait = { 
+        token = generic_mountain_gun_rom
+        name = generic_mio_mountain_gun
+        icon = GFX_generic_mio_trait_icon_breakthrough
+        special_trait_background = yes
+
+        position = { x=9 y=0 }
+        
+        available = {
+            FROM = {
+                has_completed_focus = wuw_HUN_transylvanian_mountaineers
+            }
+        }
+
+		limit_to_equipment_type = { 
+			pack_artillery_equipment
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+		}
+    }
 
 	available = {
 	}
