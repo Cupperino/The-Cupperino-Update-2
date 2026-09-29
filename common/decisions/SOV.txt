@@ -3058,13 +3058,13 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 tooltip = production_speed_buildings_factor_tt }
 		}
 
 		remove_effect = {
 			add_stability = 0.05
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_buildings_factor_tt }
 			hidden_effect = {
 				add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.075 }
 			}
