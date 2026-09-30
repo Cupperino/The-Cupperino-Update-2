@@ -468,9 +468,10 @@
 					has_dlc = "Man the Guns"
 				}
 				has_legitimacy > 90
+				date > 1941.6.1
 			}
 			else = {
-				num_of_factories > 24
+				date > 1942.1.1
 			}
 		}
 		
@@ -487,6 +488,12 @@
 			create_wargoal = {
 				type = annex_everything
 				target = VIC
+			}
+			310 = {
+				set_state_controller_to = ROOT
+			}
+			694 = {
+				set_state_controller_to = ROOT
 			}
 		}
 	}

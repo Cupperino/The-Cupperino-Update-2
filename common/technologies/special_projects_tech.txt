@@ -58,7 +58,7 @@ technologies = {
 		start_year = 1936
 		enable_building = {
 			building = stronghold_network
-			level = 1
+			level = 5
 		}
 	}
 	

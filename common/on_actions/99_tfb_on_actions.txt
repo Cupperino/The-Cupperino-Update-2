@@ -2053,6 +2053,20 @@ on_actions = {
 					add_offsite_building = { type = dockyard level = POL_num_of_war_docs }
 				}
 				set_variable = { global.poland_fall_date = global.date }
+				if = {
+					limit = {
+						NOT = {
+							ROM = { has_government = fascism } 
+						}
+						ROM = { 
+							owns_state = 78 # BESSARABIA
+							owns_state = 766 # S. BESSARABIA
+						} 
+					}
+					POL = {
+						country_event = { id = tfb.poland.3 }
+					}
+				}
 			}
 		}
 		# Denied Czechs Stuff
