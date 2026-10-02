@@ -630,7 +630,7 @@
 
 		completion_reward = {
 			add_political_power = 25
-			custom_effect_tooltip = SOV_big_purge_4_tt
+			#custom_effect_tooltip = SOV_big_purge_4_tt
 			set_country_flag = SOV_big_purge_decision4_flag
 				remove_power_balance = {
 				id = SOV_purge_bop 
@@ -5924,7 +5924,7 @@
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery = {
-				amount = 150
+				amount = 100
 				folder = land
 			}
 		}
@@ -6066,7 +6066,8 @@
 				SOV_konstantin_rokossovsky = {
 					remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army_weaker
 					add_skill_level = 1
-					
+					add_logistics = 1
+					add_attack = 1
 					hidden_effect = {
 						remove_unit_leader_trait = panzer_leader
 						remove_unit_leader_trait = cavalry_leader
@@ -6086,6 +6087,8 @@
 				SOV_konstantin_rokossovsky = {
 					remove_unit_leader_trait = trait_SOV_cowed_by_stalin_army
 					add_skill_level = 1
+					add_logistics = 1
+					add_attack = 1
 					hidden_effect = {
 						remove_unit_leader_trait = panzer_leader
 						remove_unit_leader_trait = cavalry_leader
@@ -8035,6 +8038,11 @@
 			custom_effect_tooltip = SOV_more_decisions_generic_tt
 			unlock_decision_tooltip = { decision = SOV_military_construction_focus show_effect_tooltip = no }
 			unlock_decision_tooltip = { decision = SOV_civilian_construction_focus show_effect_tooltip = no }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = available_political_advisor
+			custom_effect_tooltip = SOV_nikolay_voznesensky
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			add_tech_bonus = {
