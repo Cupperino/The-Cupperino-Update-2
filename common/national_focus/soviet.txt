@@ -2256,7 +2256,7 @@
 			add_ideas = SOV_winter_war_soviet_nerf
 			#activate_mission = SOV_winter_war_lessons_mission
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
-			add_to_variable = { SOV_red_army_land_mastery_gain_factor_var = 0.6 tooltip = land_mastery_gain_factor_tt }
+			add_to_variable = { SOV_red_army_land_mastery_gain_factor_var = 0.5 tooltip = land_mastery_gain_factor_tt }
 
 			hidden_effect = {
 				add_state_claim = 146
