@@ -622,6 +622,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_1_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 				OR = { arms_factory > 0 industrial_complex > 0 }
 			}
 		}
@@ -632,6 +633,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_1_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 			}
 		}
 
@@ -647,6 +649,7 @@ SOV_gosplan_decisions_category = {
 				limit = {
 					is_controlled_by = ROOT
 					SOV_is_industrial_relocation_area_1_state = yes
+					NOT = { has_state_flag = GER_captured }
 				}
 
 				if = {
@@ -727,6 +730,7 @@ SOV_gosplan_decisions_category = {
 					any_owned_state = {
 						SOV_is_industrial_relocation_area_1_state = yes
 						is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
 						OR = { arms_factory > 0 industrial_complex > 0 }
 					}
 				}
@@ -739,6 +743,7 @@ SOV_gosplan_decisions_category = {
 						any_owned_state = {
 							SOV_is_industrial_relocation_area_1_state = yes
 							is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
 							OR = { arms_factory > 0 industrial_complex > 0 }
 						}
 					}
@@ -753,6 +758,7 @@ SOV_gosplan_decisions_category = {
 				any_owned_state = {
 					SOV_is_industrial_relocation_area_1_state = yes
 					is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
 				}
 			}
 		}
@@ -769,6 +775,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_2_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 				OR = { arms_factory > 0 industrial_complex > 0 }
 			}
 		}
@@ -779,6 +786,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_2_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 			}
 		}
 
@@ -795,6 +803,7 @@ SOV_gosplan_decisions_category = {
 				limit = {
 					is_controlled_by = ROOT
 					SOV_is_industrial_relocation_area_2_state = yes
+					NOT = { has_state_flag = GER_captured }
 				}
 				
 				# --- LOGIC FOR MILITARY FACTORIES ---
@@ -889,6 +898,7 @@ SOV_gosplan_decisions_category = {
 					any_owned_state = {
 						SOV_is_industrial_relocation_area_2_state = yes
 						is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
 						OR = { arms_factory > 0 industrial_complex > 0 }
 					}
 				}
@@ -903,6 +913,7 @@ SOV_gosplan_decisions_category = {
 						any_owned_state = {
 							SOV_is_industrial_relocation_area_2_state = yes
 							is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
 							OR = { arms_factory > 0 industrial_complex > 0 }
 						}
 					}
@@ -917,6 +928,7 @@ SOV_gosplan_decisions_category = {
 				any_owned_state = {
 					SOV_is_industrial_relocation_area_2_state = yes
 					is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
 				}
 			}
 		}
@@ -933,6 +945,7 @@ SOV_gosplan_decisions_category = {
             any_owned_state = {
                 SOV_is_industrial_relocation_area_3_state = yes
                 is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
                 OR = { arms_factory > 0 industrial_complex > 0 }
             }
         }
@@ -943,6 +956,7 @@ SOV_gosplan_decisions_category = {
             any_owned_state = {
                 SOV_is_industrial_relocation_area_3_state = yes
                 is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
             }
         }
 
@@ -959,6 +973,7 @@ SOV_gosplan_decisions_category = {
                 limit = {
                     is_controlled_by = ROOT
                     SOV_is_industrial_relocation_area_3_state = yes
+					NOT = { has_state_flag = GER_captured }
                 }
                 
                 # --- MILITARY FACTORIES ---
@@ -1047,6 +1062,7 @@ SOV_gosplan_decisions_category = {
                     any_owned_state = {
                         SOV_is_industrial_relocation_area_3_state = yes
                         is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
                         OR = { arms_factory > 0 industrial_complex > 0 }
                     }
                 }
@@ -1060,6 +1076,7 @@ SOV_gosplan_decisions_category = {
                         any_owned_state = {
                             SOV_is_industrial_relocation_area_3_state = yes
                             is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
                             OR = { arms_factory > 0 industrial_complex > 0 }
                         }
                     }
@@ -1074,6 +1091,7 @@ SOV_gosplan_decisions_category = {
                 any_owned_state = {
                     SOV_is_industrial_relocation_area_3_state = yes
                     is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
                 }
             }
         }
