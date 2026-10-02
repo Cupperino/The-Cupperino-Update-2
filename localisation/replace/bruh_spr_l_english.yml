@@ -80,7 +80,7 @@
   SPA_mechanize_our_brigades_desc:0 "Infantry must keep pace with the tanks. We will provide our best divisions with half-tracks and armored transports."
   SPA_develop_armored_cavalry:0 "Develop Armored Cavalry"
   SPA_develop_armored_cavalry_desc:0 "The era of the horse is over, but the mission of the reconnaissance and fast moving shock units is still as relevant as ever."
-  SPA_axis_technical_support_desc:0 "Axis Technical Support"
+  SPA_axis_technical_support:0 "Axis Technical Support"
   SPA_improve_on_our_designs:0 "Improve on our Designs"
   SPA_improve_on_our_designs_desc:0 "We have learned much from our foreign friends and have much to learn. However it is now the time to surpass them with Spanish ingenuity."
   SPA_german_designed_spanish_produced:0 "German Designed, Spanish Produced"
