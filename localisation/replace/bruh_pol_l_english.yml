@@ -37,3 +37,13 @@
  tfb_poland.2.t:0 "[FROM.GetNameDefCap] Refuses"
  tfb_poland.2.d:0 "[FROM.GetNameDefCap] has refused our request to transfer ownership of [298.GetName] and [700.GetName]. Our industry and forces will have to remain in our host's capital."
  tfb_poland.2.a:0 "Very well."
+
+ tfb_poland.3.t:0 "The Romanian Bridgehead"
+ tfb_poland.3.d:0 "Bucharest is willing to let our forces escape via the Bessarabian Corridor to continue the fight with the Allies. In return we will hand over what is left of the treasury to the Romanian Government."
+ tfb_poland.3.a:0 "Poland is not yet lost!"
+ tfb_poland.3.b:0 "We cannot aid the fascists or communists!"
+
+ tfb_poland.4.t:0 "The Romanian Bridgehead"
+ tfb_poland.4.d:0 "As previously promised, we have let the Polish escape via the Romanian Bridgehead. In return they've given us what is left of their treasury reserves."
+ tfb_poland.4.a:0 "It's free money"
+ 

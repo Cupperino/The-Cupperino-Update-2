@@ -24,6 +24,7 @@ state={
 			infrastructure = 7
 			industrial_complex = 5
 			arms_factory = 4
+			stronghold_network = 3
 			549 = {
 				bunker = 5
 				fortress = 5

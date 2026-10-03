@@ -750,8 +750,8 @@ set_variable = { SOV_command_economy_production_speed_infrastructure_factor_var 
 set_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = -0.1 }
 set_variable = { SOV_command_economy_production_speed_industrial_complex_factor_var = 0.15 }
 #set_variable = { SOV_command_economy_production_speed_dockyard_factor_var = -0.25 }
-set_variable = { SOV_command_economy_conversion_cost_mil_to_civ_factor_var = 0 }
-set_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = 0.3 }
+set_variable = { SOV_command_economy_conversion_cost_mil_to_civ_factor_var = 0.3 }
+set_variable = { SOV_command_economy_conversion_cost_civ_to_mil_factor_var = 0 }
 
 # Refinery Speed
 set_variable = { SOV_command_economy_production_speed_synthetic_rubber_refinery_factor_var = 0 }
@@ -823,7 +823,7 @@ set_technology = {
 	set_variable = { SOV_red_army_promote_cost_factor_var = 5 }
 	set_variable = { SOV_red_army_land_doctrine_cost_factor_var = 0.3 }
 	set_variable = { SOV_red_army_experience_gain_factor_var = -0.1 }
-	set_variable = { SOV_red_army_land_mastery_gain_factor_var = -0.6 }
+	set_variable = { SOV_red_army_land_mastery_gain_factor_var = -0.4 }
 
 	# Supply
 	set_variable = { SOV_red_army_supply_combat_penalties_on_core_factor_var = -0.1 }

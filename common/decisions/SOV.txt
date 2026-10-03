@@ -622,6 +622,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_1_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 				OR = { arms_factory > 0 industrial_complex > 0 }
 			}
 		}
@@ -632,6 +633,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_1_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 			}
 		}
 
@@ -647,6 +649,7 @@ SOV_gosplan_decisions_category = {
 				limit = {
 					is_controlled_by = ROOT
 					SOV_is_industrial_relocation_area_1_state = yes
+					NOT = { has_state_flag = GER_captured }
 				}
 
 				if = {
@@ -727,6 +730,7 @@ SOV_gosplan_decisions_category = {
 					any_owned_state = {
 						SOV_is_industrial_relocation_area_1_state = yes
 						is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
 						OR = { arms_factory > 0 industrial_complex > 0 }
 					}
 				}
@@ -739,6 +743,7 @@ SOV_gosplan_decisions_category = {
 						any_owned_state = {
 							SOV_is_industrial_relocation_area_1_state = yes
 							is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
 							OR = { arms_factory > 0 industrial_complex > 0 }
 						}
 					}
@@ -753,6 +758,7 @@ SOV_gosplan_decisions_category = {
 				any_owned_state = {
 					SOV_is_industrial_relocation_area_1_state = yes
 					is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
 				}
 			}
 		}
@@ -769,6 +775,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_2_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 				OR = { arms_factory > 0 industrial_complex > 0 }
 			}
 		}
@@ -779,6 +786,7 @@ SOV_gosplan_decisions_category = {
 			any_owned_state = {
 				SOV_is_industrial_relocation_area_2_state = yes
 				is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
 			}
 		}
 
@@ -795,6 +803,7 @@ SOV_gosplan_decisions_category = {
 				limit = {
 					is_controlled_by = ROOT
 					SOV_is_industrial_relocation_area_2_state = yes
+					NOT = { has_state_flag = GER_captured }
 				}
 				
 				# --- LOGIC FOR MILITARY FACTORIES ---
@@ -889,6 +898,7 @@ SOV_gosplan_decisions_category = {
 					any_owned_state = {
 						SOV_is_industrial_relocation_area_2_state = yes
 						is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
 						OR = { arms_factory > 0 industrial_complex > 0 }
 					}
 				}
@@ -903,6 +913,7 @@ SOV_gosplan_decisions_category = {
 						any_owned_state = {
 							SOV_is_industrial_relocation_area_2_state = yes
 							is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
 							OR = { arms_factory > 0 industrial_complex > 0 }
 						}
 					}
@@ -917,6 +928,7 @@ SOV_gosplan_decisions_category = {
 				any_owned_state = {
 					SOV_is_industrial_relocation_area_2_state = yes
 					is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
 				}
 			}
 		}
@@ -933,6 +945,7 @@ SOV_gosplan_decisions_category = {
             any_owned_state = {
                 SOV_is_industrial_relocation_area_3_state = yes
                 is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
                 OR = { arms_factory > 0 industrial_complex > 0 }
             }
         }
@@ -943,6 +956,7 @@ SOV_gosplan_decisions_category = {
             any_owned_state = {
                 SOV_is_industrial_relocation_area_3_state = yes
                 is_controlled_by = ROOT
+				NOT = { has_state_flag = GER_captured }
             }
         }
 
@@ -959,6 +973,7 @@ SOV_gosplan_decisions_category = {
                 limit = {
                     is_controlled_by = ROOT
                     SOV_is_industrial_relocation_area_3_state = yes
+					NOT = { has_state_flag = GER_captured }
                 }
                 
                 # --- MILITARY FACTORIES ---
@@ -1047,6 +1062,7 @@ SOV_gosplan_decisions_category = {
                     any_owned_state = {
                         SOV_is_industrial_relocation_area_3_state = yes
                         is_controlled_by = ROOT
+						NOT = { has_state_flag = GER_captured }
                         OR = { arms_factory > 0 industrial_complex > 0 }
                     }
                 }
@@ -1060,6 +1076,7 @@ SOV_gosplan_decisions_category = {
                         any_owned_state = {
                             SOV_is_industrial_relocation_area_3_state = yes
                             is_controlled_by = ROOT
+							NOT = { has_state_flag = GER_captured }
                             OR = { arms_factory > 0 industrial_complex > 0 }
                         }
                     }
@@ -1074,6 +1091,7 @@ SOV_gosplan_decisions_category = {
                 any_owned_state = {
                     SOV_is_industrial_relocation_area_3_state = yes
                     is_controlled_by = ROOT
+					NOT = { has_state_flag = GER_captured }
                 }
             }
         }
@@ -1676,6 +1694,7 @@ SOV_gosplan_decisions_category = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 404
+			has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		highlight_states = {
@@ -1692,7 +1711,7 @@ SOV_gosplan_decisions_category = {
 					has_state_flag = kyzla_tungsten_developed
 				}
 			}
-			has_completed_focus = SOV_heavy_wealth_of_the_motherland
+			#has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		fire_only_once = yes
@@ -1774,6 +1793,7 @@ SOV_gosplan_decisions_category = {
 			has_tech = construction2
 			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 573
+			has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		highlight_states = {
@@ -1790,7 +1810,7 @@ SOV_gosplan_decisions_category = {
 					has_state_flag = zlatoust_aluminium_developed
 				}
 			}
-			has_completed_focus = SOV_heavy_wealth_of_the_motherland
+			#has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		fire_only_once = yes
@@ -1976,6 +1996,7 @@ SOV_gosplan_decisions_category = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 220
+			has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		visible = {
@@ -1989,7 +2010,7 @@ SOV_gosplan_decisions_category = {
 					}
 				}
 			}
-			has_completed_focus = SOV_heavy_wealth_of_the_motherland
+			#has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		cost = 25
@@ -2747,6 +2768,7 @@ SOV_gosplan_decisions_category = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 407
+			has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		highlight_states = {
@@ -2763,7 +2785,7 @@ SOV_gosplan_decisions_category = {
 					has_state_flag = uralsk_chromium_developed
 				}
 			}
-			has_completed_focus = SOV_heavy_wealth_of_the_motherland
+			#has_completed_focus = SOV_heavy_wealth_of_the_motherland
 		}
 
 		fire_only_once = yes
@@ -2936,7 +2958,7 @@ SOV_gosplan_decisions_category = {
 		
 		visible = {
 			has_variable = gosplan_heavy_industry
-			has_completed_focus = SOV_heavy_industrial_expansion
+			#has_completed_focus = SOV_heavy_industrial_expansion
 			NOT = { has_country_flag = SOV_contruction_focus_taken }
 		}
 		
@@ -3058,13 +3080,13 @@ SOV_gosplan_decisions_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = -0.075 tooltip = production_speed_buildings_factor_tt }
 		}
 
 		remove_effect = {
 			add_stability = 0.05
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 tooltip = production_speed_buildings_factor_tt }
 			hidden_effect = {
 				add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.075 }
 			}

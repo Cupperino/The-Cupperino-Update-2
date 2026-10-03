@@ -17137,7 +17137,7 @@ focus_tree = {
 		id = wuw_HUN_expand_the_hungarian_academy_of_sciences
 		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = wuw_HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = wuw_HUN_invite_foreign_investors }
+		#mutually_exclusive = { focus = wuw_HUN_invite_foreign_investors }
 		x = 0
 		y = 2
 		relative_position_id = wuw_HUN_announce_the_gyor_program
@@ -17373,7 +17373,7 @@ focus_tree = {
 		id = wuw_HUN_invite_foreign_investors
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = wuw_HUN_devalue_the_pengo }
-		mutually_exclusive = { focus = wuw_HUN_expand_the_hungarian_academy_of_sciences }
+		#mutually_exclusive = { focus = wuw_HUN_expand_the_hungarian_academy_of_sciences }
 		x = 0
 		y = 2
 		relative_position_id = wuw_HUN_devalue_the_pengo
@@ -17541,7 +17541,13 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = aluminium
-					amount = 140
+					amount = 150
+				}
+			}
+			155 = {
+				add_resource = {
+					type = aluminium
+					amount = 100
 				}
 			}
 		}
@@ -19974,6 +19980,10 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			mio:HUN_digep_artillery = {
+				complete_mio_trait = generic_mountain_gun_rom
+			}			
 
 			# IF = {
 			# 	limit = {
@@ -19981,7 +19991,7 @@ focus_tree = {
 			# 			has_tech = mountain_gun
 			# 		}
 			# 	}
-				custom_effect_tooltip = ROM_mountain_artillery_tech_tt
+			#	custom_effect_tooltip = ROM_mountain_artillery_tech_tt
 			# 	hidden_effect = { set_technology = { mountain_gun = 1 } }
 			# }
 

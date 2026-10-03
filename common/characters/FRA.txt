@@ -83,10 +83,6 @@ characters={
 			}
 		}
 		
-		
-		
-		
-		
 	}
 
 	FRA_jean_de_lattre_de_tassigny={
@@ -215,10 +211,7 @@ characters={
 							has_global_flag = FRA_DEFENSIVE
 						}
 					}
-					AND = {
-						has_government = fascism
-						has_global_flag = FRA_AGGRESSIVE
-					}
+					has_government = fascism
 				}
 			}
 			cost = 100.000

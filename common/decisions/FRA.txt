@@ -333,10 +333,18 @@ category_test_decisions = {
 							state = 25
 							state = 33
 							state = 1
+							state = 310
+							state = 694
 						}
 					}
 					add_core_of = PREV
 					event_target:france_vichy = { transfer_state = PREV }
+				}
+				310 = {
+					set_demilitarized_zone = yes
+				}
+				694 = {
+					set_demilitarized_zone = yes
 				}
 				every_state = {
 					limit = {
@@ -359,6 +367,11 @@ category_test_decisions = {
 					fascism = 80
 					communism = 0
 				}
+				set_rule = { 
+					can_join_factions = no 
+					can_create_factions = no
+					can_not_declare_war = yes
+				}
 				FRA = {
 					FRA_philippe_petain= {
 						set_nationality = event_target:france_vichy	
@@ -370,7 +383,7 @@ category_test_decisions = {
 							expire = "1965.1.1"
 							ideology = fascism_ideology
 							traits = {
-								
+								subservient_ultranationalist
 							}
 						}
 						promote_leader = yes

@@ -258,7 +258,8 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				training_time_army_factor = -0.2
+				training_time_army_factor = -0.25
+				minimum_training_level = -0.2
 			}
 		}
 

@@ -94,6 +94,53 @@
 				producer = FRA 
 				variant_name = "Somua S35" 
 			}
+			custom_effect_tooltip = FRA_equip_foreign_exiles_tt
+			hidden_effect = {
+				FRA = {
+					division_template = {
+						name = "Foreign Exiles"
+						division_names_group = FRA_INF_01
+							regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							anti_tank_brigade = { x = 4 y = 0 }
+							anti_tank_brigade = { x = 4 y = 1 }
+							anti_tank_brigade = { x = 4 y = 2 }
+						}
+						support = {
+							#hq_company = { x = 0 y = 0 } 
+							engineer = { x = 0 y = 0 }   
+							recon = { x = 0 y = 1 }
+							logistics_company  = { x = 0 y = 2 }
+							anti_air = { x = 0 y = 3 }
+						}
+					}
+				}
+				ENG = {
+					random_owned_controlled_state = {
+						prioritize = { 454 455 453 457 551 }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+						create_unit = { division = "division_template = \"Foreign Exiles\" start_experience_factor = 0.3 force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } squad_equipment_0 = { owner = \"ENG\" } artillery_equipment_1 = { owner = \"ENG\" } anti_tank_equipment_1 = { owner = \"ENG\" } }" owner = FRA }
+					}
+				}
+			}
 		}	
 	}
 
@@ -421,9 +468,10 @@
 					has_dlc = "Man the Guns"
 				}
 				has_legitimacy > 90
+				date > 1941.6.1
 			}
 			else = {
-				num_of_factories > 24
+				date > 1942.1.1
 			}
 		}
 		
@@ -437,6 +485,40 @@
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.1
+			create_wargoal = {
+				type = annex_everything
+				target = VIC
+			}
+			310 = {
+				set_state_controller_to = ROOT
+			}
+			694 = {
+				set_state_controller_to = ROOT
+			}
+		}
+	}
+	focus = {
+		id = FRA_dec_on_vichy
+		icon = GFX_focus_generic_attack_vichy_france
+		x = 1
+		y = 1
+
+		prerequisite = { focus = FRA_form_the_national_committee }
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = VIC_regains_france
+		}
+		
+		bypass = {
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
 				target = VIC

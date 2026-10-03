@@ -79,6 +79,7 @@
   FRA_resistance_sabotage:0 "The Dice are on the Carpet"
   FRA_allied_equipment:0 "Produce Allied Equipment"
   FRA_form_new_army:0 "Form New Army"
+  FRA_dec_on_vichy:0 "Finish off the Pretenders"
 
   #### TOOLTIP ####
   FRA_coalition_tt:0 "§RIf completed before 'The Blum-Violette Proposal' and 'Expand the Citizenship' those focuses will bypass not gaining the bonuses.§W"
@@ -170,6 +171,7 @@
 
   VIC_end_occupation_later_tt:0 "Vichy gets a repeating decision to ask for their land again at a later date."
   VIC_end_occupation_never_tt:0 "Vichy will never be able to ask for their land back again."
+  VIC_regains_france:0 "Vichy has been Re-instated as the rulers of Paris."
   lar_end_the_occupation.1.z:0 "Let them ask again later"
   lar_end_the_occupation.0.t:0 "Germany Postpones Reunification"
   lar_end_the_occupation.0.a:0 "We will ask then again soon"
