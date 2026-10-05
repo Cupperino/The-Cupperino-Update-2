@@ -1716,43 +1716,43 @@ technologies = {
 		artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		mot_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		category_self_propelled_artillery = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		heavy_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		mot_heavy_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		super_heavy_artillery = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		self_propelled_super_heavy_artillery = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		# field_guns = {
@@ -1776,31 +1776,31 @@ technologies = {
 		artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		mot_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		heavy_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		mot_heavy_artillery_brigade = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		category_self_propelled_artillery = {
 			ap_attack = 0.15
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		
