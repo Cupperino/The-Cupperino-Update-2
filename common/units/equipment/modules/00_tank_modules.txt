@@ -479,14 +479,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			reliability = -0.1
-			max_strength = -0.25
+			reliability = -0.15
+			max_strength = -1
 		}
 		
 		multiply_stats = {
 			build_cost_ic = -0.1	
 		}
-		dismantle_cost_ic = 1
+		dismantle_cost_ic = 5
 	}
 
 	tank_cast_armor = {
@@ -495,8 +495,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			reliability = 0.1
-			defense = 5
+			reliability = 0.15
+			defense = 6
 			breakthrough = 5
 			hardness = 0.2
 			max_strength = 0.5
@@ -1377,7 +1377,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.15
+			breakthrough = -0.2
 			armor_value = 0.05
 		}
 		dismantle_cost_ic = 2
@@ -1409,7 +1409,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.15
+			breakthrough = -0.2
 			armor_value = 0.10
 		}
 		dismantle_cost_ic = 3
@@ -2026,7 +2026,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = -0.15
+			breakthrough = -0.2
 			armor_value = 0.05
 		}
 		dismantle_cost_ic = 2
@@ -3459,7 +3459,7 @@ equipment_modules = {
 			build_cost_ic = 0.5
 			defense = 4
 			breakthrough = 5
-			max_strength = 0.2
+			max_strength = 0.4
 		}
 		
 		multiply_stats = {  }
