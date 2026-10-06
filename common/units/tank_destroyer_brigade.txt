@@ -345,7 +345,7 @@ sub_units = {
 		hard_attack = -0.65
 		breakthrough = -0.85
 		defense = 0.15
-		ap_attack = -0.5
+		ap_attack = -0.25
 
 	}
 	
@@ -392,7 +392,7 @@ sub_units = {
 		hard_attack = -0.65
 		breakthrough = -0.85
 		defense = 0.2
-		ap_attack = -0.5
+		ap_attack = -0.25
 
 	}
 	
@@ -439,7 +439,7 @@ sub_units = {
 		hard_attack = -0.65
 		breakthrough = -0.85
 		defense = 0.2
-		ap_attack = -0.5
+		ap_attack = -0.25
 	}
 
 

@@ -8,7 +8,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
-			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
@@ -64,6 +63,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_light_turret_2
+			tank_welded_armor
 		}
 
 		on_research_complete = {
@@ -139,7 +139,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
-			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
@@ -191,6 +190,10 @@ technologies = {
 
 		enable_equipments = {
 			eng_medium_tank_chassis_a13
+		}
+
+		enable_equipment_modules = {
+			tank_welded_armor
 		}
 	
 		path = {
@@ -492,7 +495,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
-			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
@@ -546,6 +548,10 @@ technologies = {
 
 		enable_equipments = {
 			eng_heavy_tank_chassis_a12
+		}
+
+		enable_equipment_modules = {
+			tank_welded_armor
 		}
 	
 		path = {
