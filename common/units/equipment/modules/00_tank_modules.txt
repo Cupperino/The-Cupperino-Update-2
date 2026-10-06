@@ -1191,6 +1191,7 @@ equipment_modules = {
 			defense = -0.5
 			maximum_speed = 0.1
 			#air_attack = -0.2
+			max_strength = -0.25
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1432,7 +1433,7 @@ equipment_modules = {
 				tank_armament_tier_medium_2
 				tank_armament_tier_medium_3
 				tank_armament_tier_heavy_1
-				tank_armament_tier_heavy_2
+				#tank_armament_tier_heavy_2
 				tank_armament_tier_arty
 				tank_armament_tier_heavy_arty
 				tank_armament_tier_aa
@@ -1645,6 +1646,7 @@ equipment_modules = {
 			defense = -0.5
 			maximum_speed = 0.1
 			air_attack = -0.2
+			max_strength = -0.25
 		}
 		dismantle_cost_ic = 4
 	}
