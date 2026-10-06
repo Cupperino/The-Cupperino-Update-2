@@ -632,13 +632,13 @@ self_propelled_support = {
     rewards = {
         mobile_battery_management_platoons = {
             category_self_propelled_artillery = {
-               max_organisation = 2
+               max_organisation = 1
             }
             category_self_propelled_anti_air= {
-               max_organisation = 2
+               max_organisation = 1
             }
             category_tank_destroyers = {
-               max_organisation = 2
+               max_organisation = 1
             }
         }
         screening_attacks = {

@@ -539,7 +539,7 @@ equipments = {
 			}
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 4.5
+		maximum_speed = 4
 		build_cost_ic = 30
 		reliability = 0.7
 		armor_value = 30
@@ -588,7 +588,7 @@ equipments = {
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 4.5
+		maximum_speed = 4
 		build_cost_ic = 34
 		reliability = 0.7
 		armor_value = 40
@@ -645,7 +645,7 @@ equipments = {
 			#tank_nsb_heavy_armor_1_upgrade
 			tank_nsb_heavy_engine_1_upgrade
 		}
-		maximum_speed = 4
+		maximum_speed = 4.5
 		build_cost_ic = 44
 		reliability = 0.7
 		armor_value = 85

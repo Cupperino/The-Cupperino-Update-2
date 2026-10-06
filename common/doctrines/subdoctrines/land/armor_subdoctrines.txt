@@ -784,7 +784,7 @@ tank_destroyer_force = {
 
         independent_counterattacks = {
             category_tank_destroyers = {
-                max_organisation = 5
+                max_organisation = 3
                 initiative = 0.02
             }
         }
