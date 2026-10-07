@@ -363,8 +363,7 @@ assault_infantry = {
                 supply_consumption = -0.03
             }
             category_assault_gun = {
-                breakthrough = 0.15
-                soft_attack = 0.1
+                soft_attack = 0.05
             }
             light_assault_gun_brigade = {
                 max_organisation = 3

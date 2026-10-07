@@ -94,6 +94,9 @@ sub_units = {
 		amphibious = { 
 			attack = -0.8
 		}
+		fort = {
+			attack = 0.4
+		}
 	}
 	
 	medium_sp_artillery_brigade = {
