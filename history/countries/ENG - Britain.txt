@@ -493,10 +493,10 @@ create_equipment_variant = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_medium_turret_1
 		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_welded_armor
+		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 	}
-	icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_1.dds"
+	icon = "gfx/interface/technologies/tanks/eng/eng_heavy_tank_1.dds"
 }
 
 # Materials
