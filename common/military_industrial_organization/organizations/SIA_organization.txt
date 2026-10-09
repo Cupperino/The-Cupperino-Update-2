@@ -141,6 +141,31 @@ SIA_army_ordnance_department_artillery_organzation = {
 		original_TAG = SIA
 		has_dlc = "Thunder at Our Gates"
 	}
+
+	add_trait = { 
+		token = SIA_mio_trait_thunder_at_the_gates
+		name = SIA_mio_trait_thunder_at_the_gates
+		icon = GFX_generic_mio_department_icon_infantry_quality
+		special_trait_background = yes
+
+		available = {
+			FROM = { has_completed_focus = SIA_the_thunder_at_the_gates }
+		}
+
+		position = { x=9 y=0 }  
+
+		limit_to_equipment_type = { pack_artillery_equipment }
+
+		equipment_bonus = {
+			breakthrough = 0.10
+			soft_attack = 0.15
+		}
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.1
+		}
+
+	}
 }
 
 #Motorized
