@@ -36,7 +36,7 @@ sub_units = {
 		supply_consumption = 0.28
 		supply_consumption_factor = 0.05
 
-		breakthrough = 0.2
+		breakthrough = -0.2
 		soft_attack = -0.3
 		hard_attack = -0.3
 
@@ -134,7 +134,7 @@ sub_units = {
 		supply_consumption = 0.45
 		supply_consumption_factor = 0.065
 
-		breakthrough = 0.2
+		breakthrough = -0.2
 		soft_attack = -0.1
 		hard_attack = -0.1
 		maximum_speed = -0.075
@@ -233,7 +233,7 @@ sub_units = {
 		supply_consumption = 0.5
 		supply_consumption_factor = 0.08
 		
-		breakthrough = 0.2
+		breakthrough = -0.2
 
 		plains = {
 			attack = -0.1 

@@ -7081,6 +7081,7 @@
 			add_to_variable = { SIA_aep_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { SIA_aep_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { SIA_aep_extraction = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { SIA_aep_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt }
 
 			SIA_increase_civilian_approval = yes
 			SIA_decrease_military_approval = yes
@@ -7144,6 +7145,7 @@
 			add_to_variable = { SIA_aep_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { SIA_aep_min_export = 0.15 tooltip = min_export_tt }
 			add_to_variable = { SIA_aep_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { SIA_aep_production_factory_max_efficiency_factor = 0.025 tooltip = production_factory_max_efficiency_factor_tt }
 
 		}
 	}
@@ -7638,8 +7640,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
-			add_to_variable = { SIA_army_of_siam_production_speed_industrial_complex_factor = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
-			add_to_variable = { SIA_army_of_siam_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SIA_army_of_siam_production_speed_industrial_complex_factor = 0.075 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SIA_army_of_siam_production_speed_arms_factory_factor = 0.075 tooltip = production_speed_arms_factory_factor_tt }
 			
 		}
 	}
@@ -7665,7 +7667,7 @@
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
 			add_to_variable = { SIA_army_of_siam_line_change_production_efficiency_factor = 0.08 tooltip = line_change_production_efficiency_factor_tt }
-			add_to_variable = { SIA_army_of_siam_production_factory_max_efficiency_factor = 0.04 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SIA_army_of_siam_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { SIA_army_of_siam_land_mastery_gain_factor = 0.075 tooltip = land_mastery_gain_factor_tt }
 		}
 	}
@@ -7690,8 +7692,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
-			add_to_variable = { SIA_army_of_siam_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
-			add_to_variable = { SIA_army_of_siam_no_supply_grace = 48 tooltip = SIA_no_supply_grace_tt }
+			add_to_variable = { SIA_army_of_siam_special_forces_attack_factor = 0.025 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { SIA_army_of_siam_special_forces_defence_factor = 0.025 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { SIA_army_of_siam_special_forces_cap = 0.025 tooltip = special_forces_cap_tt }
 			add_potential_special_forces_tree = yes
 		}
 	}
@@ -7726,6 +7729,9 @@
 				amount = 50
 				track = combat_support
 			}
+			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
+			add_to_variable = { SIA_army_of_siam_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt}
+			add_to_variable = { SIA_army_of_siam_army_artillery_defence_factor = 0.05 tooltip = army_artillery_defence_factor_tt}
 		}
 	}
 	focus = {
@@ -8258,7 +8264,7 @@
 
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
-			add_to_variable = { SIA_army_of_siam_air_weather_penalty = -0.25 tooltip = air_weather_penalty_tt }
+			add_to_variable = { SIA_army_of_siam_air_weather_penalty = -0.15 tooltip = air_weather_penalty_tt }
 			add_to_variable = { SIA_army_of_siam_ground_attack_factor = 0.10 tooltip = ground_attack_factor_tt }
 		}
 	}
@@ -8302,18 +8308,9 @@
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			if = {
-				limit = { has_dlc = "By Blood Alone" }
-				has_tech = basic_medium_airframe
-			}
-			else = {
-				has_tech = tactical_bomber1
-			}
-		}
 
 		completion_reward = {
-			add_timed_idea = { idea = idea_SIA_bomber_procurement_program days = 500 }
+			add_timed_idea = { idea = idea_SIA_bomber_procurement_program days = 365 }
 		}
 	}
 
@@ -8335,10 +8332,10 @@
 
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
-			add_to_variable = { SIA_army_of_siam_air_range_factor = -0.50 tooltip = air_range_factor_tt }
-			add_to_variable = { SIA_army_of_siam_ground_attack_factor = 0.15 tooltip = ground_attack_factor_tt }
-			add_to_variable = { SIA_army_of_siam_air_agility_factor = 0.15 tooltip = air_agility_factor_tt }
-			add_to_variable = { SIA_army_of_siam_air_attack_factor = 0.10 tooltip = air_attack_factor_tt }
+			add_to_variable = { SIA_army_of_siam_air_range_factor = -0.20 tooltip = air_range_factor_tt }
+			add_to_variable = { SIA_army_of_siam_ground_attack_factor = 0.05 tooltip = ground_attack_factor_tt }
+			add_to_variable = { SIA_army_of_siam_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { SIA_army_of_siam_air_attack_factor = 0.075 tooltip = air_attack_factor_tt }
 		}
 	}
 
@@ -8380,7 +8377,7 @@
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
 			add_to_variable = { SIA_army_of_siam_air_defence_factor = 0.10 tooltip = air_defence_factor_tt }
-			add_to_variable = { SIA_army_of_siam_air_escort_efficiency = 0.20 tooltip = air_escort_efficiency_tt }
+			add_to_variable = { SIA_army_of_siam_air_escort_efficiency = 0.10 tooltip = air_escort_efficiency_tt }
 			add_to_variable = { SIA_army_of_siam_air_fuel_consumption_factor = 0.10 tooltip = air_fuel_consumption_factor_tt }
 		}
 	}
@@ -8919,6 +8916,9 @@
                     popup = no
                 }
             }
+			mio:SIA_army_ordnance_department_artillery_organzation = {
+				complete_mio_trait = SIA_mio_trait_thunder_at_the_gates
+			}
 		}
 	}
 
@@ -8942,8 +8942,8 @@
 
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
-			add_to_variable = { SIA_army_of_siam_supply_consumption_factor = -0.03 tooltip = supply_consumption_factor_tt }
-			add_to_variable = { SIA_army_of_siam_no_supply_grace = 30 tooltip = SIA_no_supply_grace_tt }
+			add_to_variable = { SIA_army_of_siam_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { SIA_army_of_siam_no_supply_grace = 48 tooltip = SIA_no_supply_grace_tt }
 			add_to_variable = { SIA_army_of_siam_land_night_attack = 0.10 tooltip = land_night_attack_tt }
 		}
 	}
@@ -9058,10 +9058,13 @@
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 3
+				uses = 2
 				category = armor
 				name = SIA_reverse_engineer_allied_tanks
 			}	
+			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
+			add_to_variable = { SIA_army_of_siam_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt}
+			add_to_variable = { SIA_army_of_siam_army_armor_defence_factor = 0.05 tooltip = army_armor_attack_factor_tt}
 			# if = {
 			# 	limit = {
 			# 		has_dlc = "No Step Back"
@@ -10293,16 +10296,16 @@
 					}
 				}
 				prioritize = { 1076 }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 
 			custom_effect_tooltip = modify_royal_thai_navy
-			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.10 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 
@@ -10344,16 +10347,16 @@
 					}
 				}
 				prioritize = { 1076 }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 
 			custom_effect_tooltip = modify_royal_thai_navy
-			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.025 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 
@@ -10395,10 +10398,10 @@
 					}
 				}
 				prioritize = { 1076 }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -10459,7 +10462,7 @@
 				}
 			}
 			custom_effect_tooltip = modify_royal_thai_navy
-			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.10 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { SIA_royal_navy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { SIA_royal_navy_factory_energy_consumption = 0.05 tooltip = factory_energy_consumption_tt }
 		}
@@ -10512,7 +10515,7 @@
 				}
 			}
 			custom_effect_tooltip = modify_royal_thai_navy
-			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { SIA_royal_navy_industrial_capacity_dockyard = 0.025 tooltip = industrial_capacity_dockyard_tt }
 			add_tech_bonus = {
 				name = SIA_establish_the_foundry_and_machine_shop
 				bonus = 0.25
