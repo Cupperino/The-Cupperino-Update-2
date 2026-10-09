@@ -7987,15 +7987,13 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
-
+			has_completed_focus = SOV_pol_triple_alliance
+			has_war_with_major = yes
 			any_country = {
 				has_government = fascism
 				OR = {
-					tag = ENG
-					tag = FRA
 					tag = GER
 					tag = ITA
-					tag = USA
 					tag = JAP
 				}
 			}
