@@ -2207,7 +2207,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
 		relative_position_id = USA_fdr_again
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2237,7 +2237,43 @@ focus_tree = {
 		}
 		
 		bypass = {
+			has_war = yes
+		}
 
+		bypass_effect = {
+			custom_effect_tooltip = USA_congress_focus_support3_tt
+			if = {
+				limit = { has_completed_focus = USA_neutrality_act }
+				swap_ideas = {
+					remove_idea = USA_neutrality_act
+					add_idea = USA_lend_lease_act_na
+				}
+			}
+			else = {
+				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
+			}
+			if = {
+				limit = {
+					has_war_support > 0.6
+					has_war = no
+				}
+				USA_congress_small_support = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support > 0.4
+					has_war = no
+				}
+				USA_congress_medium_opposition = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support < 0.4
+					has_war = no
+				}
+				USA_congress_large_opposition = yes
+			}
+			USA_neutrality_level_up = yes
 		}
 
 		cancel_if_invalid = no
