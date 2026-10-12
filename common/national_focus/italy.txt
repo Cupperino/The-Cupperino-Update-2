@@ -4940,9 +4940,18 @@ focus_tree = {
 				uses = 1
 				category = mountaineers_tech
 			}
-			swap_ideas = {
-				add_idea = ITA_arditi_legacy2
-				remove_idea = ITA_arditi_legacy
+			if = {
+				limit = { has_idea = ITA_arditi_legacy2_planning }
+				swap_ideas = {
+					add_idea = ITA_arditi_legacy3
+					remove_idea = ITA_arditi_legacy2_planning
+				}
+			}
+			else = {
+				swap_ideas = {
+					add_idea = ITA_arditi_legacy2
+					remove_idea = ITA_arditi_legacy
+				}
 			}
 		}
 	}
@@ -5075,9 +5084,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_arditi_legacy3
-				remove_idea = ITA_arditi_legacy2
+			if = {
+				limit = { has_idea = ITA_arditi_legacy2 }
+				swap_ideas = {
+					add_idea = ITA_arditi_legacy3
+					remove_idea = ITA_arditi_legacy2
+				}
+			}
+			else = {
+				swap_ideas = {
+					add_idea = ITA_arditi_legacy2_planning
+					remove_idea = ITA_arditi_legacy
+				}
 			}
 		}
 	}
