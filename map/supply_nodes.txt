@@ -754,3 +754,6 @@
 #1 10775 # Ethiopia Removed
 1 7101 #Changde
 1 1591 # KSR
+1 11362 # Behind Moscow
+1 566 # Uralsk 1
+1 11480 # Uralsk 2
