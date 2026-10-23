@@ -122,73 +122,73 @@ on_actions = {
 					}
 				}
 			}
-			# JAP = {
-			# 	if = {
-			# 		limit = { has_completed_focus = JAP_early_war_intel_focus }
-			# 		for_each_scope_loop = {
-			# 			array = JAP.JAPAN_INTEL
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_small } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_small } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_small } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_army_japan_small } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_small } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_small } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_small } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_navy_japan_small } }
-			# 			}
-			# 		}
-			# 	} else_if = {
-			# 		limit = { has_completed_focus = JAP_mid_war_intel_focus }
-			# 		for_each_scope_loop = {
-			# 			array = JAP.JAPAN_INTEL
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_medium } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_medium } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_medium } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_army_japan_medium } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_medium } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_medium } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_medium } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_navy_japan_medium } }
-			# 			}
-			# 		}
-			# 	} else_if = {
-			# 		limit = { has_completed_focus = JAP_late_war_intel_focus }
-			# 		for_each_scope_loop = {
-			# 			array = JAP.JAPAN_INTEL
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_big } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_big } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_big } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_army_japan_big } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_big } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_big } }
-			# 			}
-			# 			if = {
-			# 				limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_big } } } }
-			# 				JAP = { add_operation_token = { tag = PREV token = token_navy_japan_big } }
-			# 			}
-			# 		}
-			# 	}
+			JAP = {
+				if = {
+					limit = { has_completed_focus = JAP_early_war_intel_focus }
+					for_each_scope_loop = {
+						array = JAP.JAPAN_INTEL
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_small } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_small } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_small } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_army_japan_small } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_small } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_small } }
+						}
+						if = {
+							limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_small } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_navy_japan_small } }
+						}
+					}
+				} else_if = {
+					limit = { has_completed_focus = JAP_mid_war_intel_focus }
+					for_each_scope_loop = {
+						array = JAP.JAPAN_INTEL
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_medium } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_medium } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_medium } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_army_japan_medium } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_medium } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_medium } }
+						}
+						if = {
+							limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_medium } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_navy_japan_medium } }
+						}
+					}
+				} else_if = {
+					limit = { has_completed_focus = JAP_late_war_intel_focus }
+					for_each_scope_loop = {
+						array = JAP.JAPAN_INTEL
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_airforce_japan_big } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_airforce_japan_big } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_army_japan_big } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_army_japan_big } }
+						}
+						if = {
+							limit = {  NOT = { JAP = { has_operation_token = { tag = PREV token = token_civilian_japan_big } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_civilian_japan_big } }
+						}
+						if = {
+							limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy_japan_big } } } }
+							JAP = { add_operation_token = { tag = PREV token = token_navy_japan_big } }
+						}
+					}
+				}
 
-			# }
+			}
 		}
 
 		# Reset Friendly Intel on Hotjoin
