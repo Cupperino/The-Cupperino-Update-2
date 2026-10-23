@@ -9354,6 +9354,10 @@ spriteType = {
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_maritime_patrol.dds"
 	}
 	spriteType = {
+		name = "GFX_military_industrial_organization_fighter_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
 		name = "GFX_military_industrial_organization_armored_car_chassis"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_armored_car.dds"
 	}

@@ -207,6 +207,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	ENG_neutrality_acts_usa
 	undisturbed_isolation
 	great_depression
 	disarmed_nation

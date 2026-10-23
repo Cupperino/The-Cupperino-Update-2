@@ -2044,7 +2044,23 @@ on_actions = {
 	# 		}
 	# 	}
 	# }
+	on_war = {
+		# The Neutrality Acts end for the UK once the United States goes to war
+		effect = {
+			if = {
+				limit = { tag = USA }
+				ENG = { ENG_end_neutrality_acts = yes }
+			}
+		}
+	}
 	on_capitulation = {
+		# The Neutrality Acts end for the UK once France falls
+		effect = {
+			if = {
+				limit = { tag = FRA }
+				ENG = { ENG_end_neutrality_acts = yes }
+			}
+		}
 		effect = {
 			if = {
 				limit = {
@@ -2471,6 +2487,20 @@ on_actions = {
 	}
 
 	on_state_control_changed = {
+		# State of the Empire: Gibraltar or the Suez changed hands
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM.FROM = { state = 118 }
+						FROM.FROM = { state = 446 }
+						FROM.FROM = { state = 1091 }
+					}
+					ENG_has_state_of_the_empire = yes
+				}
+				ENG = { ENG_update_state_of_the_empire = yes }
+			}
+		}
 		effect = {
 			if = {
 				limit = {
@@ -3151,6 +3181,37 @@ on_actions = {
 			else_if = { limit = { ROOT = { original_tag = CAN } } CAN = { set_country_flag = CAN_capitulated } set_variable = { global.can_capitulate_date = global.date } }
 			else_if = { limit = { ROOT = { original_tag = MEX } } MEX = { set_country_flag = MEX_capitulated } set_variable = { global.mex_capitulate_date = global.date } }
 			else_if = { limit = { ROOT = { original_tag = BRA } } BRA = { set_country_flag = BRA_capitulated } set_variable = { global.bra_capitulate_date = global.date } }
+		}
+	}
+
+	# The Shadow Scheme and the Military Industrialization Plan: count the UK's civilian factories built
+	# until each focus pays them out
+	on_weekly_ENG = {
+		effect = {
+			# each tracker stops once its payout focus is done or the other branch was chosen
+			if = {
+				limit = {
+					NOT = { has_completed_focus = ENG_the_shadow_scheme }
+					NOT = { has_completed_focus = ENG_legacy_of_the_industrial_revolution }
+				}
+				ENG_shadow_scheme_track = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_completed_focus = ENG_the_military_industrialization_plan }
+					NOT = { has_completed_focus = ENG_the_sun_that_never_set }
+				}
+				ENG_mil_plan_track = yes
+			}
+			# containment: pacifists riot while we punish Germany or Italy in a calm world
+			if = {
+				limit = {
+					NOT = { has_idea = ENG_pacifist_riots }
+					ENG_pacifist_riots_active = yes
+				}
+				add_ideas = ENG_pacifist_riots
+				country_event = britain.717
+			}
 		}
 	}
 }
