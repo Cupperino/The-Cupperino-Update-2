@@ -94,16 +94,22 @@ brutal_crackdown = {
 italianisation = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_decision_ITA_claim_yugo_1
 	
 	resistance_target = 0.2
 	compliance_gain = -0.06
 }
 
 italianised = {
-	enable = { always = yes }
+	enable = {
+		ROOT = {
+			controller = {
+				tag = ITA
+			}
+		}
+	}
 
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_decision_ITA_claim_yugo_4
 	
 	compliance_gain = 0.4
 }

@@ -1614,48 +1614,28 @@ ITA_carve_up_africa_decisions = {
 
 		visible = { 
 			has_completed_focus = ITA_carve_up_africa
-			NOT = { owns_state = 458 }
+			NOT = { controls_state = 458 } #Tunisia
+			NOT = { controls_state = 665 } #Gabès
 		}
 		available =	{
-			has_completed_focus = ITA_carve_up_africa
-			controls_state = 448
-			OR = {
-				D04 = {
-					458	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D05 = {
-					458	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				VIC = {
-					458	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
+			#has_completed_focus = ITA_carve_up_africa #focus checks are redundant if the only way you get the decision is from a focus
+			controls_state = 448 #Tripoli
+			458	= { #Tunisia
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
 			}
-
 		}
 		complete_effect = {
-			transfer_state = 458
-			transfer_state = 665
+			458 = { #Tunisia
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			665 = { #Gabès
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
 		}
 		
 	}
@@ -1671,80 +1651,41 @@ ITA_carve_up_africa_decisions = {
 
 		visible = { 
 			has_completed_focus = ITA_carve_up_africa
-			NOT = { owns_state = 459 }
+			NOT = { controls_state = 460 } #Constantine
+			NOT = { controls_state = 459 } #Algiers
+			NOT = { controls_state = 513 } #Tlemcen
 		}
 		available =	{
-			has_completed_focus = ITA_carve_up_africa
-			controls_state = 458
-			controls_state = 1082
-			OR = {
-				D04 = {
-					460	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D04 = {
-					459	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D05 = {
-					460	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				D05 = {
-					459	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				VIC = {
-					460	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
-				}
-				VIC = {
-					459	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
+			#has_completed_focus = ITA_carve_up_africa
+			controls_state = 458 #Tunisia
+			controls_state = 1082 #El-Alamein
+			907 = { is_controlled_by_ROOT_or_ally = yes } #Cairo
+			460	= { #Constantine
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
 			}
-			907 = { is_controlled_by_ROOT_or_ally = yes }
+			459	= { #Algiers
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
+				}
+			}
 		}
 		complete_effect = {
-			transfer_state = 460			
-			transfer_state = 459
-			transfer_state = 513
+			460 = { #Constantine
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			459 = { #Algiers
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			513 = { #Tlemcen
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
 		}
 	}
 	
@@ -1759,80 +1700,37 @@ ITA_carve_up_africa_decisions = {
 
 		visible = { 
 			has_completed_focus = ITA_carve_up_africa
-			NOT = { owns_state = 461 }
+			NOT = { controls_state = 461 } #Casablanca
+			NOT = { controls_state = 462 } #Marrakesh
 		}
 		available =	{
-			has_completed_focus = ITA_carve_up_africa
+			#has_completed_focus = ITA_carve_up_africa
 			NOT = { has_completed_focus = ITA_seize_balearics }
-			controls_state = 459
-			controls_state = 455
-			OR = {
-				D04 = {
-					461	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D04 = {
-					462	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D05 = {
-					461	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				D05 = {
-					462	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				VIC = {
-					461	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
-				}
-				VIC = {
-					462	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
+			controls_state = 459 #Algiers
+			455 = { is_controlled_by_ROOT_or_ally = yes } #Jordan
+			905 = { is_controlled_by_ROOT_or_ally = yes } #Mombasa, previously 547 - Nairobi
+			461	= { #Casablanca
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
 			}
-			547 = { is_controlled_by_ROOT_or_ally = yes }
+			462	= { #Marrakesh
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
+				}
+			}
 		}
 		complete_effect = {
-			transfer_state = 461			
-			transfer_state = 462
+			461 = { #Casablanca
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			462 = { #Marrakesh
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
 		}
 	}
 	
@@ -1847,80 +1745,57 @@ ITA_carve_up_africa_decisions = {
 
 		visible = { 
 			has_completed_focus = ITA_carve_up_africa
-			NOT = { owns_state = 677 }
+			NOT = { controls_state = 553 } #Lebanon
+			NOT = { controls_state = 554 } #Damascus
+			NOT = { controls_state = 677 } #Aleppo
+			NOT = { controls_state = 680 } #Deir-az-Zur
 		}
 		available =	{
-			has_completed_focus = ITA_carve_up_africa
-			454 = { is_controlled_by_ROOT_or_ally = yes }
-			455 = { is_controlled_by_ROOT_or_ally = yes }
-			OR = {
-				D04 = {
-					553	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
+			#has_completed_focus = ITA_carve_up_africa
+			454 = { is_controlled_by_ROOT_or_ally = yes } #Palestine
+			455 = { is_controlled_by_ROOT_or_ally = yes } #Jordan
+			553 = { #Lebanon
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
-				D04 = {
-					554	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
+			}
+			554 = { #Damascus
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
-				D05 = {
-					553	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
+			}
+			677 = { #Aleppo
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
-				D05 = {
-					554	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				VIC = {
-					553	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
-				}
-				VIC = {
-					554	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
+			}
+			680 = { #Deir-az-Zur
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
 			}
 		}
 		complete_effect = {
-			transfer_state = 553
-			transfer_state = 554
-			transfer_state = 677
-			transfer_state = 680
+			553 = { #Lebanon
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			554 = { #Damascus
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			677 = { #Aleppo
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
+			680 = { #Deir-az-Zur
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
 		}
 	}	
 	
@@ -1935,47 +1810,24 @@ ITA_carve_up_africa_decisions = {
 
 		visible = { 
 			has_completed_focus = ITA_carve_up_africa
-			NOT = { owns_state = 268 }
+			NOT = { controls_state = 268 } #French Somaliland
 		}
 		available =	{
-			has_completed_focus = ITA_carve_up_africa
-			550 = { is_controlled_by_ROOT_or_ally = yes }
-			269 = { is_controlled_by_ROOT_or_ally = yes }
-			OR = {
-				D04 = {
-					268	= {
-						CONTROLLER = {
-							OR = {
-								tag = D04
-								is_subject_of = D04
-							}
-						}
-					}
-				}
-				D05 = {
-					268	= {
-						CONTROLLER = {
-							OR = {
-								tag = D05
-								is_subject_of = D05
-							}
-						}
-					}
-				}
-				VIC = {
-					268	= {
-						CONTROLLER = {
-							OR = {
-								tag = VIC
-								is_subject_of = VIC
-							}
-						}
-					}
+			#has_completed_focus = ITA_carve_up_africa
+			550 = { is_controlled_by_ROOT_or_ally = yes } #Eritrea
+			269 = { is_controlled_by_ROOT_or_ally = yes } #British Somaliland
+			268	= {#French Somaliland
+				CONTROLLER = {
+					original_tag = FRA
+					has_government = fascism
 				}
 			}
 		}
 		complete_effect = {
-			transfer_state = 268
+			268 = { #French Somaliland
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+			}
 		}
 	}
 }
@@ -2010,7 +1862,10 @@ ITA_italianisation_decisions = {
 					is_core_of = YUG
 					NOT = { is_core_of = ITA }
 				}
-				add_dynamic_modifier = { modifier = italianisation }
+				add_dynamic_modifier = {
+					modifier = italianisation
+					scope = ROOT
+				}
 			}
 		}
 		
@@ -2019,10 +1874,16 @@ ITA_italianisation_decisions = {
 				limit = {
 					is_core_of = YUG
 					NOT = { is_core_of = ITA }
-					has_dynamic_modifier = { modifier = italianisation }
+					has_dynamic_modifier = {
+						modifier = italianisation
+						scope = ROOT
+					}
 				}
 				remove_dynamic_modifier = { modifier = italianisation }
-				add_dynamic_modifier = { modifier = italianised }
+				add_dynamic_modifier = {
+					modifier = italianised
+					scope = ROOT
+				}
 			}
 			set_country_flag = yug_italianized 
 		}
@@ -2056,7 +1917,10 @@ ITA_italianisation_decisions = {
 					is_core_of = GRE
 					NOT = { is_core_of = ITA }
 				}
-				add_dynamic_modifier = { modifier = italianisation }
+				add_dynamic_modifier = {
+					modifier = italianisation
+					scope = ROOT
+				}
 			}
 		}
 		
@@ -2065,10 +1929,16 @@ ITA_italianisation_decisions = {
 				limit = {
 					is_core_of = GRE
 					NOT = { is_core_of = ITA }
-					has_dynamic_modifier = { modifier = italianisation }
+					has_dynamic_modifier = {
+						modifier = italianisation
+						scope = ROOT
+					}
 				}
 				remove_dynamic_modifier = { modifier = italianisation }
-				add_dynamic_modifier = { modifier = italianised }
+				add_dynamic_modifier = {
+					modifier = italianised
+					scope = ROOT
+				}
 			}
 			set_country_flag = gre_italianized 
 		}
@@ -2102,7 +1972,10 @@ ITA_italianisation_decisions = {
 					is_core_of = FRA
 					NOT = { is_core_of = ITA }
 				}
-				add_dynamic_modifier = { modifier = italianisation }
+				add_dynamic_modifier = {
+					modifier = italianisation
+					scope = ROOT
+				}
 			}
 		}
 		
@@ -2111,10 +1984,33 @@ ITA_italianisation_decisions = {
 				limit = {
 					is_core_of = FRA
 					NOT = { is_core_of = ITA }
-					has_dynamic_modifier = { modifier = italianisation }
+					has_dynamic_modifier = {
+						modifier = italianisation
+						scope = ROOT
+					}
 				}
 				remove_dynamic_modifier = { modifier = italianisation }
-				add_dynamic_modifier = { modifier = italianised }
+				add_dynamic_modifier = {
+					modifier = italianised
+					scope = ROOT
+				}
+				if = {
+					limit = {
+						owner = {
+							NOT = { tag = ITA }
+						}
+						OR = {
+							state = 735
+							state = 851
+							state = 21
+							state = 32
+							state = 1
+						}
+					}
+					transfer_state_to = ITA
+					remove_contested_owner = VIC
+					add_contested_owner = FRA
+				}
 			}
 			set_country_flag = fra_italianized
 		}
