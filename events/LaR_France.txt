@@ -4031,12 +4031,13 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		if = {
-			limit = { FROM = { is_ai = no } }
+		# if = {
+		# 	limit = { FROM = { is_ai = no } }
 			custom_effect_tooltip = GAME_OVER_TT
-		}
+		# }
 		FROM = {
 			country_event = lar_france_vichy_reunification.2
+			annex_country = { target = ROOT transfer_troops = yes }
 		}
 	}
 
@@ -4071,15 +4072,15 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		if = {
-			limit = {
-				FROM = { is_ai = no }
-				is_ai = yes
-			}
-			change_tag_from = FROM #if Vichy is played by player and FRA is AI, player gets to keep playing
-		}
+		# if = {
+		# 	limit = {
+		# 		FROM = { is_ai = no }
+		# 		is_ai = yes
+		# 	}
+		# 	change_tag_from = FROM #if Vichy is played by player and FRA is AI, player gets to keep playing
+		# }
 		
-		annex_country = { target = FROM transfer_troops = yes } 
+		# annex_country = { target = FROM transfer_troops = yes } 
 	}
 }
 
