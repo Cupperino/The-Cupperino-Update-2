@@ -8329,29 +8329,212 @@ country_event = {
 
 	is_triggered_only = yes
 
-	# Italy gets 1 state Savoy
+	# Italy gets Savoy and Corsica
 	option = {
 		ai_chance = { base = 70 }
 		name = germany.104.a
-		ITA = { 
-			transfer_state = 735
-			transfer_state = 1
-			transfer_state = 851
+		735 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
 		}
+		1 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		851 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		# ITA = { 
+		# 	transfer_state = 735
+		# 	transfer_state = 1
+		# 	transfer_state = 851
+		# }
 	}
 
-	# Italy gets 1 state Corsica
+	# Italy gets Southeastern France
 	option = {
 		ai_chance = { base = 70 }
 		name = germany.104.b
-		ITA = { 
-			transfer_state = 735
-			transfer_state = 1
-			transfer_state = 851
-			transfer_state = 32
-			transfer_state = 21
-			
+		735 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
 		}
+		1 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		851 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		32 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		21 = {
+			if = { #Vichy owns it
+				limit = {
+					owner = {
+						original_tag = FRA
+						has_government = fascism
+					}
+				}
+				transfer_state_to = ITA
+				set_state_owner_to = FRA
+				add_contested_owner = VIC
+				remove_contested_owner = FRA
+			}
+			else_if = { #Axis ally controls it
+				limit = {
+					controller = {
+						is_ally_with = ITA
+						NOT = { tag = ITA }
+					}
+				}
+				set_state_controller_to = ITA
+			}
+		}
+		# ITA = { 
+		# 	transfer_state = 735
+		# 	transfer_state = 1
+		# 	transfer_state = 851
+		# 	transfer_state = 32
+		# 	transfer_state = 21
+		# }
 	}
 
 	# Italy gets nothing
