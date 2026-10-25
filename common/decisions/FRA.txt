@@ -388,7 +388,13 @@ FRA_vichy_france = {
 					has_war_with = ROOT
 				}
 			}
-			controls_state = 16 #Paris
+			OR = {
+				controls_state = 16 #Paris
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = VIC
+				}
+			}
 			NOT = { has_idea = FRA_defeatism }
 		}
 
@@ -480,6 +486,16 @@ category_test_decisions = {
 					}
 					event_target:france_vichy = { transfer_state = PREV }
 				}
+				every_state = { #start resistance regardless of cores
+					limit = {
+						is_core_of = FRA
+					}
+					force_enable_resistance = {
+						occupier = PREV
+						occupied = FRA
+					}
+					start_resistance = PREV
+				}
 				every_state = {
 					limit = {
 						is_controlled_by = ROOT
@@ -502,11 +518,11 @@ category_test_decisions = {
 					event_target:france_vichy = { transfer_state = PREV }
 				}
 				310 = {
-					transfer_state_to = event_target:vichy_france
+					transfer_state_to = event_target:france_vichy
 					set_demilitarized_zone = yes
 				}
 				694 = {
-					transfer_state_to = event_target:vichy_france
+					transfer_state_to = event_target:france_vichy
 					set_demilitarized_zone = yes
 				}
 				every_state = {
@@ -519,16 +535,6 @@ category_test_decisions = {
 						NOT = { state = 730 }
 					}
 					add_core_of = PREV
-				}
-				every_state = { #start resistance regardless of cores
-					limit = {
-						is_core_of = FRA
-					}
-					force_enable_resistance = {
-						occupier = PREV
-						occupied = FRA
-					}
-					start_resistance = PREV
 				}
 				set_capital = { state = 26 }
 				set_politics = {
