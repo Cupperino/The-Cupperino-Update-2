@@ -2816,20 +2816,20 @@ country_event = {
 	id = bftb_bulgaria_fatherland_front.1
 	title = bftb_bulgaria_fatherland_front.1.t
 
-	# # Desc when formed by the player
-	# desc = {
-	# 	text = bftb_bulgaria_fatherland_front.1.desc_positive
-	# 	trigger = {
-	# 		has_completed_focus = BUL_the_fatherland_front
-	# 	}
-	# }
+	# Desc when formed by the player
+	desc = {
+		text = bftb_bulgaria_fatherland_front.1.desc_positive
+		trigger = {
+			has_completed_focus = BUL_the_fatherland_front
+		}
+	}
 
 	# Desc when NOT formed by the player
 	desc = {
 		text = bftb_bulgaria_fatherland_front.1.desc_negative
-		# trigger = {
-		# 	NOT = { has_completed_focus = BUL_the_fatherland_front }
-		# }
+		trigger = {
+			NOT = { has_completed_focus = BUL_the_fatherland_front }
+		}
 	}
 
 	picture = GFX_report_event_bul_partisans_plovdiv
@@ -2840,35 +2840,34 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			# if = {
-			# 	limit = { 
-			# 		NOT = { has_completed_focus = BUL_the_fatherland_front }
-			# 	}
+			if = {
+				limit = { 
+					NOT = { has_completed_focus = BUL_the_fatherland_front }
+				}
 				add_popularity = {
 					ideology = communism
 					popularity = 0.2
 				}
 				set_country_flag = BUL_fatherland_front_formed_flag
-			# }
+			}
 		}
 	}
 
-	# option = { #When formed by the player
-	# 	name = bftb_bulgaria_fatherland_front.1.a
+	option = { #When formed by the player
+		name = bftb_bulgaria_fatherland_front.1.a
 
-	# 	trigger = {
-	# 		has_completed_focus = BUL_the_fatherland_front
-	# 	}
-	# 	add_political_power = 70
-	# 	add_ideas = BUL_fatherland_front_positive
-	# }
+		trigger = {
+			has_completed_focus = BUL_the_fatherland_front
+		}
+		add_political_power = 70
+		add_ideas = BUL_fatherland_front_positive
+	}
 
 	option = { #When NOT formed by the player
 		name = bftb_bulgaria_fatherland_front.1.b
 
 		trigger = {
-			always = yes
-			#NOT = { has_completed_focus = BUL_the_fatherland_front }
+			NOT = { has_completed_focus = BUL_the_fatherland_front }
 		}
 		effect_tooltip = {
 			add_popularity = {

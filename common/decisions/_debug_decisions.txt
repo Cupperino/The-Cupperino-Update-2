@@ -501,8 +501,8 @@ debug_decisions = {
 			set_technology = { tech_signal_company2 = 1  popup = no }
 			set_technology = { basic_train = 1  popup = no }
 			set_technology = { armored_train = 1  popup = no }
-			set_technology = { railway_gun_0 = 1  popup = no }
 			set_technology = { railway_gun = 1  popup = no }
+			set_technology = { railway_gun_2 = 1  popup = no }
 			set_technology = { wartime_train = 1  popup = no }
 
 			# Infantry
@@ -1957,6 +1957,28 @@ debug_decisions = {
 
 		complete_effect = {
 			add_ideas = ENG_expand_the_repair_yards
+		}
+	}
+
+	add_eng_refitting_yards_debug = {
+		icon = SWE_set_navy_budget
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_ideas = ENG_refitting_yards
 		}
 	}
 

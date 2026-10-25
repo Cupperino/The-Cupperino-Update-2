@@ -680,6 +680,7 @@ guiTypes = {
 					name = "trains_year"
 					position = { x=2000 y=175 }
 					size = { width = 100%% height = 80 }
+					orientation = "UPPER_LEFT"
 					
 					instantTextBoxType = {
 						name = "trains_year1"

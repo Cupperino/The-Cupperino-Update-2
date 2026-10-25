@@ -5088,7 +5088,7 @@ focus_tree = {
 			has_equipment = {
 				train_equipment > 49
 			}
-			has_tech = railway_gun
+			has_tech = railway_gun_2
 		}
 
 		icon = GFX_focus_generic_railway_gun

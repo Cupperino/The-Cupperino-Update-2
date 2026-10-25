@@ -612,14 +612,6 @@ spriteType = {
 		texturefile ="gfx/leaders/YUG/Portrait_Yugoslavia_Robert_E_Lee.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_grand_admiral_thrawn"
-		texturefile ="gfx/leaders/Portrait_grand_admiral_thrawn.dds"
-	}
-	spriteType = {
-		name = "GFX_portrait_grand_admiral_thrawn_small"
-		texturefile = "gfx/leaders/thrawn_small.png"
-	} 
-	spriteType = {
 		name = "GFX_portrait_Nikolay_Aleksandrovich_Skvortsov"
 		texturefile ="gfx/leaders/KSR/portrait_kaz_nikolay_skvortsov.dds"
 	}
@@ -9352,10 +9344,6 @@ spriteType = {
 	spriteType = {
 		name = "GFX_military_industrial_organization_flying_boat_equipment"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_maritime_patrol.dds"
-	}
-	spriteType = {
-		name = "GFX_military_industrial_organization_fighter_equipment"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
 	}
 	spriteType = {
 		name = "GFX_military_industrial_organization_armored_car_chassis"

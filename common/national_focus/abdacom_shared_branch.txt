@@ -325,7 +325,7 @@
 	### AUSTRALIA OFFSET END ###
 
 	offset = {
-		x = 48
+		x = 79
 		y = 0
 		trigger = { tag = ENG }
 	}

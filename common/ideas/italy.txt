@@ -557,24 +557,8 @@ ideas = {
 				special_forces_cap = 0.05
 			}
 		}
-
-		ITA_arditi_legacy2_planning = {
-
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = ita_armir
-
-			removal_cost = -1
-
-			modifier = {
-				army_infantry_attack_factor = 0.05
-				max_planning = 0.05
-			}
-		}
-
-		ITA_arditi_legacy = {
+	
+		ITA_arditi_legacy = {			
 			
 			allowed = {
 				original_tag = "ITA"
